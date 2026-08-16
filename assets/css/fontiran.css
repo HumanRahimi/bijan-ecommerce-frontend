@@ -1,81 +1,81 @@
 /* Dana font family - WOFF only. Remove unused weight blocks if not downloaded. */
 
-@font-face {
+/* @font-face {
     font-family: "Dana";
     font-style: normal;
     font-weight: 10;
     font-display: swap;
     src: url('../fonts/woff/DanaFaNum-Hairline.woff') format('woff');
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Dana";
     font-style: normal;
     font-weight: 100;
     font-display: swap;
     src: url('../fonts/woff/DanaFaNum-Thin.woff') format('woff');
-}
-
+} */
+/* 
 @font-face {
     font-family: "Dana";
     font-style: normal;
     font-weight: 200;
     font-display: swap;
     src: url('../fonts/woff/DanaFaNum-UltraLight.woff') format('woff');
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Dana";
     font-style: normal;
     font-weight: 300;
     font-display: swap;
     src: url('../fonts/woff/DanaFaNum-Light.woff') format('woff');
+} */
+
+@font-face {
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-Regular.woff') format('woff');
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-Medium.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-Medium.woff') format('woff');
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-DemiBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-DemiBold.woff') format('woff');
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: bold;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-Bold.woff') format('woff');
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-ExtraBold.woff') format('woff');
-}
-
-@font-face {
-    font-family: "Dana";
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url('../fonts/woff/DanaFaNum-Black.woff') format('woff');
+  font-family: "Dana";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/woff/DanaFaNum-Black.woff") format("woff");
 }

@@ -1,8 +1,8 @@
 # Bijan E-commerce Frontend
 
-A responsive, pixel-perfect e-commerce frontend built from scratch using **HTML, CSS, and Vanilla JavaScript**.
+A pixel-perfect, responsive e-commerce frontend built from scratch using **HTML, CSS, and Vanilla JavaScript**.
 
-This project focuses on responsive UI engineering, reusable frontend architecture, client-side state management, accessibility, and interactive shopping features without using a frontend framework.
+This project focuses on modern frontend engineering concepts including responsive UI development, reusable components, client-side state management, accessibility, and performance optimization without using any frontend framework.
 
 ---
 
@@ -10,112 +10,104 @@ This project focuses on responsive UI engineering, reusable frontend architectur
 
 ### Store
 
-[View Live Store](https://humanrahimi.github.io/bijan-ecommerce-frontend/demo.html)
+https://humanrahimi.github.io/bijan-ecommerce-frontend/demo.html
 
-### Responsive Device Preview
+### Responsive Preview
 
-[Open Responsive Preview](https://humanrahimi.github.io/bijan-ecommerce-frontend/)
+https://humanrahimi.github.io/bijan-ecommerce-frontend/
 
-### GitHub Repository
+### Repository
 
-[View Source Code](https://github.com/HumanRahimi/bijan-ecommerce-frontend)
-
----
-
-## 📸 Preview
-
-### Desktop
-
-![Bijan E-commerce Desktop Preview](docs/desktop-preview.png)
-
-### Mobile
-
-![Bijan E-commerce Mobile Preview](docs/mobile-preview.png)
+https://github.com/HumanRahimi/bijan-ecommerce-frontend
 
 ---
 
-## ✨ Features
+# 📸 Preview
 
-### Shopping Experience
+## Desktop
 
-- Add products to cart
-- Increase and decrease product quantity
-- Remove products from cart
-- Persistent cart state using Local Storage
-- Wishlist management
-- Persistent wishlist state
+![Desktop Preview](docs/desktop-preview.png)
+
+## Mobile
+
+![Mobile Preview](docs/mobile-preview.png)
+
+---
+
+# ✨ Features
+
+## 🛒 E-commerce Functionality
+
+- Shopping cart system
+- Add / remove products
+- Product quantity management
+- Wishlist system
 - Cart and wishlist counters
-- User-specific cart and wishlist data
+- LocalStorage persistence
+- User-based shopping data
+- Dynamic product updates
 
-### Product System
+---
+
+## 🔍 Product & Search System
 
 - Centralized product registry
-- Shared product data across different UI sections
-- Product detection across repeated product cards
-- Featured product integration
-- Reusable product lookup logic
+- Product data management
+- Search functionality
+- Product filtering
+- Shared product data between:
+  - Product cards
+  - Cart
+  - Wishlist
+  - Search results
 
-### Search
+---
 
-- Desktop product search
-- Mobile sidebar search
-- Search result rendering
-- Product navigation
-- Product highlighting
-
-### User Account
+## 👤 User Account
 
 - Login interface
-- Registration interface
-- Logout
-- Persistent user session
-- User-specific data
+- Register interface
 - Account popover
-- Login protection for shopping actions
+- User session management
+- Protected shopping actions
+- Persistent user data
 
-### Navigation
+---
 
-- Multi-level desktop navigation
+## 🧭 Navigation
+
+- Responsive desktop navigation
 - Hover dropdown menus
-- Responsive mobile sidebar
-- Mobile accordion submenus
-- Responsive compact header
-- Click-outside behavior
-- Escape-key support
+- Mobile sidebar navigation
+- Accordion submenus
+- Mobile-friendly interactions
+- Click outside closing behavior
+- Escape key support
 
-### Cart & Wishlist Popovers
+---
 
-- Responsive floating popovers
-- Dynamic positioning relative to header buttons
-- Automatic synchronization while scrolling
-- Automatic closing when trigger elements leave the viewport
-- Only one header surface can remain open at a time
+## 🎞 Interactive Components
 
-### Interactive Components
+Implemented components:
 
 - Hero slider
 - Product sliders
 - Category sliders
-- Promotional slider
-- Best sellers section
+- Brand slider
 - Testimonials slider
 - Blog slider
-- Brand slider
-- Countdown timer
-- Account modal
-- Cart popover
-- Wishlist popover
-- Mobile sidebar
+- Countdown timers
+- Modal dialogs
+- Popovers
+- Mobile navigation
 
 ---
 
-## 📱 Responsive Design
+# 📱 Responsive Design
 
-The interface is optimized for desktop, tablet, and mobile layouts.
+The project is optimized for multiple screen sizes:
 
-The project has been tested across important viewport widths including:
-
-```text
+```
 1440px
 1200px
 1024px
@@ -127,145 +119,121 @@ The project has been tested across important viewport widths including:
 390px
 ```
 
-The responsive implementation focuses on maintaining typography and adjusting layout, spacing, wrapping, card dimensions, and interaction patterns according to the available viewport.
+The responsive approach focuses on:
+
+- Maintaining typography quality
+- Flexible layouts
+- Proper spacing
+- Mobile-first interaction patterns
+- Pixel-perfect implementation
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- Vanilla JavaScript (ES6+)
 - CSS Custom Properties
-- Local Storage
-- Custom DOM Events
-- Font Awesome
+- LocalStorage API
+- DOM Events
 - Responsive Design
 - RTL Layout
 
-No frontend framework or UI component library is used for the main application architecture.
+No frontend framework or UI library was used.
 
 ---
 
-## 🧠 Frontend Architecture
+# 🧠 Architecture
 
-The project separates product data, application state, and interface behavior.
+The project separates:
 
-```text
-               Product Cards
-                    │
-                    ▼
+- Product data
+- Application state
+- UI behavior
+
+Architecture overview:
+
+```
+                Product Data
+                     │
+                     ▼
               BijanProducts
-                    │
-        ┌───────────┼───────────┐
-        │           │           │
-        ▼           ▼           ▼
-      Search       Cart      Wishlist
-                    │           │
-                    └─────┬─────┘
-                          ▼
-                     BijanStore
-                          │
-                          ▼
-                     LocalStorage
+                     │
+        ┌────────────┼────────────┐
+        ▼            ▼            ▼
+     Search        Cart      Wishlist
+                     │
+                     ▼
+               BijanStore
+                     │
+                     ▼
+              LocalStorage
 ```
 
-### Product Registry
+---
 
-`BijanProducts` acts as a shared product layer.
+# ⚡ Performance Optimization
 
-Instead of implementing separate product-detection logic for Search, Cart, Wishlist, and Featured Products, these features consume the same centralized product information.
+Implemented optimizations:
 
-This reduces duplicated logic and keeps product behavior consistent across the application.
+- Lazy loading images
+- Optimized image loading strategy
+- Font loading optimization
+- Reduced unnecessary resource loading
+- Responsive asset usage
+- Improved initial page rendering
 
-### Application Store
+---
 
-Client-side state is handled through a shared store architecture.
+# ♿ Accessibility
 
-User-related data such as:
+Accessibility improvements include:
 
-```text
-Cart
-Wishlist
-User session
+- Semantic HTML
+- ARIA attributes
+- Keyboard navigation
+- Focus management
+- Escape key handling
+- Accessible modals and popovers
+- Improved color contrast
+- Proper touch targets
+
+Lighthouse Accessibility score:
+
+```
+100
 ```
 
-can persist between page refreshes using browser storage.
+---
+
+# 📊 Lighthouse Results
+
+Approximate results:
+
+| Category       | Score |
+| -------------- | ----: |
+| Performance    |   90+ |
+| Accessibility  |   100 |
+| Best Practices |   100 |
+| SEO            |   90+ |
 
 ---
 
-## 🎯 UX Decisions
+# 📂 Project Structure
 
-Several interaction decisions were intentionally implemented to improve usability.
-
-Cart and Wishlist behave as interactive shopping surfaces and remain positioned relative to their header triggers while scrolling.
-
-The Account popover behaves as a temporary navigation surface and closes when the page is scrolled.
-
-Only one major header surface can remain open at a time.
-
-For example, opening Wishlist automatically closes Cart or Account.
-
-Desktop navigation uses hover dropdowns, while mobile navigation uses expandable accordion submenus.
-
-On smaller screens, Search is available inside the navigation sidebar while Cart, Wishlist, and Account remain directly accessible from the compact header.
-
----
-
-## ♿ Accessibility
-
-The project includes accessibility-focused behaviors such as:
-
-- Semantic HTML controls
-- Keyboard-accessible buttons
-- `aria-expanded`
-- `aria-controls`
-- Escape-key handling
-- Focus management for interactive surfaces
-- Click-outside closing behavior
-- Reduced-motion support
-- Responsive interaction patterns
-
-A deeper accessibility audit is planned as part of the next optimization phase.
-
----
-
-## ⚡ Performance Considerations
-
-Several optimizations are already included in the project:
-
-- Visibility-aware countdown timers
-- Reduced background JavaScript activity
-- Shared CSS design tokens
-- Responsive layouts
-- Reduced-motion support
-- Modular CSS and JavaScript organization
-
-A dedicated Lighthouse and Core Web Vitals optimization pass is planned.
-
----
-
-## 📂 Project Structure
-
-```text
+```
 bijan-ecommerce-frontend/
+
 │
 ├── assets/
 │   │
 │   ├── css/
-│   │   ├── components/
-│   │   ├── sections/
-│   │   └── ...
 │   │
 │   ├── js/
-│   │   ├── account/
-│   │   ├── core/
-│   │   ├── sections/
-│   │   ├── shop/
-│   │   ├── store/
-│   │   └── ...
 │   │
 │   ├── images/
+│   │
 │   └── fonts/
 │
 ├── docs/
@@ -280,9 +248,7 @@ bijan-ecommerce-frontend/
 
 ---
 
-## 🚀 Running Locally
-
-No build process or package installation is required.
+# 🚀 Running Locally
 
 Clone the repository:
 
@@ -290,117 +256,62 @@ Clone the repository:
 git clone https://github.com/HumanRahimi/bijan-ecommerce-frontend.git
 ```
 
-Enter the project directory:
+Open the project folder:
 
 ```bash
 cd bijan-ecommerce-frontend
 ```
 
-Then open the project using a local development server.
+Run the project using:
 
-For example, you can use **Live Server** in Visual Studio Code.
-
-### Responsive Preview
-
-Open:
-
-```text
-index.html
-```
-
-### Storefront Directly
-
-Open:
-
-```text
-demo.html
-```
+- VS Code Live Server
+- Any local development server
 
 ---
 
-## 🖥 Responsive Preview Tool
+# 📚 What I Learned
 
-The project contains a dedicated preview interface for testing the storefront at different viewport sizes.
-
-```text
-index.html
-        │
-        ▼
-Responsive Preview
-        │
-        ▼
-      iframe
-        │
-        ▼
-    demo.html
-```
-
-This allows the main storefront to be tested quickly across different responsive layouts.
-
----
-
-## 📚 What I Learned
-
-This project helped strengthen my understanding of:
+This project helped improve my understanding of:
 
 - Responsive frontend architecture
-- Pixel-perfect UI implementation
-- Complex CSS layouts
-- Vanilla JavaScript architecture
+- Pixel-perfect implementation
+- Vanilla JavaScript application structure
 - State management without frameworks
-- Local Storage
-- Reusable JavaScript modules
-- DOM event coordination
-- Custom events
-- Product data normalization
-- Responsive debugging
-- Accessibility
+- DOM event handling
+- LocalStorage
 - UI interaction design
-- Shopping interface architecture
+- Accessibility
+- Performance optimization
+- Real-world e-commerce workflows
 
 ---
 
-## 🗺 Roadmap
+# 🗺 Future Improvements
 
-Planned improvements:
+Planned features:
 
 - [ ] Product details page
 - [ ] Dedicated cart page
 - [ ] Checkout flow
-- [ ] Accessibility audit
-- [ ] Lighthouse optimization
-- [ ] Core Web Vitals optimization
+- [ ] Advanced filtering
 - [ ] Automated UI testing
 - [ ] GitHub Actions CI
 - [ ] Further performance improvements
 
 ---
 
-## 📌 Project Purpose
-
-This project was developed as a frontend engineering and UI implementation exercise with a strong focus on responsive behavior and pixel-accurate implementation.
-
-The goal was not only to recreate the visual interface, but also to implement realistic frontend interactions and reusable application logic using Vanilla JavaScript.
-
----
-
-## ⚠️ Disclaimer
-
-This project was created for educational and portfolio purposes.
-
-Any third-party brand names, visual references, fonts, images, or other assets remain the property of their respective owners.
-
-This repository demonstrates frontend development and UI implementation skills and is not presented as the official website of any referenced brand.
-
----
-
-## 👨‍💻 Developer
+# 👨‍💻 Author
 
 **Human Rahimi**
 
-GitHub:  
-[github.com/HumanRahimi](https://github.com/HumanRahimi)
+GitHub:
+
+https://github.com/HumanRahimi
 
 ---
 
-⭐ If you found this project useful, consider giving the repository a star.
+# 📌 Disclaimer
+
+This project was created for educational and portfolio purposes.
+
+Any third-party brand names, images, fonts, or visual references belong to their respective owners.

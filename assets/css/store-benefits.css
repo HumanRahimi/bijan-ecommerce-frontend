@@ -1,0 +1,329 @@
+/* ============================================
+   Store Benefits
+   ============================================ */
+
+.store-benefits {
+  width: 100%;
+  margin-top: 56px;
+
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+
+  background: var(--color-surface);
+}
+
+.store-benefits__container {
+  width: min(
+    calc(100% - (var(--layout-gutter, 24px) * 2)),
+    var(--layout-max-width, 1400px)
+  );
+
+  margin-inline: auto;
+}
+
+/* ============================================
+   Benefits List
+   ============================================ */
+
+.store-benefits__list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  width: 100%;
+  min-height: 116px;
+}
+
+/* ============================================
+   Benefit Item
+   ============================================ */
+
+.store-benefit {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  min-width: 0;
+
+  padding: 26px 20px;
+}
+
+/* Separator */
+.store-benefit:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  inset-inline-end: 0;
+
+  width: 1px;
+  height: 44px;
+
+  background: rgba(0, 0, 0, 0.1);
+
+  transform: translateY(-50%);
+}
+
+/* ============================================
+   Icon
+   ============================================ */
+
+.store-benefit__icon {
+  display: block;
+
+  flex: 0 0 58px;
+
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+/* ============================================
+   Content
+   ============================================ */
+
+.store-benefit__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 5px;
+
+  min-width: 0;
+
+  text-align: right;
+}
+
+.store-benefit__title {
+  margin: 0;
+
+  color: var(--color-text-dark);
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+
+  white-space: nowrap;
+}
+
+.store-benefit__description {
+  margin: 0;
+
+  color: var(--color-text-muted, #b8b8b8);
+
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.7;
+
+  white-space: nowrap;
+}
+
+/* ============================================
+   <= 1200px
+   ============================================ */
+
+@media only screen and (max-width: 1200px) {
+  .store-benefits {
+    margin-top: 44px;
+  }
+
+  .store-benefits__container {
+    width: calc(100% - 32px);
+  }
+
+  .store-benefits__list {
+    min-height: 104px;
+  }
+
+  .store-benefit {
+    gap: 10px;
+
+    padding: 22px 10px;
+  }
+
+  .store-benefit:not(:last-child)::after {
+    height: 38px;
+  }
+
+  .store-benefit__icon {
+    flex-basis: 48px;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .store-benefit__content {
+    gap: 3px;
+  }
+}
+
+/* ============================================
+   <= 1100px
+   Compact Tablet
+   ============================================ */
+
+@media only screen and (max-width: 1100px) {
+  .store-benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 0;
+
+    padding-block: 10px;
+  }
+
+  .store-benefit {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+
+    min-height: 92px;
+
+    padding: 18px 16px;
+  }
+
+  .store-benefit:not(:last-child)::after {
+    display: none;
+  }
+
+  .store-benefit:nth-child(1)::after,
+  .store-benefit:nth-child(2)::after,
+  .store-benefit:nth-child(4)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    inset-inline-end: 0;
+
+    display: block;
+
+    width: 1px;
+    height: 38px;
+
+    background: rgba(0, 0, 0, 0.1);
+
+    transform: translateY(-50%);
+  }
+
+  .store-benefit:nth-child(n + 4) {
+    border-top: 1px solid var(--color-border-subtle);
+  }
+}
+
+/* ============================================
+   <= 767px
+   Horizontal Benefits Rail
+   ============================================ */
+
+@media only screen and (max-width: 767px) {
+  .store-benefits {
+    margin-top: 32px;
+
+    overflow: hidden;
+  }
+
+  .store-benefits__container {
+    width: 100%;
+  }
+
+  .store-benefits__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    width: 100%;
+    min-height: 0;
+
+    gap: 14px;
+
+    padding: 8px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+
+    direction: rtl;
+  }
+
+  .store-benefits__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .store-benefit {
+    flex: 0 0 calc(50% - 7px);
+    max-width: calc(50% - 7px);
+
+    min-height: 84px;
+
+    gap: 8px;
+
+    padding: 12px 8px;
+
+    border-top: 0;
+
+    scroll-snap-align: start;
+  }
+
+  .store-benefit:nth-child(n + 4) {
+    border-top: 0;
+  }
+
+  .store-benefit:nth-child(1)::after,
+  .store-benefit:nth-child(2)::after,
+  .store-benefit:nth-child(4)::after {
+    display: none;
+  }
+
+  .store-benefit:not(:last-child)::after {
+    display: none;
+  }
+
+  .store-benefit__icon {
+    flex: 0 0 42px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+  .store-benefit__content {
+    gap: 3px;
+  }
+
+  .store-benefit__description {
+    line-height: 1.6;
+
+    white-space: normal;
+  }
+}
+
+/* ============================================
+   <= 425px
+   Small Mobile
+   ============================================ */
+
+@media only screen and (max-width: 425px) {
+  .store-benefit {
+    min-height: 94px;
+
+    gap: 8px;
+
+    padding-inline: 8px;
+  }
+
+  .store-benefit__icon {
+    flex-basis: 44px;
+
+    width: 44px;
+    height: 44px;
+  }
+}

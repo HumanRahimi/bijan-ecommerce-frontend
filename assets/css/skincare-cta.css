@@ -1,0 +1,464 @@
+/* =========================================
+   Skincare CTA
+========================================= */
+
+.skincare-cta {
+  --sc-purple: #9d3cbc;
+  --sc-purple-dark: #7f279f;
+  --sc-purple-soft: #c979dd;
+  --sc-text: #17151c;
+
+  width: 100%;
+  margin-top: 32px;
+  padding: 0 var(--section-inline-padding) 48px;
+
+  direction: rtl;
+}
+
+/* =========================================
+   Container
+========================================= */
+
+.skincare-cta__container {
+  width: min(100%, var(--section-content-width));
+  margin-inline: auto;
+}
+
+/* =========================================
+   Main Box
+========================================= */
+
+.skincare-cta__box {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px minmax(0, 1fr);
+  align-items: center;
+
+  width: 100%;
+  min-height: 250px;
+
+  direction: ltr;
+}
+
+/* =========================================
+   Side Panels
+========================================= */
+
+.skincare-cta__side {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+  min-height: 190px;
+
+  overflow: hidden;
+
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  direction: rtl;
+}
+
+/* Left panel */
+
+.skincare-cta__side--left {
+  grid-column: 1;
+
+  justify-content: center;
+
+  padding: 28px 78px 28px 56px;
+
+  border-radius: 12px 72px 72px 12px;
+
+  background-image: url("../images/cta-bg-1.png");
+  background-position: center left;
+}
+
+/* Right panel */
+
+.skincare-cta__side--right {
+  grid-column: 3;
+
+  justify-content: center;
+
+  padding: 28px 56px 28px 78px;
+
+  border-radius: 72px 12px 12px 72px;
+
+  background-image: url("../images/cta-bg-1-1.png");
+  background-position: center right;
+}
+
+/* =========================================
+   Left Description
+========================================= */
+
+.skincare-cta__description {
+  max-width: 280px;
+
+  color: var(--sc-text);
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+  text-align: center;
+}
+
+.skincare-cta__description strong {
+  display: block;
+
+  color: var(--sc-purple);
+  font-weight: 700;
+}
+
+/* =========================================
+   Left Arrow
+========================================= */
+
+.skincare-cta__arrow {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--sc-purple-soft),
+    var(--sc-purple-dark)
+  );
+
+  box-shadow: 0 7px 16px rgba(127, 39, 159, 0.22);
+
+  transition:
+    transform var(--duration-fast) ease,
+    box-shadow var(--duration-fast) ease;
+}
+
+.skincare-cta__arrow:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 9px 20px rgba(127, 39, 159, 0.28);
+}
+
+.skincare-cta__arrow span,
+.skincare-cta__arrow span::before,
+.skincare-cta__arrow span::after {
+  position: absolute;
+
+  display: block;
+
+  height: 2px;
+
+  border-radius: var(--radius-round);
+  background: var(--color-white);
+}
+
+.skincare-cta__arrow span {
+  width: 12px;
+}
+
+.skincare-cta__arrow span::before,
+.skincare-cta__arrow span::after {
+  content: "";
+
+  left: 0;
+
+  width: 7px;
+
+  transform-origin: left center;
+}
+
+.skincare-cta__arrow span::before {
+  transform: rotate(42deg);
+}
+
+.skincare-cta__arrow span::after {
+  transform: rotate(-42deg);
+}
+
+/* =========================================
+   Right Title
+========================================= */
+
+.skincare-cta__title {
+  color: var(--sc-text);
+
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.skincare-cta__title span {
+  color: var(--sc-purple);
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* =========================================
+   Center Product
+========================================= */
+
+.skincare-cta__product {
+  position: relative;
+  z-index: 5;
+
+  grid-column: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+  height: 250px;
+
+  pointer-events: none;
+}
+
+.skincare-cta__circle {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 248px;
+  height: 248px;
+
+  border-radius: 50%;
+  background: linear-gradient(145deg, #bd69d3 0%, #9b3dba 52%, #7c249d 100%);
+
+  box-shadow:
+    0 16px 34px rgba(126, 43, 157, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.skincare-cta__circle::before {
+  content: "";
+
+  position: absolute;
+  inset: 17px;
+
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+
+  background: radial-gradient(
+    circle at 35% 25%,
+    rgba(255, 255, 255, 0.16),
+    transparent 42%
+  );
+}
+
+.skincare-cta__circle-inner {
+  position: absolute;
+  inset: 32px;
+
+  border-radius: 50%;
+  background: rgba(113, 31, 139, 0.2);
+}
+
+.skincare-cta__product img {
+  position: relative;
+  z-index: 3;
+
+  display: block;
+
+  width: 210px;
+  height: 210px;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 12px 12px rgba(50, 7, 67, 0.22));
+
+  transform: translateY(5px);
+}
+
+@media only screen and (max-width: 884px) {
+  .skincare-cta {
+    margin-top: 16px;
+    padding-inline: 16px;
+    padding-bottom: 64px;
+  }
+
+  .skincare-cta__box {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    min-height: 720px;
+
+    direction: rtl;
+  }
+
+  .skincare-cta__side {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 0;
+    height: 47%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    overflow: hidden;
+  }
+
+  .skincare-cta__side--right {
+    top: 0;
+    bottom: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 54px 24px 190px;
+
+    border-radius: 16px 16px 50% 50% / 16px 16px 24% 24%;
+
+    background-image: url("../images/cta-bg-1-1.png");
+  }
+
+  .skincare-cta__side--left {
+    top: auto;
+    bottom: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 190px 24px 52px;
+
+    border-radius: 50% 50% 16px 16px / 24% 24% 16px 16px;
+
+    background-image: url("../images/cta-bg-1.png");
+  }
+
+  .skincare-cta__product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: min(calc(100% - 12px), 680px);
+    height: auto;
+
+    margin: 0;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .skincare-cta__circle {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+
+    background:
+      radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.1),
+        transparent 68%
+      ),
+      linear-gradient(145deg, #bd69d3 0%, #9b3dba 52%, #7c249d 100%);
+  }
+
+  .skincare-cta__circle::before {
+    inset: 9%;
+
+    border: 0;
+
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.58) 1.2px,
+      transparent 1.5px
+    );
+
+    background-size: 14px 14px;
+    opacity: 0.7;
+  }
+
+  .skincare-cta__circle-inner {
+    inset: 10%;
+    background: rgba(103, 25, 132, 0.1);
+  }
+
+  .skincare-cta__product img {
+    width: 86%;
+    height: 86%;
+
+    transform: translateY(5%);
+  }
+
+  .skincare-cta__title {
+    position: relative;
+    z-index: 7;
+
+    max-width: 620px;
+
+    line-height: 1.8;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .skincare-cta__title span {
+    font-size: 2rem;
+  }
+
+  .skincare-cta__title br {
+    display: none;
+  }
+
+  .skincare-cta__description {
+    position: relative;
+    z-index: 7;
+
+    max-width: none;
+
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .skincare-cta__description strong {
+    display: inline;
+    margin-inline-start: 4px;
+  }
+
+  .skincare-cta__arrow {
+    top: auto;
+    bottom: 14px;
+    left: 14px;
+    z-index: 8;
+  }
+}
+
+/* =========================================
+   Reduced Motion
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .skincare-cta *,
+  .skincare-cta *::before,
+  .skincare-cta *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

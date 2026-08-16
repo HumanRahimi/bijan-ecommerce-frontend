@@ -1,0 +1,137 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>پیش نمایش : قالب وردپرس فروشگاهی بیژن</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <link rel="stylesheet" href="assets/css/fontiran.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/site-header.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body
+    id="preview-bar"
+    class="preview-shell-page"
+    data-preview-device="desktop"
+    data-preview-bar
+  >
+    <!-- Preview top bar -->
+    <div class="preview-bar" role="toolbar" aria-label="نوار ابزار پیش‌نمایش">
+      <!-- Logo -->
+      <div class="preview-bar__logo-wrap">
+        <a href="https://www.rtl-theme.com">
+          <img
+            src="assets/images/logo.png"
+            alt="راست چین - RTL-THEME"
+            class="preview-bar__logo-image"
+          />
+        </a>
+      </div>
+
+      <!-- Title -->
+      <div class="preview-bar__title-wrap">
+        <h1 class="preview-bar__title">
+          پیش نمایش : قالب وردپرس فروشگاهی بیژن
+        </h1>
+      </div>
+
+      <!-- Device switcher -->
+      <div
+        class="preview-bar__devices"
+        role="group"
+        aria-label="تغییر اندازه نمایش"
+      >
+        <div class="device-switcher">
+          <button
+            type="button"
+            class="device-switcher__button device-switcher__button--desktop"
+            data-device="desktop"
+            aria-pressed="true"
+            aria-label="نمایش دسکتاپ"
+          ></button>
+          <button
+            type="button"
+            class="device-switcher__button device-switcher__button--laptop"
+            data-device="laptop"
+            aria-pressed="false"
+            aria-label="نمایش لپ‌تاپ"
+          ></button>
+          <button
+            type="button"
+            class="device-switcher__button device-switcher__button--tablet"
+            data-device="tablet"
+            aria-pressed="false"
+            aria-label="نمایش تبلت"
+          ></button>
+          <button
+            type="button"
+            class="device-switcher__button device-switcher__button--mobile"
+            data-device="mobile"
+            aria-pressed="false"
+            aria-label="نمایش موبایل"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Buy + preview buttons -->
+      <div class="preview-bar__actions">
+        <a href="#" class="preview-bar__link preview-bar__link--preview">
+          <span class="preview-bar__link-icon" aria-hidden="true"></span>
+          پیش نمایش اصلی
+        </a>
+        <a href="#" class="preview-bar__link preview-bar__link--buy">
+          <span class="preview-bar__link-icon" aria-hidden="true"></span>
+          خرید و دانلود
+        </a>
+      </div>
+
+      <!-- Close -->
+      <div class="preview-bar__close-wrap">
+        <button
+          type="button"
+          class="preview-bar__close"
+          aria-label="بستن پیش‌نمایش"
+          data-preview-bar-close
+        ></button>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="preview-bar-restore"
+      data-preview-bar-open
+      aria-label="نمایش دوباره نوار پیش‌نمایش"
+      aria-controls="preview-bar"
+      hidden
+    >
+      <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+
+      <span>نمایش نوار پیش‌نمایش</span>
+    </button>
+
+    <main class="preview-stage">
+      <div class="preview-device-frame" data-preview-device-frame>
+        <iframe
+          class="preview-device-frame__content"
+          src="demo.html"
+          title="پیش‌نمایش قالب فروشگاهی بیژن"
+          data-preview-iframe
+        ></iframe>
+      </div>
+    </main>
+
+    <script src="assets/js/core/preview.js"></script>
+
+    <script>
+      initPreviewBar();
+      initDeviceSwitcher();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5542 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>پیش نمایش : قالب وردپرس فروشگاهی بیژن</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <link rel="stylesheet" href="assets/css/fontiran.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/site-header.css" />
+    <link rel="stylesheet" href="assets/css/account-modal.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/store-benefits.css" />
+    <link rel="stylesheet" href="assets/css/amazing-deals.css" />
+    <link rel="stylesheet" href="assets/css/category-shortcuts.css" />
+    <link rel="stylesheet" href="assets/css/new-products.css" />
+    <link rel="stylesheet" href="assets/css/instagram-banner.css" />
+    <link rel="stylesheet" href="assets/css/popular-categories.css" />
+    <link rel="stylesheet" href="assets/css/skincare-cta.css" />
+    <link rel="stylesheet" href="assets/css/best-sellers.css" />
+    <link rel="stylesheet" href="assets/css/category-promos.css" />
+    <link rel="stylesheet" href="assets/css/support-cta.css" />
+    <link rel="stylesheet" href="assets/css/testimonials.css" />
+    <link rel="stylesheet" href="assets/css/about-showcase.css" />
+    <link rel="stylesheet" href="assets/css/blog-news.css" />
+    <link rel="stylesheet" href="assets/css/popular-brands.css" />
+    <link rel="stylesheet" href="assets/css/site-footer.css" />
+    <link rel="stylesheet" href="assets/css/wishlist.css" />
+    <link rel="stylesheet" href="assets/css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="demo-page">
+    <!-- Discount banner -->
+    <a
+      href="https://www.rtl-theme.com/bijan-wordpress-theme/"
+      target="_blank"
+      rel="noopener"
+      id="header-banner"
+      class="header-banner"
+      title="خرید از راست چین"
+    ></a>
+
+    <!-- Site header -->
+    <header class="site-header">
+      <!-- Compact header: tablet and mobile -->
+      <div class="compact-header">
+        <button
+          type="button"
+          class="compact-header__menu"
+          aria-label="باز کردن منوی سایت"
+          aria-expanded="false"
+          aria-controls="mobile-sidebar"
+          data-mobile-menu-toggle
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <a href="#" class="compact-header__brand">
+          <img
+            src="assets/images/site-logo.png"
+            alt="فروشگاه آراکس"
+            class="compact-header__logo"
+            width="162"
+            height="48"
+          />
+        </a>
+
+        <div class="compact-header__actions">
+          <button
+            type="button"
+            class="compact-header__action compact-header__action--wishlist"
+            aria-label="مشاهده علاقه‌مندی‌ها"
+            aria-haspopup="dialog"
+            aria-controls="wishlist-panel"
+            data-wishlist-open
+            aria-expanded="false"
+          >
+            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+
+            <span class="compact-header__badge" data-wishlist-count> ۰ </span>
+          </button>
+          <button
+            type="button"
+            class="compact-header__action compact-header__action--cart"
+            aria-label="مشاهده سبد خرید"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="cart-popover"
+            data-cart-open
+          >
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+
+            <span class="compact-header__badge" data-cart-count> ۰ </span>
+          </button>
+
+          <button
+            type="button"
+            class="compact-header__action compact-header__action--account"
+            aria-label="ورود یا عضویت"
+            data-account-open
+            aria-haspopup="dialog"
+            aria-controls="account-modal"
+          >
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="site-header__inner">
+        <!-- Toolbar: logo, product search, account actions -->
+        <div class="toolbar">
+          <div class="toolbar__brand-group">
+            <a href="#" class="toolbar__logo-link">
+              <img
+                src="assets/images/site-logo.png"
+                alt="فروشگاه آراکس"
+                class="toolbar__logo"
+                width="162"
+                height="48"
+              />
+            </a>
+
+            <form
+              class="product-search"
+              data-product-search
+              role="search"
+              novalidate
+            >
+              <label class="product-search__label" for="product-search-input">
+                جستجو برای:
+              </label>
+              <input
+                id="product-search-input"
+                type="search"
+                name="s"
+                class="product-search__input"
+                placeholder="جستجوی محصول مورد نظر..."
+                autocomplete="off"
+                role="combobox"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="product-search-results"
+                data-search-input
+              />
+              <select
+                name="search-product-category"
+                class="product-search__category"
+                aria-label="دسته‌بندی جستجو"
+                data-search-category-select
+              >
+                <option value="">همه</option>
+                <option value="eye-and-eyebrow">آرایش چشم</option>
+                <option value="lip">آرایش لب</option>
+                <option value="mobile">تلفن همراه</option>
+                <option value="beauty-and-health">زیبایی و سلامت</option>
+                <option value="perfume">عطر و ادکلن</option>
+                <option value="supermarket">کالاهای سوپرمارکتی</option>
+                <option value="digital">کالای دیجیتال</option>
+                <option value="books">کتاب و لوازم التحریر</option>
+                <option value="home-appliances">لوازم خانه و آشپزخانه</option>
+                <option value="clothes">مد و پوشاک</option>
+                <option value="skin-care-accessories">مراقبت پوست</option>
+                <option value="sport">ورزش و سفر</option>
+              </select>
+              <button
+                type="submit"
+                class="product-search__submit"
+                aria-label="جستجو"
+              >
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </button>
+              <div
+                id="product-search-results"
+                class="product-search__results"
+                data-search-results
+                role="listbox"
+                aria-label="نتایج جستجوی محصولات"
+                hidden
+              ></div>
+            </form>
+          </div>
+
+          <div class="toolbar__actions">
+            <button
+              type="button"
+              class="icon-action"
+              title="بازگشت"
+              aria-label="بازگشت"
+              data-go-back
+            >
+              <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="icon-action"
+              title="علاقه‌مندی‌ها"
+              aria-label="مشاهده علاقه‌مندی‌ها"
+              aria-haspopup="dialog"
+              aria-controls="wishlist-panel"
+              data-wishlist-open
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+
+              <span class="icon-action__badge" data-wishlist-count> ۰ </span>
+            </button>
+            <div class="cart-widget" data-cart-widget>
+              <button
+                type="button"
+                class="icon-action"
+                title="سبد خرید"
+                aria-label="مشاهده سبد خرید"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="cart-popover"
+                data-cart-open
+              >
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+
+                <span class="icon-action__badge" data-cart-count> ۰ </span>
+              </button>
+
+              <div
+                id="cart-popover"
+                class="cart-popover"
+                data-cart-popover
+                role="dialog"
+                aria-label="سبد خرید من"
+                hidden
+              >
+                <div class="cart-popover__header">
+                  <div class="cart-popover__title">
+                    <span class="cart-popover__title-icon">
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+
+                    <div>
+                      <strong>سبد خرید شما</strong>
+
+                      <small data-cart-popover-count> ۰ محصول </small>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="cart-popover__close"
+                    aria-label="بستن سبد خرید"
+                    data-cart-close
+                  >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <div class="cart-popover__body" data-cart-list></div>
+
+                <div class="cart-popover__empty" data-cart-empty hidden>
+                  <span class="cart-popover__empty-icon">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  </span>
+
+                  <strong> سبد خرید شما خالی است </strong>
+
+                  <p>محصول مورد نظرتان را به سبد خرید اضافه کنید.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="account-button"
+              data-account-open
+              aria-haspopup="dialog"
+              aria-controls="account-modal"
+            >
+              <span class="account-button__icon">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+              </span>
+
+              <span class="account-button__text" data-account-button-text>
+                ورود | عضویت
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Secondary row: main menu + contact info -->
+        <nav class="site-nav" aria-label="منوی اصلی">
+          <ul class="site-nav__menu">
+            <li class="site-nav__item">
+              <a href="#" class="categories-trigger">
+                <span class="categories-trigger__icon">
+                  <img
+                    src="assets/images/flame.png"
+                    alt=""
+                    class="categories-trigger__flame"
+                    width="15"
+                    height="18"
+                  />
+                </span>
+                <span class="categories-trigger__text">دسته‌بندی کالاها</span>
+              </a>
+            </li>
+            <li
+              class="site-nav__item site-nav__item--active site-nav__item--has-children"
+            >
+              <a
+                href="#"
+                class="site-nav__link"
+                aria-haspopup="true"
+                aria-current="page"
+              >
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+                <span>صفحه اصلی</span>
+                <i
+                  class="fa-solid fa-chevron-down site-nav__caret"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="site-nav__submenu">
+                <li><a href="#">صفحه 404</a></li>
+                <li><a href="#">خرید بیژن از راست‌چین</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item site-nav__item--has-children">
+              <a href="#" class="site-nav__link" aria-haspopup="true">
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                <span>فروشگاه</span>
+                <i
+                  class="fa-solid fa-chevron-down site-nav__caret"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="site-nav__submenu">
+                <li><a href="#">طرح ۱ فروشگاه</a></li>
+                <li><a href="#">طرح ۲ فروشگاه</a></li>
+                <li><a href="#">طرح ۳ فروشگاه</a></li>
+                <li><a href="#">نمونه محصول</a></li>
+                <li><a href="#">نمونه محصول متغیر</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item site-nav__item--has-children">
+              <a href="#" class="site-nav__link" aria-haspopup="true">
+                <i class="fa-solid fa-percent" aria-hidden="true"></i>
+                <span>تخفیفات شگفت انگیز</span>
+                <i
+                  class="fa-solid fa-chevron-down site-nav__caret"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="site-nav__submenu">
+                <li><a href="#">پرتخفیف‌ترین‌ها</a></li>
+                <li><a href="#">پرفروش‌ترین‌ها</a></li>
+                <li><a href="#">همه تخفیف‌ها</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item site-nav__item--has-children">
+              <a href="#" class="site-nav__link" aria-haspopup="true">
+                <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                <span>وبلاگ</span>
+                <i
+                  class="fa-solid fa-chevron-down site-nav__caret"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="site-nav__submenu">
+                <li><a href="#">آرشیو نوشته‌ها</a></li>
+                <li><a href="#">آرشیو دسته‌بندی</a></li>
+                <li><a href="#">نمونه نوشته وبلاگ</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+                <span>درباره ما</span>
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">
+                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                <span>تماس با ما</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="site-nav__contact">
+            <a
+              href="mailto:info@araxtest.com"
+              class="contact-chip contact-chip--email"
+            >
+              <span class="contact-chip__text">
+                <span class="contact-chip__label">آدرس ایمیل</span>
+                <span class="contact-chip__value"
+                  ><span>info</span>@araxtest.com</span
+                >
+              </span>
+              <span class="contact-chip__icon">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a
+              href="tel:02145675430"
+              class="contact-chip contact-chip--support"
+            >
+              <span class="contact-chip__text">
+                <span class="contact-chip__label">واحد پشتیبانی</span>
+                <span class="contact-chip__value"
+                  >۴۵۶۷۵۴۳-<span>۰۲۱</span></span
+                >
+              </span>
+              <span class="contact-chip__icon">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav-layer" data-mobile-nav aria-hidden="true" hidden>
+      <!-- Dark page overlay -->
+      <button
+        type="button"
+        class="mobile-nav-layer__overlay"
+        data-mobile-menu-close
+        aria-label="بستن منوی سایت"
+      ></button>
+
+      <!-- Sidebar panel -->
+      <aside
+        id="mobile-sidebar"
+        class="mobile-sidebar"
+        aria-label="منوی موبایل"
+        tabindex="-1"
+      >
+        <!-- Sidebar search -->
+        <form
+          class="mobile-sidebar__search"
+          data-product-search
+          data-search-variant="sidebar"
+          role="search"
+          novalidate
+        >
+          <label class="visually-hidden" for="mobile-sidebar-search">
+            جستجوی محصول
+          </label>
+
+          <input
+            id="mobile-sidebar-search"
+            class="mobile-sidebar__search-input"
+            type="search"
+            name="s"
+            placeholder="جستجوی محصول مورد نظر..."
+            autocomplete="off"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="mobile-search-results"
+            data-search-input
+          />
+
+          <button
+            class="mobile-sidebar__search-button"
+            type="submit"
+            aria-label="جستجو"
+          >
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+
+          <div
+            id="mobile-search-results"
+            class="mobile-sidebar__search-results"
+            data-search-results
+            role="listbox"
+            aria-label="نتایج جستجوی محصولات"
+            hidden
+          ></div>
+        </form>
+
+        <!-- Main navigation -->
+        <nav class="mobile-sidebar__navigation" aria-label="منوی اصلی موبایل">
+          <p class="mobile-sidebar__section-title">منوی اصلی</p>
+
+          <ul class="mobile-sidebar__menu">
+            <!-- Home -->
+            <li class="mobile-sidebar__item is-active">
+              <button
+                type="button"
+                class="mobile-sidebar__link mobile-sidebar__submenu-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-submenu-home"
+                data-mobile-submenu-toggle
+              >
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+
+                <span>صفحه اصلی</span>
+
+                <i
+                  class="fa-solid fa-chevron-down mobile-sidebar__caret"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <ul
+                id="mobile-submenu-home"
+                class="mobile-sidebar__submenu"
+                data-mobile-submenu
+                hidden
+              >
+                <li>
+                  <a href="#">صفحه 404</a>
+                </li>
+
+                <li>
+                  <a href="#">خرید بیژن از راست‌چین</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Shop -->
+            <li class="mobile-sidebar__item">
+              <button
+                type="button"
+                class="mobile-sidebar__link mobile-sidebar__submenu-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-submenu-shop"
+                data-mobile-submenu-toggle
+              >
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+
+                <span>فروشگاه</span>
+
+                <i
+                  class="fa-solid fa-chevron-down mobile-sidebar__caret"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <ul
+                id="mobile-submenu-shop"
+                class="mobile-sidebar__submenu"
+                data-mobile-submenu
+                hidden
+              >
+                <li><a href="#">طرح ۱ فروشگاه</a></li>
+                <li><a href="#">طرح ۲ فروشگاه</a></li>
+                <li><a href="#">طرح ۳ فروشگاه</a></li>
+                <li><a href="#">نمونه محصول</a></li>
+                <li><a href="#">نمونه محصول متغیر</a></li>
+              </ul>
+            </li>
+
+            <!-- Amazing Deals -->
+            <li class="mobile-sidebar__item">
+              <button
+                type="button"
+                class="mobile-sidebar__link mobile-sidebar__submenu-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-submenu-deals"
+                data-mobile-submenu-toggle
+              >
+                <i class="fa-solid fa-percent" aria-hidden="true"></i>
+
+                <span>تخفیفات شگفت‌انگیز</span>
+
+                <i
+                  class="fa-solid fa-chevron-down mobile-sidebar__caret"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <ul
+                id="mobile-submenu-deals"
+                class="mobile-sidebar__submenu"
+                data-mobile-submenu
+                hidden
+              >
+                <li><a href="#">پرتخفیف‌ترین‌ها</a></li>
+                <li><a href="#">پرفروش‌ترین‌ها</a></li>
+                <li><a href="#">همه تخفیف‌ها</a></li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="mobile-sidebar__item">
+              <button
+                type="button"
+                class="mobile-sidebar__link mobile-sidebar__submenu-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-submenu-blog"
+                data-mobile-submenu-toggle
+              >
+                <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+
+                <span>وبلاگ</span>
+
+                <i
+                  class="fa-solid fa-chevron-down mobile-sidebar__caret"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <ul
+                id="mobile-submenu-blog"
+                class="mobile-sidebar__submenu"
+                data-mobile-submenu
+                hidden
+              >
+                <li><a href="#">آرشیو نوشته‌ها</a></li>
+                <li><a href="#">آرشیو دسته‌بندی</a></li>
+                <li><a href="#">نمونه نوشته وبلاگ</a></li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="mobile-sidebar__item">
+              <a href="#" class="mobile-sidebar__link">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+
+                <span>درباره ما</span>
+              </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="mobile-sidebar__item">
+              <a href="#" class="mobile-sidebar__link">
+                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+
+                <span>تماس با ما</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Support information -->
+        <a class="mobile-sidebar__support" href="tel:02145675430">
+          <span class="mobile-sidebar__support-icon" aria-hidden="true">
+            <i class="fa-solid fa-phone-volume"></i>
+          </span>
+
+          <span class="mobile-sidebar__support-content">
+            <strong>امور پشتیبانی</strong>
+            <small>۰۲۱-۴۵۶۷۵۴۳۰</small>
+          </span>
+        </a>
+      </aside>
+    </div>
+
+    <!-- Hero / discount slider -->
+    <main class="home-main">
+      <section class="hero" aria-label="پیشنهادهای ویژه فروشگاه">
+        <div class="hero__grid">
+          <!-- Right text panel -->
+          <div class="hero__promo">
+            <img
+              class="hero__party"
+              src="assets/images/party_popper.png"
+              width="38"
+              height="38"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <h1 class="hero__promo-title">
+              <strong>تخفــــــــیف‌های</strong> بی‌نظیر،<br />
+              فقط بــــــــــــرای شما!
+            </h1>
+
+            <p class="hero__promo-copy">
+              بهترین فرصت برای تجربه خریدی متفاوت همین حالاست! محصولات متنوع با
+              <strong>تخفیف‌های ویژه</strong>
+              در دسترس شما هستند.
+            </p>
+          </div>
+
+          <!-- Center slider -->
+          <div class="hero-slider" data-hero-slider>
+            <div class="hero-slider__main">
+              <span class="hero-slider__halo" aria-hidden="true"></span>
+              <span class="hero-slider__dots" aria-hidden="true"></span>
+
+              <div class="hero-slider__product" data-hero-viewport>
+                <!-- Slide 1 -->
+                <a
+                  id="hero-slide-1"
+                  class="hero-slide is-active"
+                  href="#"
+                  data-hero-slide="0"
+                  aria-hidden="false"
+                  aria-label="مشاهده پیشنهاد اول"
+                >
+                  <img
+                    class="hero-slider__product-image"
+                    loading="eager"
+                    fetchpriority="high"
+                    src="assets/images/hero-s1.png"
+                    width="444"
+                    height="436"
+                    alt="محصولات آرایشی و مراقبتی"
+                  />
+
+                  <span
+                    class="hero-slider__discount hero-slider__discount--center"
+                  >
+                    <img
+                      src="assets/images/slider-badge.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="79"
+                      height="78"
+                    />
+
+                    <span class="hero-slider__discount-copy">
+                      <b>۷٪</b>
+                      <small>تخفیف</small>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- Slide 2 -->
+                <a
+                  id="hero-slide-2"
+                  class="hero-slide"
+                  href="#"
+                  data-hero-slide="1"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  aria-label="مشاهده پیشنهاد دوم"
+                >
+                  <img
+                    class="hero-slider__product-image"
+                    loading="lazy"
+                    src="assets/images/hero-s1.png"
+                    width="444"
+                    height="436"
+                    alt="محصولات آرایشی و مراقبتی"
+                  />
+
+                  <span
+                    class="hero-slider__discount hero-slider__discount--top-end"
+                  >
+                    <img
+                      src="assets/images/slider-badge.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="79"
+                      height="78"
+                    />
+
+                    <span class="hero-slider__discount-copy">
+                      <b>۷٪</b>
+                      <small>تخفیف</small>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- Slide 3 -->
+                <a
+                  id="hero-slide-3"
+                  class="hero-slide"
+                  href="#"
+                  data-hero-slide="2"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  aria-label="مشاهده پیشنهاد سوم"
+                >
+                  <img
+                    class="hero-slider__product-image"
+                    loading="lazy"
+                    src="assets/images/hero-s1.png"
+                    width="444"
+                    height="436"
+                    alt="محصولات آرایشی و مراقبتی"
+                  />
+
+                  <span
+                    class="hero-slider__discount hero-slider__discount--bottom-end"
+                  >
+                    <img
+                      src="assets/images/slider-badge.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="79"
+                      height="78"
+                    />
+
+                    <span class="hero-slider__discount-copy">
+                      <b>۷٪</b>
+                      <small>تخفیف</small>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- Slide 4 -->
+                <a
+                  id="hero-slide-4"
+                  class="hero-slide"
+                  href="#"
+                  data-hero-slide="3"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  aria-label="مشاهده پیشنهاد چهارم"
+                >
+                  <img
+                    class="hero-slider__product-image"
+                    loading="lazy"
+                    src="assets/images/hero-s1.png"
+                    width="444"
+                    height="436"
+                    alt="محصولات آرایشی و مراقبتی"
+                  />
+
+                  <span
+                    class="hero-slider__discount hero-slider__discount--top-start"
+                  >
+                    <img
+                      src="assets/images/slider-badge.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="79"
+                      height="78"
+                    />
+
+                    <span class="hero-slider__discount-copy">
+                      <b>۹۱٪</b>
+                      <small>تخفیف</small>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <button
+                class="slider-arrow slider-arrow--compact hero-slider__arrow hero-slider__arrow--left"
+                type="button"
+                data-hero-prev
+                aria-label="اسلاید قبلی"
+              >
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+
+              <button
+                class="slider-arrow slider-arrow--compact hero-slider__arrow hero-slider__arrow--right"
+                type="button"
+                data-hero-next
+                aria-label="اسلاید بعدی"
+              >
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div
+              class="hero-slider__thumbs"
+              role="group"
+              aria-label="انتخاب پیشنهاد"
+            >
+              <button
+                class="hero-thumb is-active"
+                type="button"
+                aria-pressed="true"
+                aria-controls="hero-slide-1"
+                aria-label="پیشنهاد اول"
+                data-hero-thumb="0"
+              >
+                <img
+                  src="assets/images/hero-s1-t-100x100.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <span>۲۰٪<br />تخفیف</span>
+              </button>
+
+              <button
+                class="hero-thumb"
+                type="button"
+                aria-pressed="true"
+                aria-controls="hero-slide-2"
+                aria-label="پیشنهاد دوم"
+                data-hero-thumb="1"
+              >
+                <img
+                  src="assets/images/hero-s2-t.png"
+                  width="75"
+                  height="78"
+                  alt=""
+                />
+                <span>۲۰٪<br />تخفیف</span>
+              </button>
+
+              <button
+                class="hero-thumb"
+                type="button"
+                aria-pressed="true"
+                aria-controls="hero-slide-3"
+                aria-label="پیشنهاد سوم"
+                data-hero-thumb="2"
+              >
+                <img
+                  src="assets/images/hero-s3-t.png"
+                  width="81"
+                  height="80"
+                  alt=""
+                />
+                <span>۲۰٪<br />تخفیف</span>
+              </button>
+
+              <button
+                class="hero-thumb"
+                type="button"
+                aria-pressed="true"
+                aria-controls="hero-slide-4"
+                aria-label="پیشنهاد چهارم"
+                data-hero-thumb="3"
+              >
+                <img
+                  src="assets/images/hero-s4-t.png"
+                  width="106"
+                  height="75"
+                  alt=""
+                />
+                <span>۹۰٪<br />تخفیف</span>
+              </button>
+            </div>
+
+            <p class="visually-hidden" aria-live="polite" data-hero-status></p>
+          </div>
+
+          <!-- Left text panel -->
+          <div class="hero__feature">
+            <h2 class="hero__feature-title">پوستت لایق بهترین‌هاست</h2>
+            <span class="hero__feature-line" aria-hidden="true"></span>
+            <p class="hero__feature-copy">
+              خرید جدیدترین کرم‌های مراقبتی با تخفیف
+            </p>
+            <a class="hero__feature-button" href="#">
+              <span>مشاهده محصولات</span>
+              <span class="hero__feature-button-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M14.5 5.5 8 12l6.5 6.5" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store benefits -->
+      <section class="store-benefits" aria-labelledby="store-benefits-title">
+        <h2 id="store-benefits-title" class="visually-hidden">
+          مزایای فروشگاه
+        </h2>
+        <div class="store-benefits__container">
+          <ul class="store-benefits__list">
+            <!-- Original products -->
+            <li class="store-benefit">
+              <img
+                class="store-benefit__icon"
+                src="assets/images/icon1.png"
+                width="58"
+                height="58"
+                loading="lazy"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="store-benefit__content">
+                <h3 class="store-benefit__title">محصولات اورجینال</h3>
+
+                <p class="store-benefit__description">ضمانت اورجینال بودن</p>
+              </div>
+            </li>
+
+            <!-- Free shipping -->
+            <li class="store-benefit">
+              <img
+                class="store-benefit__icon"
+                src="assets/images/icon2.png"
+                width="58"
+                height="58"
+                loading="lazy"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="store-benefit__content">
+                <h3 class="store-benefit__title">ارسال رایگان</h3>
+
+                <p class="store-benefit__description">
+                  خریدهای بالای ۳۰۰ هزار تومان
+                </p>
+              </div>
+            </li>
+
+            <!-- Secure payment -->
+            <li class="store-benefit">
+              <img
+                class="store-benefit__icon"
+                src="assets/images/icon3.png"
+                width="58"
+                height="58"
+                loading="lazy"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="store-benefit__content">
+                <h3 class="store-benefit__title">پرداخت امن</h3>
+
+                <p class="store-benefit__description">همه کارت‌های عضو شتاب</p>
+              </div>
+            </li>
+
+            <!-- Fast support -->
+            <li class="store-benefit">
+              <img
+                class="store-benefit__icon"
+                src="assets/images/icon4.png"
+                width="58"
+                height="58"
+                loading="lazy"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="store-benefit__content">
+                <h3 class="store-benefit__title">پشتیبانی سریع</h3>
+
+                <p class="store-benefit__description">
+                  پشتیبانی ۲۴ ساعته، ۷ روز هفته
+                </p>
+              </div>
+            </li>
+
+            <!-- Latest products -->
+            <li class="store-benefit">
+              <img
+                class="store-benefit__icon"
+                src="assets/images/icon5.png"
+                width="58"
+                height="58"
+                loading="lazy"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="store-benefit__content">
+                <h3 class="store-benefit__title">محصولات بروز</h3>
+
+                <p class="store-benefit__description">جدیدترین‌های دنیا</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Amazing deals -->
+      <section
+        id="amazing-deals"
+        class="amazing-deals"
+        aria-labelledby="amazing-deals-title"
+      >
+        <div class="amazing-deals__container">
+          <header class="amazing-deals__header">
+            <div class="amazing-deals__label">
+              <span class="amazing-deals__label-icon" aria-hidden="true">
+                <i class="fa-solid fa-percent"></i>
+              </span>
+
+              <h2 id="amazing-deals-title" class="amazing-deals__title">
+                <strong>تخفیفات</strong>
+                شگفت‌انگیز
+              </h2>
+            </div>
+
+            <div class="amazing-deals__intro">
+              <p>
+                اینجا بهترین فرصت‌های خرید با قیمت‌های باورکردنی منتظرته! هر روز
+              </p>
+
+              <p>محصولات منتخب با تخفیف ویژه قرار می‌گیرن</p>
+            </div>
+
+            <a
+              class="section-view-all section-view-all--light amazing-deals__view-all"
+              href="#"
+            >
+              مشاهده همه محصولات
+            </a>
+          </header>
+
+          <div class="amazing-deals__grid">
+            <!-- Product 1 -->
+            <article class="deal-card" data-search-category="perfume">
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده ادو پرفیوم مردانه اسکلاره"
+                >
+                  <img
+                    src="assets/images/deal-product-1.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="ادو پرفیوم مردانه اسکلاره"
+                  />
+
+                  <span class="deal-card__discount"> ۳۱٪ </span>
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#">
+                      ادو پرفیوم مردانه اسکلاره مدل DUNHILL LONDON DESIRE حجم
+                      ۱۰۰ میلی‌لیتر
+                    </a>
+                  </h3>
+
+                  <div class="deal-card__prices">
+                    <del class="deal-card__old-price"> ۱,۵۰۰,۰۰۰ تومان </del>
+
+                    <strong class="deal-card__price"> ۱,۱۰۰,۰۰۰ تومان </strong>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول اول به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول اول به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="138240"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۱۴</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="deal-card" data-search-category="perfume">
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده ادوپرفیوم مردانه هارلینگ"
+                >
+                  <img
+                    src="assets/images/deal-product-2.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="ادوپرفیوم مردانه هارلینگ"
+                  />
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#">
+                      ادوپرفیوم مردانه هارلینگ مدل تام فورد توباکو وانیل
+                    </a>
+                  </h3>
+
+                  <div class="deal-card__price-range">
+                    <span>
+                      <small>از</small>
+                      ۶۰۰,۰۰۰ تومان
+                    </span>
+
+                    <span>
+                      <small>تا</small>
+                      ۸۰۰,۰۰۰ تومان
+                    </span>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول دوم به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول دوم به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="129600"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۱۲</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article
+              class="deal-card"
+              data-search-category="skin-care-accessories"
+            >
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده اسپری روشن‌کننده صورت و بدن"
+                >
+                  <img
+                    src="assets/images/deal-product-3.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="اسپری روشن‌کننده صورت و بدن"
+                  />
+
+                  <span class="deal-card__discount"> ۲۵٪ </span>
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#">
+                      اسپری روشن‌کننده صورت و بدن لیمیجز مدل ۰۱ حجم ۱۵۰
+                      میلی‌لیتر
+                    </a>
+                  </h3>
+
+                  <div class="deal-card__prices">
+                    <del class="deal-card__old-price"> ۴۰۰,۰۰۰ تومان </del>
+
+                    <strong class="deal-card__price"> ۳۰۰,۰۰۰ تومان </strong>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول سوم به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول سوم به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="115200"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۰۸</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article
+              class="deal-card"
+              data-search-category="skin-care-accessories"
+            >
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده کرم روشن‌کننده و ضد لک"
+                >
+                  <img
+                    src="assets/images/deal-product-4.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="کرم روشن‌کننده و ضد لک"
+                  />
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#"> کرم روشن‌کننده و ضد لک رویو بیوتی مدل ۰۰۱ </a>
+                  </h3>
+
+                  <div class="deal-card__price-range">
+                    <span>
+                      <small>از</small>
+                      ۶۰۰,۰۰۰ تومان
+                    </span>
+
+                    <span>
+                      <small>تا</small>
+                      ۱,۰۰۰,۰۰۰ تومان
+                    </span>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول چهارم به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول چهارم به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="126000"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۱۱</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="deal-card" data-search-category="perfume">
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده ادو پرفیوم مردانه ایفوریا"
+                >
+                  <img
+                    src="assets/images/deal-product-5.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="ادو پرفیوم مردانه ایفوریا"
+                  />
+
+                  <span class="deal-card__discount"> ۵۰٪ </span>
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#">
+                      ادو پرفیوم مردانه ایفوریا مدل آلفرد دانهیل دیزایر
+                    </a>
+                  </h3>
+
+                  <div class="deal-card__prices">
+                    <del class="deal-card__old-price"> ۴,۰۰۰,۰۰۰ تومان </del>
+
+                    <strong class="deal-card__price"> ۲,۰۰۰,۰۰۰ تومان </strong>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول پنجم به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول پنجم به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="122400"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۱۰</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="deal-card" data-search-category="supermarket">
+              <div class="deal-card__body">
+                <a
+                  class="deal-card__media"
+                  href="#"
+                  aria-label="مشاهده دستمال مرطوب تازه"
+                >
+                  <img
+                    src="assets/images/deal-product-6.webp"
+                    width="180"
+                    height="180"
+                    loading="lazy"
+                    alt="دستمال مرطوب تازه"
+                  />
+                </a>
+
+                <div class="deal-card__content">
+                  <h3 class="deal-card__title">
+                    <a href="#"> دستمال مرطوب تازه مدل ۰۱ بسته ۴۰ عددی </a>
+                  </h3>
+
+                  <div class="deal-card__price-range">
+                    <span>
+                      <small>از</small>
+                      ۸۰,۰۰۰ تومان
+                    </span>
+
+                    <span>
+                      <small>تا</small>
+                      ۱۲۰,۰۰۰ تومان
+                    </span>
+                  </div>
+
+                  <div class="deal-card__actions">
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      aria-label="افزودن محصول ششم به سبد خرید"
+                      data-cart-add
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="deal-card__action"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن محصول ششم به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="deal-card__countdown"
+                data-deal-countdown
+                data-duration="118800"
+                aria-label="زمان باقی‌مانده تخفیف"
+              >
+                <span class="deal-card__time-unit">
+                  <b data-time-days>۰۱</b>
+                  <small>روز</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-hours>۰۹</b>
+                  <small>ساعت</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-minutes>۰۰</b>
+                  <small>دقیقه</small>
+                </span>
+
+                <span class="deal-card__time-unit">
+                  <b data-time-seconds>۰۰</b>
+                  <small>ثانیه</small>
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category shortcuts -->
+      <section
+        class="category-shortcuts"
+        aria-labelledby="category-shortcuts-title"
+      >
+        <h2 id="category-shortcuts-title" class="visually-hidden">
+          دسته‌بندی‌های محبوب
+        </h2>
+        <div class="category-shortcuts__container">
+          <div class="category-shortcuts__grid">
+            <!-- 1 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته آرایش چشم"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">آرایش چشم</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/eye.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 2 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته عطر و ادکلن"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">عطر و ادکلن</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i3.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 3 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته آرایش لب"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">آرایش لب</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i5.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 4 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته پاک کننده‌ها"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">پاک کننده‌ها</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i7.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 5 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته لوسیون و روغن"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">لوسیون و روغن</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i2.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 6 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته مراقبت پوست"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">مراقبت پوست</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i4.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 7 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته مراقبت مو"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">مراقبت مو</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i6.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <!-- 8 -->
+            <a
+              class="category-shortcut"
+              href="#"
+              aria-label="مشاهده دسته مراقبت بدن"
+            >
+              <span class="category-shortcut__arrow" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+
+              <div class="category-shortcut__content">
+                <h3 class="category-shortcut__title">مراقبت بدن</h3>
+
+                <p class="category-shortcut__meta">
+                  <span class="category-shortcut__dot"></span>
+                  <span>۳۰ محصول موجود است</span>
+                </p>
+              </div>
+
+              <span class="category-shortcut__media" aria-hidden="true">
+                <img
+                  src="assets/images/i8.png"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- New products -->
+      <section
+        id="new-products"
+        class="new-products"
+        aria-labelledby="new-products-title"
+        data-new-products
+      >
+        <div class="new-products__container">
+          <!-- Section header -->
+          <header class="new-products__header">
+            <div class="section-heading new-products__heading">
+              <span class="section-eyebrow new-products__eyebrow">
+                NEW PRODUCTS
+              </span>
+
+              <h2
+                id="new-products-title"
+                class="section-title new-products__title"
+              >
+                <strong>جدیدترین</strong>
+                محصولات
+              </h2>
+            </div>
+
+            <!-- Category filters -->
+            <div
+              class="new-products__filters"
+              role="group"
+              aria-label="فیلتر محصولات جدید"
+            >
+              <button
+                class="new-products__filter is-active"
+                type="button"
+                data-product-filter="all"
+                aria-pressed="true"
+              >
+                همه
+              </button>
+
+              <button
+                class="new-products__filter"
+                type="button"
+                data-product-filter="eye"
+                aria-pressed="false"
+              >
+                آرایش چشم
+              </button>
+
+              <button
+                class="new-products__filter"
+                type="button"
+                data-product-filter="lip"
+                aria-pressed="false"
+              >
+                آرایش لب
+              </button>
+
+              <button
+                class="new-products__filter"
+                type="button"
+                data-product-filter="perfume"
+                aria-pressed="false"
+              >
+                عطر و ادکلن
+              </button>
+            </div>
+
+            <!-- Slider controls -->
+            <div class="new-products__controls">
+              <a class="section-view-all new-products__view-all" href="#">
+                نمایش همه
+              </a>
+
+              <div class="slider-arrows new-products__arrows">
+                <button
+                  class="slider-arrow slider-arrow--compact"
+                  type="button"
+                  aria-label="محصولات قبلی"
+                  data-new-products-prev
+                >
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <button
+                  class="slider-arrow slider-arrow--compact"
+                  type="button"
+                  aria-label="محصولات بعدی"
+                  data-new-products-next
+                >
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <!-- Products viewport -->
+          <div class="new-products__viewport">
+            <div class="new-products__track">
+              <!-- Product 1 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="perfume"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده ادو پرفیوم دانهیل لندن دیزایر"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--blue"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-1.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="ادو پرفیوم مردانه دانهیل لندن دیزایر"
+                  />
+
+                  <span class="product-card__discount"> ۳۱٪ </span>
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#">
+                      ادو پرفیوم مردانه اسکلاره مدل DUNHILL LONDON DESIRE حجم
+                      ۱۰۰ میلی‌لیتر
+                    </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۳</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۲</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="60"
+                    >
+                      <span style="width: 60%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول اول به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول اول به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <del>۱,۵۰۰,۰۰۰ تومان</del>
+                      <strong>۱,۱۰۰,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="perfume"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده ادو پرفیوم تام فورد توباکو وانیل"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--red"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--black"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--brown"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-2.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="ادو پرفیوم مردانه تام فورد توباکو وانیل"
+                  />
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#">
+                      ادوپرفیوم مردانه هارلینگ مدل تام فورد توباکو وانیل
+                    </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۲</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۸</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="25"
+                    >
+                      <span style="width: 25%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول دوم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول دوم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <small>از</small>
+                      <strong>۴۸۰,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 3 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="perfume"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده ادو پرفیوم آلفرد دانهیل"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--red"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-3.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="ادو پرفیوم مردانه آلفرد دانهیل"
+                  />
+
+                  <span class="product-card__discount"> ۵۰٪ </span>
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#">
+                      ادو پرفیوم مردانه ایفوریا مدل آلفرد دانهیل دیزایر
+                    </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۲</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۳</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="40"
+                    >
+                      <span style="width: 40%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول سوم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول سوم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <del>۴,۰۰۰,۰۰۰ تومان</del>
+                      <strong>۲,۰۰۰,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 4 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="eye"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده خط چشم و ریمل دی بی"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--black"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-4.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="خط چشم و ریمل دی بی"
+                  />
+
+                  <span class="product-card__discount"> ۴٪ </span>
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#"> خط چشم و ریمل DB </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۰</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۱۰</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="5"
+                    >
+                      <span style="width: 5%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول چهارم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول چهارم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <strong>۳۰۰,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 5 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="eye"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده خط چشم یوشاس مدل ژلی"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--brown"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--black"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-5.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="خط چشم یوشاس مدل ژلی به همراه برس"
+                  />
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#">
+                      خط چشم یوشاس مدل ژلی کد ۰۰ مجموعه ۲ عددی به همراه برس خط
+                      چشم
+                    </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۰</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۱۰</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="0"
+                    >
+                      <span style="width: 0%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول پنجم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول پنجم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <span>
+                        <small>از</small>
+                        <strong>۵۹۰,۰۰۰ تومان</strong>
+                      </span>
+
+                      <span>
+                        <small>تا</small>
+                        <strong>۶۵۰,۰۰۰ تومان</strong>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 6 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="lip"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده رژ لب مایع دراگون رانی"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--pink"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--red"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--beige"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-6.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="رژ لب مایع دراگون رانی مدل توت فرنگی"
+                  />
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#">
+                      رژ لب مایع دراگون رانی مدل توت فرنگی شماره ۸ مجموعه ۳ عددی
+                    </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۵</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۱۵</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="25"
+                    >
+                      <span style="width: 25%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول ششم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول ششم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <span>
+                        <small>از</small>
+                        <strong>۲۵۰,۰۰۰ تومان</strong>
+                      </span>
+
+                      <span>
+                        <small>تا</small>
+                        <strong>۳۰۰,۰۰۰ تومان</strong>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 7 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="lip"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده ژل لب مایع اولی بولا"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--rose"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--pink"
+                    ></span>
+
+                    <span
+                      class="product-card__swatch product-card__swatch--red"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-7.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="ژل لب مایع اولی بولا شماره ۰۱"
+                  />
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#"> ژل لب مایع اولی بولا شماره ۰۱ </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۲۲</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۱۱</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="67"
+                    >
+                      <span style="width: 67%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول هفتم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول هفتم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <del>۲۲۰,۰۰۰ تومان</del>
+                      <strong>۱۹۹,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 8 -->
+              <article
+                class="product-card"
+                data-product-card
+                data-product-category="eye"
+              >
+                <a
+                  class="product-card__media"
+                  href="#"
+                  aria-label="مشاهده ریمل بلند کننده میرا دور"
+                >
+                  <span class="product-card__swatches" aria-hidden="true">
+                    <span
+                      class="product-card__swatch product-card__swatch--black"
+                    ></span>
+                  </span>
+
+                  <img
+                    src="assets/images/new-product-8.webp"
+                    width="260"
+                    height="220"
+                    loading="lazy"
+                    alt="ریمل بلند کننده میرا دور مدل Summer Time"
+                  />
+
+                  <span class="product-card__discount"> ۶٪ </span>
+                </a>
+
+                <div class="product-card__content">
+                  <h3 class="product-card__title">
+                    <a href="#"> ریمل بلند کننده میرا دور مدل Summer Time </a>
+                  </h3>
+
+                  <div class="product-card__stock">
+                    <div class="product-card__stock-meta">
+                      <span>
+                        فروخته شده
+                        <b>۰</b>
+                      </span>
+
+                      <span>
+                        باقی‌مانده
+                        <b>۳۰</b>
+                      </span>
+                    </div>
+
+                    <div
+                      class="product-card__progress"
+                      role="progressbar"
+                      aria-label="میزان فروش محصول"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="0"
+                    >
+                      <span style="width: 0%"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <div class="product-card__actions">
+                      <button
+                        class="product-card__action product-card__action--cart"
+                        type="button"
+                        data-cart-add
+                        aria-label="افزودن محصول هشتم به سبد خرید"
+                      >
+                        <i
+                          class="fa-solid fa-basket-shopping"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="product-card__action"
+                        type="button"
+                        data-wishlist-toggle
+                        aria-label="افزودن محصول هشتم به علاقه‌مندی‌ها"
+                      >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </div>
+
+                    <div class="product-card__prices">
+                      <del>۱۵۰,۰۰۰ تومان</del>
+                      <strong>۱۴۲,۰۰۰ تومان</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instagram promotion -->
+      <section
+        class="instagram-banner"
+        aria-labelledby="instagram-banner-title"
+      >
+        <div class="instagram-banner__container">
+          <div class="instagram-banner__box">
+            <!-- Decorative shapes -->
+            <span
+              class="instagram-banner__decoration instagram-banner__decoration--one"
+              aria-hidden="true"
+            ></span>
+
+            <span
+              class="instagram-banner__decoration instagram-banner__decoration--two"
+              aria-hidden="true"
+            ></span>
+
+            <span
+              class="instagram-banner__decoration instagram-banner__decoration--three"
+              aria-hidden="true"
+            ></span>
+
+            <!-- Left button -->
+            <a
+              class="instagram-banner__button"
+              href="#"
+              aria-label="بازکردن صفحه اینستاگرام"
+            >
+              <span>پیج اینستاگرام ما</span>
+
+              <span class="instagram-banner__button-icon">
+                <i class="fa-solid fa-chevron-left"></i>
+              </span>
+            </a>
+
+            <!-- Center content -->
+            <div class="instagram-banner__content">
+              <p class="instagram-banner__subtitle">
+                جایزه‌ها، قرعه‌کشی و تخفیف‌های
+              </p>
+
+              <h2 class="instagram-banner__title" id="instagram-banner-title">
+                مخصوص فالوورهای وفادار!
+              </h2>
+            </div>
+
+            <!-- Instagram speech bubble -->
+            <div class="instagram-banner__account">
+              <i class="fa-brands fa-instagram"></i>
+
+              <span> پیج مارو دنبال کنید! </span>
+            </div>
+
+            <!-- 3D Instagram image -->
+            <img
+              class="instagram-banner__image"
+              src="./assets/images/instagram-3d.png"
+              alt=""
+              aria-hidden="true"
+              width="145"
+              height="149"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Categories Start -->
+      <section
+        class="popular-categories"
+        aria-labelledby="popular-categories-title"
+      >
+        <div class="popular-categories__container">
+          <header class="popular-categories__header">
+            <div class="section-heading popular-categories__heading">
+              <span class="section-eyebrow popular-categories__eyebrow">
+                POPULAR CATEGORIES
+              </span>
+
+              <h2
+                class="section-title popular-categories__title"
+                id="popular-categories-title"
+              >
+                <span>محبوب‌ترین</span>
+                دسته‌بندی‌ها
+              </h2>
+            </div>
+
+            <div
+              class="section-divider popular-categories__header-line"
+              aria-hidden="true"
+            ></div>
+
+            <a class="section-view-all popular-categories__all-link" href="#">
+              نمایش همه
+            </a>
+          </header>
+
+          <div class="popular-categories__grid">
+            <!-- Eye Products -->
+            <article
+              class="popular-category-card"
+              data-search-category="eye-and-eyebrow"
+            >
+              <header class="popular-category-card__header">
+                <div class="popular-category-card__heading">
+                  <h3 class="popular-category-card__title">
+                    محصولات آرایش چشم
+                  </h3>
+
+                  <div class="popular-category-card__meta">
+                    <span class="popular-category-card__dot"></span>
+                    <span>۳ محصول</span>
+                    <span class="popular-category-card__arrows">← →</span>
+                  </div>
+                </div>
+
+                <figure class="popular-category-card__icon">
+                  <img
+                    src="assets/images/eye.png"
+                    alt=""
+                    width="54"
+                    height="54"
+                  />
+                </figure>
+              </header>
+
+              <div class="popular-category-card__products">
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      خط چشم ویویدای مدل DB
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/new-product-4.webp"
+                      alt="خط چشم ویویدای"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                    />
+
+                    <span class="popular-mini-product__discount"> ۲۳٪ </span>
+
+                    <span
+                      class="popular-mini-product__color"
+                      aria-label="رنگ مشکی"
+                    ></span>
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      خط چشم ژله‌ای دو رنگ به همراه براش
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/new-product-5.webp"
+                      alt="خط چشم ژله‌ای دو رنگ"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="popular-mini-product__color"
+                      aria-label="رنگ مشکی"
+                    ></span>
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      ریمل بلندکننده مژه سامر مدل Summer Time
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/new-product-8.webp"
+                      alt="ریمل سامر مدل Summer Time"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                    />
+
+                    <span class="popular-mini-product__discount"> ۶٪ </span>
+
+                    <span
+                      class="popular-mini-product__color"
+                      aria-label="رنگ مشکی"
+                    ></span>
+                  </figure>
+                </article>
+              </div>
+
+              <a class="popular-category-card__footer-link" href="#">
+                <span>مشاهده همه محصولات</span>
+                <span class="popular-category-card__footer-icon">‹</span>
+              </a>
+            </article>
+
+            <!-- Perfume Products -->
+            <article
+              class="popular-category-card"
+              data-search-category="perfume"
+            >
+              <header class="popular-category-card__header">
+                <div class="popular-category-card__heading">
+                  <h3 class="popular-category-card__title">
+                    محصولات عطر و ادکلن
+                  </h3>
+
+                  <div class="popular-category-card__meta">
+                    <span class="popular-category-card__dot"></span>
+                    <span>۳ محصول</span>
+                    <span class="popular-category-card__arrows">← →</span>
+                  </div>
+                </div>
+
+                <figure class="popular-category-card__icon">
+                  <img
+                    src="assets/images/i3.png"
+                    alt=""
+                    width="54"
+                    height="54"
+                  />
+                </figure>
+              </header>
+
+              <div class="popular-category-card__products">
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      ادو پرفیوم مردانه اسکلاره مدل DUNHILL LONDON DESIRE
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/new-product-1.webp"
+                      alt="ادکلن دانهیل آبی"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span class="popular-mini-product__discount"> ۲۳٪ </span>
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      ادو پرفیوم مردانه ایفوریا مدل Desire
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/new-product-3.webp"
+                      alt="ادکلن دانهیل قرمز"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span class="popular-mini-product__discount"> ۵٪ </span>
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      ادو پرفیوم مردانه ساواج دیور
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/dior-perfume.webp"
+                      alt="ادکلن ساواج دیور"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+                  </figure>
+                </article>
+              </div>
+
+              <a class="popular-category-card__footer-link" href="#">
+                <span>نمایش همه محصولات</span>
+                <span class="popular-category-card__footer-icon">‹</span>
+              </a>
+            </article>
+
+            <!-- Skin Products -->
+            <article
+              class="popular-category-card"
+              data-search-category="skin-care-accessories"
+            >
+              <header class="popular-category-card__header">
+                <div class="popular-category-card__heading">
+                  <h3 class="popular-category-card__title">
+                    محصولات مراقبت پوستی
+                  </h3>
+
+                  <div class="popular-category-card__meta">
+                    <span class="popular-category-card__dot"></span>
+                    <span>۳ محصول</span>
+                    <span class="popular-category-card__arrows">← →</span>
+                  </div>
+                </div>
+
+                <figure class="popular-category-card__icon">
+                  <img
+                    src="assets/images/i4.png"
+                    alt=""
+                    width="54"
+                    height="54"
+                  />
+                </figure>
+              </header>
+
+              <div class="popular-category-card__products">
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      اسپری روشن‌کننده صورت و بدن ایمیجز
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/deal-product-3.webp"
+                      alt="اسپری روشن‌کننده صورت و بدن"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span class="popular-mini-product__discount"> ۲۵٪ </span>
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      دستمال مرطوب و آرایش پاک‌کن ناژه ۲۷ عددی
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/deal-product-6.webp"
+                      alt="دستمال مرطوب آرایش پاک‌کن ناژه"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+                  </figure>
+                </article>
+
+                <article class="popular-mini-product">
+                  <div class="popular-mini-product__content">
+                    <h4 class="popular-mini-product__title">
+                      ماسک صورت بیوآکوا مدل سالیسیلیک اسید ACNE
+                    </h4>
+
+                    <button
+                      class="popular-mini-product__buy"
+                      type="button"
+                      data-cart-add
+                      aria-label="خرید خط چشم ویویدای"
+                    >
+                      خرید
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <figure class="popular-mini-product__image">
+                    <img
+                      src="assets/images/oil-mask.webp"
+                      alt="ماسک سالیسیلیک اسید بیوآکوا"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+                  </figure>
+                </article>
+              </div>
+
+              <a class="popular-category-card__footer-link" href="#">
+                <span>نمایش همه محصولات</span>
+                <span class="popular-category-card__footer-icon">‹</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skincare CTA Start -->
+      <section class="skincare-cta" aria-labelledby="skincare-cta-title">
+        <div class="skincare-cta__container">
+          <div class="skincare-cta__box">
+            <!-- Left Content -->
+            <div class="skincare-cta__side skincare-cta__side--left">
+              <a
+                class="skincare-cta__arrow"
+                href="#"
+                aria-label="مشاهده محصولات مراقبت پوستی"
+              >
+                <span aria-hidden="true"></span>
+              </a>
+
+              <p class="skincare-cta__description">
+                کرم های <strong> مراقبتی</strong> با فرمول اختصاصی
+              </p>
+            </div>
+
+            <!-- Center Product -->
+            <figure class="skincare-cta__product">
+              <div class="skincare-cta__circle">
+                <div class="skincare-cta__circle-inner"></div>
+
+                <img
+                  src="assets/images/hero-s1.png"
+                  alt="مجموعه محصولات مراقبت پوستی"
+                  width="444"
+                  height="436"
+                  loading="lazy"
+                />
+              </div>
+            </figure>
+
+            <!-- Right Content -->
+            <div class="skincare-cta__side skincare-cta__side--right">
+              <h2 class="skincare-cta__title" id="skincare-cta-title">
+                جدیدترین
+                <span>کرم‌های</span>
+                <br />
+                مراقبتی پوست
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Sellers Start -->
+      <section class="best-sellers" aria-labelledby="best-sellers-title">
+        <div class="best-sellers__container">
+          <div class="best-sellers__layout">
+            <!-- Featured Products Slider -->
+            <aside
+              class="best-sellers-featured"
+              data-best-sellers-featured
+              aria-label="محصولات پرفروش شگفت‌انگیز"
+            >
+              <div class="best-sellers-featured__badge">
+                <span
+                  class="best-sellers-featured__badge-icon"
+                  aria-hidden="true"
+                >
+                  ☆
+                </span>
+
+                <span>پرفروش‌های شگفت‌انگیز</span>
+              </div>
+
+              <div class="best-sellers-featured__image">
+                <img
+                  src="assets/images/deal-product-1.webp"
+                  alt="ادو پرفیوم مردانه اسکلاره مدل دانهیل لندن دیزایر"
+                  width="170"
+                  height="170"
+                  loading="lazy"
+                  data-featured-image
+                />
+
+                <!-- Right arrow -->
+                <button
+                  class="slider-arrow slider-arrow--compact best-sellers-featured__nav best-sellers-featured__nav--previous"
+                  type="button"
+                  aria-label="نمایش محصول قبلی"
+                  data-featured-previous
+                >
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <!-- Left arrow -->
+                <button
+                  class="slider-arrow slider-arrow--compact best-sellers-featured__nav best-sellers-featured__nav--next"
+                  type="button"
+                  aria-label="نمایش محصول بعدی"
+                  data-featured-next
+                >
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <p class="best-sellers-featured__title" data-featured-title>
+                ادو پرفیوم مردانه اسکلاره مدل DUNHILL LONDON DESIRE حجم ۱۰۰
+                میلی‌لیتر
+              </p>
+
+              <div class="best-sellers-featured__divider"></div>
+
+              <div class="best-sellers-featured__footer">
+                <button
+                  class="best-sellers-featured__cart"
+                  type="button"
+                  aria-label="افزودن محصول به سبد خرید"
+                  data-cart-add
+                  data-featured-cart
+                >
+                  <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+                </button>
+
+                <div class="best-sellers-featured__price" data-featured-price>
+                  <del>۱٬۵۰۰٬۰۰۰ تومان</del>
+                  <strong>۱٬۱۰۰٬۰۰۰ تومان</strong>
+                </div>
+              </div>
+
+              <p
+                class="visually-hidden"
+                aria-live="polite"
+                data-featured-status
+              ></p>
+            </aside>
+
+            <!-- Products Content -->
+            <div class="best-sellers__content">
+              <header class="best-sellers__header">
+                <div class="section-heading best-sellers__heading">
+                  <span class="section-eyebrow best-sellers__eyebrow">
+                    BEST SELLER PRODUCTS
+                  </span>
+
+                  <h2
+                    class="section-title best-sellers__title"
+                    id="best-sellers-title"
+                  >
+                    <strong>پرفروش‌ترین</strong>
+                    محصولات
+                  </h2>
+                </div>
+
+                <div
+                  class="section-divider best-sellers__header-line"
+                  aria-hidden="true"
+                ></div>
+
+                <div class="best-sellers__header-actions">
+                  <div class="best-sellers__controls section-controls">
+                    <a class="section-view-all best-sellers__view-all" href="#">
+                      نمایش همه
+                    </a>
+
+                    <div class="slider-arrows best-sellers__arrows">
+                      <button
+                        class="slider-arrow slider-arrow--compact"
+                        type="button"
+                        aria-label="محصولات قبلی"
+                      >
+                        <i
+                          class="fa-solid fa-arrow-right"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        class="slider-arrow slider-arrow--compact"
+                        type="button"
+                        aria-label="محصولات بعدی"
+                      >
+                        <i
+                          class="fa-solid fa-arrow-left"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+              <div class="best-sellers__grid">
+                <!-- Product 1 -->
+                <article
+                  class="best-seller-card"
+                  data-search-category="perfume"
+                >
+                  <div class="best-seller-card__content">
+                    <h3 class="best-seller-card__title">
+                      ادو پرفیوم مردانه اسکلاره مدل DUNHILL LONDON DESIRE حجم
+                      ۱۰۰ میل
+                    </h3>
+
+                    <div class="best-seller-card__bottom">
+                      <div
+                        class="best-seller-card__price best-seller-card__price--sale"
+                      >
+                        <div
+                          class="best-seller-card__price-line best-seller-card__price-line--old"
+                        >
+                          <span class="best-seller-card__currency">تومان</span>
+                          <del>۱٬۵۰۰٬۰۰۰ تومان</del>
+                        </div>
+
+                        <div class="best-seller-card__price-line">
+                          <span class="best-seller-card__currency">تومان</span>
+                          <strong>۱,۱۰۰,۰۰۰ تومان</strong>
+                        </div>
+                      </div>
+
+                      <span class="best-seller-card__stock">
+                        موجود در انبار
+                      </span>
+                    </div>
+                  </div>
+
+                  <figure class="best-seller-card__image">
+                    <img
+                      src="assets/images/deal-product-1.webp"
+                      alt="ادو پرفیوم مردانه دانهیل"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span class="best-seller-card__discount"> ۲۳٪ </span>
+
+                    <span
+                      class="best-seller-card__color best-seller-card__color--blue"
+                    ></span>
+                  </figure>
+                  <div class="best-seller-card__actions">
+                    <button
+                      class="best-seller-card__action best-seller-card__action--cart"
+                      type="button"
+                      data-cart-add
+                      aria-label="افزودن به سبد خرید"
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="best-seller-card__action best-seller-card__action--wishlist"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article
+                  class="best-seller-card"
+                  data-search-category="perfume"
+                >
+                  <div class="best-seller-card__content">
+                    <h3 class="best-seller-card__title">
+                      ادو پرفیوم مردانه اسکلاره مدل ناپلئون رویال
+                    </h3>
+
+                    <div class="best-seller-card__bottom">
+                      <div
+                        class="best-seller-card__price best-seller-card__price--range"
+                      >
+                        <div class="best-seller-card__price-line">
+                          <span class="best-seller-card__currency">تومان</span>
+                          <strong>۴۵۰٬۰۰۰</strong>
+                          <span class="best-seller-card__price-label">از</span>
+                        </div>
+
+                        <div class="best-seller-card__price-line">
+                          <span class="best-seller-card__currency">تومان</span>
+                          <strong>۸۵۰٬۰۰۰</strong>
+                          <span class="best-seller-card__price-label">تا</span>
+                        </div>
+                      </div>
+
+                      <span class="best-seller-card__stock"> ۱۷ در انبار </span>
+                    </div>
+                  </div>
+
+                  <figure class="best-seller-card__image">
+                    <img
+                      src="assets/images/deal-product-2.webp"
+                      alt="ادو پرفیوم مردانه طلایی"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="best-seller-card__color best-seller-card__color--orange"
+                    ></span>
+                    <span
+                      class="best-seller-card__color best-seller-card__color--red"
+                    ></span>
+                    <span
+                      class="best-seller-card__color best-seller-card__color--black"
+                    ></span>
+                  </figure>
+                  <div class="best-seller-card__actions">
+                    <button
+                      class="best-seller-card__action best-seller-card__action--cart"
+                      type="button"
+                      data-cart-add
+                      aria-label="افزودن به سبد خرید"
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="best-seller-card__action best-seller-card__action--wishlist"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article
+                  class="best-seller-card"
+                  data-search-category="skin-care-accessories"
+                >
+                  <div class="best-seller-card__content">
+                    <h3 class="best-seller-card__title">
+                      ماسک صورت بیوآکوا مدل SALICYLIC ACID ACNE حجم ۱۰۰
+                      میلی‌لیتر
+                    </h3>
+
+                    <div class="best-seller-card__bottom">
+                      <div
+                        class="best-seller-card__price best-seller-card__price--single"
+                      >
+                        <div class="best-seller-card__price-line">
+                          <span class="best-seller-card__currency">تومان</span>
+                          <strong>۲۴۰٬۰۰۰</strong>
+                        </div>
+                      </div>
+
+                      <span class="best-seller-card__stock">
+                        موجود در انبار
+                      </span>
+                    </div>
+                  </div>
+
+                  <figure class="best-seller-card__image">
+                    <img
+                      src="assets/images/oil-mask.webp"
+                      alt="ماسک سالیسیلیک اسید بیوآکوا"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="best-seller-card__actions">
+                    <button
+                      class="best-seller-card__action best-seller-card__action--cart"
+                      type="button"
+                      data-cart-add
+                      aria-label="افزودن به سبد خرید"
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="best-seller-card__action best-seller-card__action--wishlist"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article
+                  class="best-seller-card"
+                  data-search-category="skin-care-accessories"
+                >
+                  <div class="best-seller-card__content">
+                    <h3 class="best-seller-card__title">
+                      ماسک صورت توت‌فرنگی وارمی مدل توت‌فرنگی و نعناع مناسب پوست
+                      چرب و مختلط
+                    </h3>
+
+                    <div class="best-seller-card__bottom">
+                      <div
+                        class="best-seller-card__price best-seller-card__price--single"
+                      >
+                        <div class="best-seller-card__price-line">
+                          <span class="best-seller-card__currency">تومان</span>
+                          <strong>۶۰٬۰۰۰</strong>
+                        </div>
+                      </div>
+
+                      <span class="best-seller-card__stock"> ۳۰ در انبار </span>
+                    </div>
+                  </div>
+
+                  <figure class="best-seller-card__image">
+                    <img
+                      src="assets/images/straw-mask.webp"
+                      alt="ماسک صورت توت‌فرنگی وارمی"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="best-seller-card__color best-seller-card__color--pink"
+                    ></span>
+                    <span
+                      class="best-seller-card__color best-seller-card__color--purple"
+                    ></span>
+                  </figure>
+                  <div class="best-seller-card__actions">
+                    <button
+                      class="best-seller-card__action best-seller-card__action--cart"
+                      type="button"
+                      data-cart-add
+                      aria-label="افزودن به سبد خرید"
+                    >
+                      <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+
+                    <button
+                      class="best-seller-card__action best-seller-card__action--wishlist"
+                      type="button"
+                      data-wishlist-toggle
+                      aria-label="افزودن به علاقه‌مندی‌ها"
+                    >
+                      <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Promos Start -->
+
+      <section class="category-promos" aria-labelledby="category-promos-title">
+        <h2 id="category-promos-title" class="visually-hidden">
+          دسته‌بندی‌های منتخب محصولات
+        </h2>
+        <div class="category-promos__container">
+          <div class="category-promos__grid">
+            <!-- Skin Care -->
+            <a
+              class="category-promo category-promo--skin"
+              href="#"
+              aria-label="مشاهده محصولات مراقبت پوستی"
+            >
+              <div class="category-promo__start">
+                <div class="category-promo__texts">
+                  <h3 class="category-promo__title">محصولات مراقبت پوستی</h3>
+
+                  <p class="category-promo__subtitle">۱۴۰ محصول</p>
+                </div>
+
+                <div class="category-promo__button">
+                  <span>بیشتر</span>
+
+                  <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <figure class="category-promo__image">
+                <img
+                  src="assets/images/b1.png"
+                  width="113"
+                  height="150"
+                  alt="محصولات مراقبت پوستی"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+
+            <!-- Lip Makeup -->
+            <a
+              class="category-promo category-promo--lip"
+              href="#"
+              aria-label="مشاهده محصولات آرایش لب"
+            >
+              <div class="category-promo__start">
+                <div class="category-promo__texts">
+                  <h3 class="category-promo__title">محصولات آرایش لب</h3>
+
+                  <p class="category-promo__subtitle">۱۴۰ محصول</p>
+                </div>
+
+                <div class="category-promo__button">
+                  <span>بیشتر</span>
+
+                  <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <figure class="category-promo__image">
+                <img
+                  src="assets/images/b2-1.png"
+                  width="136"
+                  height="136"
+                  alt="محصولات آرایش لب"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+
+            <!-- Eye Makeup -->
+            <a
+              class="category-promo category-promo--eye"
+              href="#"
+              aria-label="مشاهده محصولات آرایش چشم"
+            >
+              <div class="category-promo__start">
+                <div class="category-promo__texts">
+                  <h3 class="category-promo__title">محصولات آرایش چشم</h3>
+
+                  <p class="category-promo__subtitle">۱۴۰ محصول</p>
+                </div>
+
+                <div class="category-promo__button">
+                  <span>بیشتر</span>
+
+                  <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <figure class="category-promo__image">
+                <img
+                  src="assets/images/b3-150x150.png"
+                  width="150"
+                  height="150"
+                  alt="محصولات آرایش چشم"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support CTA Start -->
+      <section class="support-cta" aria-labelledby="support-cta-title">
+        <div class="support-cta__container">
+          <div class="support-cta__panel">
+            <!-- Introduction -->
+            <div class="support-cta__intro">
+              <h2 id="support-cta-title" class="support-cta__sr-only">
+                ارتباط با تیم پشتیبانی
+              </h2>
+
+              <p class="support-cta__description">
+                اگر سوالی دارید یا نیاز به راهنمایی دارین، تیم پشتیبانی ما آماده
+                پاسخ‌گویی به شماست.
+              </p>
+            </div>
+
+            <!-- Contact Button -->
+            <a
+              class="support-cta__button"
+              href="#"
+              aria-label="تماس با تیم پشتیبانی"
+            >
+              <span class="support-cta__button-text"> تماس با ما </span>
+
+              <span class="support-cta__button-icon" aria-hidden="true">
+                <i class="fa-solid fa-chevron-left"></i>
+              </span>
+            </a>
+
+            <!-- Contact Information -->
+            <div class="support-cta__details">
+              <!-- Support Phone -->
+              <article class="support-detail">
+                <div class="support-detail__icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="support-detail__body">
+                  <h3 class="support-detail__title">
+                    <span>واحد</span>
+                    پشتیبانی
+                  </h3>
+
+                  <a
+                    class="support-detail__value support-detail__value--phone"
+                    href="tel:0215567654"
+                  >
+                    ۰۲۱-۵۵۶۷۶۵۴
+                  </a>
+                </div>
+              </article>
+
+              <!-- Email -->
+              <article class="support-detail">
+                <div class="support-detail__icon" aria-hidden="true">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div class="support-detail__body">
+                  <h3 class="support-detail__title">
+                    <span>آدرس</span>
+                    ایمیل
+                  </h3>
+
+                  <a
+                    class="support-detail__value support-detail__value--email"
+                    href="mailto:info@website.com"
+                  >
+                    <strong>info</strong>@website.com
+                  </a>
+                </div>
+              </article>
+
+              <!-- Working Hours -->
+              <article class="support-detail">
+                <div class="support-detail__icon" aria-hidden="true">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div class="support-detail__body">
+                  <h3 class="support-detail__title">
+                    <span>ساعات</span>
+                    کاری
+                  </h3>
+
+                  <p class="support-detail__value">۸ صبح الی ۱۷ بعد از ظهر</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Support Person -->
+          <figure class="support-cta__person">
+            <div class="support-cta__person-inner">
+              <span class="support-cta__person-dots" aria-hidden="true"></span>
+
+              <img
+                src="assets/images/person.png"
+                alt="کارشناس تیم پشتیبانی"
+                width="213"
+                height="283"
+                loading="lazy"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Testimonials Start -->
+      <section
+        class="testimonials"
+        aria-labelledby="testimonials-title"
+        data-testimonials
+      >
+        <div class="testimonials__container">
+          <!-- Section Header -->
+          <header class="testimonials__header">
+            <div class="section-heading testimonials__heading">
+              <span class="section-eyebrow testimonials__eyebrow">
+                TESTIMONIALS
+              </span>
+
+              <h2
+                id="testimonials-title"
+                class="section-title testimonials__title"
+              >
+                <strong>نظرات</strong>
+                مشتریان ما
+              </h2>
+            </div>
+
+            <span
+              class="section-divider testimonials__line"
+              aria-hidden="true"
+            ></span>
+
+            <div
+              class="slider-arrows testimonials__arrows"
+              aria-label="کنترل اسلایدر نظرات"
+            >
+              <button
+                class="slider-arrow testimonials__arrow testimonials__arrow--next"
+                type="button"
+                aria-label="نمایش نظر بعدی"
+                data-testimonials-next
+              >
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+
+              <button
+                class="slider-arrow testimonials__arrow testimonials__arrow--prev"
+                type="button"
+                aria-label="نمایش نظر قبلی"
+                data-testimonials-prev
+                disabled
+              >
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </header>
+
+          <!-- Slider -->
+          <div class="testimonials__viewport">
+            <div class="testimonials__track" data-testimonials-track>
+              <!-- Mahsa Karimi -->
+              <article class="testimonial-card">
+                <figure class="testimonial-card__avatar">
+                  <img
+                    src="assets/images/p4.png"
+                    alt="مهسا کریمی"
+                    width="135"
+                    height="135"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="testimonial-card__identity">
+                  <h3 class="testimonial-card__name">مهسا کریمی</h3>
+
+                  <p class="testimonial-card__position">طراح</p>
+
+                  <div
+                    class="testimonial-card__rating"
+                    aria-label="امتیاز ۴ از ۵"
+                  >
+                    <span class="testimonial-card__score"> (۴) </span>
+
+                    <span class="testimonial-card__stars" aria-hidden="true">
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="testimonial-card__divider" aria-hidden="true"></div>
+
+                <p class="testimonial-card__text">
+                  تجربه خرید من از این سایت فوق‌العاده بود. یک صندلی اداری خریدم
+                  که نه‌تنها راحت هست، بلکه از نظر ارگونومیک هم طراحی خوبی داره.
+                  ممنون از تیم پشتیبانی که سؤالاتم رو به‌سرعت پاسخ دادن.
+                </p>
+              </article>
+
+              <!-- Ali Esmaeili -->
+              <article class="testimonial-card">
+                <figure class="testimonial-card__avatar">
+                  <img
+                    src="assets/images/p3.png"
+                    alt="علی اسماعیلی"
+                    width="135"
+                    height="135"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="testimonial-card__identity">
+                  <h3 class="testimonial-card__name">علی اسماعیلی</h3>
+
+                  <p class="testimonial-card__position">مسئول</p>
+
+                  <div
+                    class="testimonial-card__rating"
+                    aria-label="امتیاز ۵ از ۵"
+                  >
+                    <span class="testimonial-card__score"> (۵) </span>
+
+                    <span class="testimonial-card__stars" aria-hidden="true">
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="testimonial-card__divider" aria-hidden="true"></div>
+
+                <p class="testimonial-card__text">
+                  من مدت‌ها دنبال یه مبل راحت و شیک می‌گشتم که هم طراحی مدرن
+                  داشته باشه و هم کیفیت بالایی. وقتی از این سایت خرید کردم،
+                  واقعاً فراتر از انتظارم بود. بسته‌بندی عالی، ارسال به‌موقع و
+                  پشتیبانی فوق‌العاده‌ای داشتن. رنگ و جنس کار دقیقاً همون چیزی
+                  بود.
+                </p>
+              </article>
+
+              <!-- Amirhossein Mohammadi Rad -->
+              <article class="testimonial-card">
+                <figure class="testimonial-card__avatar">
+                  <img
+                    src="assets/images/p2.png"
+                    alt="امیرحسین محمدی راد"
+                    width="135"
+                    height="135"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="testimonial-card__identity">
+                  <h3 class="testimonial-card__name">امیرحسین محمدی راد</h3>
+
+                  <p class="testimonial-card__position">برنامه‌نویس</p>
+
+                  <div
+                    class="testimonial-card__rating"
+                    aria-label="امتیاز ۵ از ۵"
+                  >
+                    <span class="testimonial-card__score"> (۵) </span>
+
+                    <span class="testimonial-card__stars" aria-hidden="true">
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="testimonial-card__divider" aria-hidden="true"></div>
+
+                <p class="testimonial-card__text">
+                  به‌تازگی یک کتابخانه سفارش دادم و از هر نظر عالی بود. نصب
+                  بسیار ساده بود و فضای خالی رو به‌خوبی پر کرد. این کتابخانه
+                  نه‌تنها کاربردی، بلکه بسیار زیباست و مشتریان دیگه هم به من
+                  پیشنهادش دادن.
+                </p>
+              </article>
+
+              <!-- Reza Tavakoli -->
+              <article class="testimonial-card">
+                <figure class="testimonial-card__avatar">
+                  <img
+                    src="assets/images/p1.jpg"
+                    alt="رضا توکلی"
+                    width="135"
+                    height="135"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="testimonial-card__identity">
+                  <h3 class="testimonial-card__name">رضا توکلی</h3>
+
+                  <p class="testimonial-card__position">مدیرعامل</p>
+
+                  <div
+                    class="testimonial-card__rating"
+                    aria-label="امتیاز ۵ از ۵"
+                  >
+                    <span class="testimonial-card__score"> (۵) </span>
+
+                    <span class="testimonial-card__stars" aria-hidden="true">
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="testimonial-card__divider" aria-hidden="true"></div>
+
+                <p class="testimonial-card__text">
+                  من چند روز پیش یک میز چای‌خوری از این فروشگاه خریدم و از کیفیت
+                  مواد استفاده‌شده خیلی راضی هستم. طراحی مینیمال واقعاً جذابه و
+                  خیلی به دکوراسیون خونه‌ام اضافه کرده. ارسال هم به‌موقع و بدون
+                  هیچ مشکلی بود.
+                </p>
+              </article>
+
+              <!-- Shirin Rasouli -->
+              <article class="testimonial-card">
+                <figure class="testimonial-card__avatar">
+                  <img
+                    src="assets/images/p1.png"
+                    alt="شیرین رسولی"
+                    width="135"
+                    height="135"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="testimonial-card__identity">
+                  <h3 class="testimonial-card__name">شیرین رسولی</h3>
+
+                  <p class="testimonial-card__position">مشتری</p>
+
+                  <div
+                    class="testimonial-card__rating"
+                    aria-label="امتیاز ۵ از ۵"
+                  >
+                    <span class="testimonial-card__score"> (۵) </span>
+
+                    <span class="testimonial-card__stars" aria-hidden="true">
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                      <i class="fa-solid fa-star is-active"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="testimonial-card__divider" aria-hidden="true"></div>
+
+                <p class="testimonial-card__text">
+                  محصولاتی که از بیژن خریداری کردم، همگی اصلی و باکیفیت بودن و
+                  همیشه با خیال راحت از پشتیبانی و اصالت کالاها از بیژن خرید
+                  می‌کنم و به نزدیکانم هم این پیشنهاد رو همیشه خواهم داد.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Showcase Start -->
+      <section class="about-showcase" aria-labelledby="about-showcase-title">
+        <div class="about-showcase__container">
+          <!-- Center Background Panel -->
+          <div class="about-showcase__panel">
+            <div class="about-showcase__content">
+              <h2 id="about-showcase-title" class="about-showcase__title">
+                بیشتر
+                <strong>دربـــــــــاره مـــا</strong>
+                بدانید
+              </h2>
+
+              <p class="about-showcase__description">
+                ما اینجا هستیم تا تجربه‌ای متفاوت از خرید آنلاین براتون بسازیم.
+                در فروشگاه ما می‌تونید محصولات متنوع و با قیمت مناسب پیدا کنید و
+                با خیال راحت سفارش بدید. هدف ما ارائه بهترین خدمات و پشتیبانی
+                واقعی هست تا خریدی ساده، مطمئن و لذت‌بخش داشته باشید.
+              </p>
+
+              <div class="about-showcase__actions">
+                <a href="#" class="about-showcase__button">
+                  <span class="about-showcase__button-text"> تماس با ما </span>
+
+                  <span class="about-showcase__button-icon" aria-hidden="true">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </span>
+                </a>
+
+                <a href="#" class="about-showcase__button">
+                  <span class="about-showcase__button-text"> درباره ما </span>
+
+                  <span class="about-showcase__button-icon" aria-hidden="true">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Circle / Perfume -->
+          <div
+            class="about-showcase__visual about-showcase__visual--right"
+            aria-hidden="true"
+          >
+            <div class="about-showcase__visual-inner">
+              <img
+                src="assets/images/im.png"
+                alt=""
+                class="about-showcase__product about-showcase__product--perfume"
+                width="157"
+                height="251"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Left Circle / Nail Polish -->
+          <div
+            class="about-showcase__visual about-showcase__visual--left"
+            aria-hidden="true"
+          >
+            <div class="about-showcase__visual-inner">
+              <img
+                src="assets/images/ima.png"
+                alt=""
+                class="about-showcase__product about-showcase__product--nail"
+                width="43"
+                height="69"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog News Start -->
+      <section class="blog-news" aria-labelledby="blog-news-title">
+        <div class="blog-news__container">
+          <!-- Header -->
+          <header class="blog-news__header">
+            <div class="section-heading blog-news__heading">
+              <span class="section-eyebrow blog-news__eyebrow"> BLOGS </span>
+
+              <h2 id="blog-news-title" class="section-title blog-news__title">
+                <strong>آخرین</strong>
+                اخبار سایت
+              </h2>
+            </div>
+
+            <span
+              class="section-divider blog-news__line"
+              aria-hidden="true"
+            ></span>
+
+            <a
+              href="#"
+              class="section-view-all section-view-all--button blog-news__all"
+            >
+              <span class="blog-news__all-text"> مشاهده همه </span>
+
+              <span class="blog-news__all-icon" aria-hidden="true">
+                <i class="fa-solid fa-chevron-left"></i>
+              </span>
+            </a>
+          </header>
+
+          <!-- Blog Content -->
+          <div class="blog-news__content">
+            <!-- Featured Post -->
+            <article class="blog-featured">
+              <a
+                href="#"
+                class="blog-featured__link"
+                aria-label="جدیدترین مدل‌ها و ترکیب رنگ مو شرابی"
+              >
+                <img
+                  src="assets/images/wine-hair-color-13-1.webp"
+                  alt="جدیدترین مدل‌ها و ترکیب رنگ مو شرابی"
+                  class="blog-featured__image"
+                  width="1200"
+                  height="760"
+                  loading="lazy"
+                />
+
+                <span class="blog-featured__overlay" aria-hidden="true"></span>
+
+                <div class="blog-featured__body">
+                  <!-- Main Title -->
+                  <h3 class="blog-featured__title">
+                    <span
+                      class="blog-featured__bullet"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span> جدیدترین مدل‌ها و ترکیب رنگ مو شرابی </span>
+                  </h3>
+
+                  <!-- Hover Excerpt -->
+                  <p class="blog-featured__excerpt">
+                    رنگ مو شرابی همان رنگی است که چهره شما را چند برابر شیک‌تر
+                    نشان می‌دهد؛ البته باید تناژ درستی را انتخاب کنید. طیف رنگ
+                    مو شرابی بسیار متنوع است؛ از شرابی‌های تیره و عمیق گرفته تا
+                    شرابی‌های روشن و متمایل به قرمز.
+                  </p>
+
+                  <div class="blog-featured__divider" aria-hidden="true"></div>
+
+                  <!-- Meta -->
+                  <div class="blog-featured__meta">
+                    <span class="blog-featured__meta-item">
+                      <i class="fa-regular fa-comments" aria-hidden="true"></i>
+
+                      <span> ۰ دیدگاه </span>
+                    </span>
+
+                    <span class="blog-featured__meta-item">
+                      <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+
+                      <span> ۲۳ اردیبهشت ۱۴۰۵ </span>
+                    </span>
+
+                    <span class="blog-featured__meta-item">
+                      <i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+                      <span> ۳ دقیقه </span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Side Posts -->
+            <div class="blog-news__list">
+              <!-- Henna -->
+              <article class="blog-news-card">
+                <a
+                  href="#"
+                  class="blog-news-card__link"
+                  aria-label="نقش حنا جدید با طرح‌های ساده دخترانه"
+                >
+                  <figure class="blog-news-card__thumbnail">
+                    <img
+                      src="assets/images/A-simple-henna-role-27.webp"
+                      alt="نقش حنا جدید با طرح‌های ساده دخترانه"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="blog-news-card__image-overlay"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="blog-news-card__image-time">
+                      <i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+                      <span> ۲ دقیقه </span>
+                    </span>
+                  </figure>
+
+                  <div class="blog-news-card__body">
+                    <h3 class="blog-news-card__title">
+                      نقش حنا جدید با طرح‌های ساده دخترانه
+                    </h3>
+
+                    <p class="blog-news-card__excerpt">
+                      نقش حنا، یک هنر قدیمی با قدمت باستانی است که جلوه‌ی زنانه
+                      و زیبا به دست‌های شما می‌دهد. حنا از ترکیب پودر گیاهی به
+                      دست می‌آید...
+                    </p>
+
+                    <span class="blog-news-card__more"> مطالعه بیشتر </span>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Nude Nails -->
+              <article class="blog-news-card">
+                <a
+                  href="#"
+                  class="blog-news-card__link"
+                  aria-label="مدل ناخن رنگ نود؛ جدیدترین طرح‌های شیک و ترندی"
+                >
+                  <figure class="blog-news-card__thumbnail">
+                    <img
+                      src="assets/images/Nude-nail-design-8.webp"
+                      alt="مدل ناخن رنگ نود؛ جدیدترین طرح‌های شیک و ترندی"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="blog-news-card__image-overlay"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="blog-news-card__image-time">
+                      <i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+                      <span> ۳ دقیقه </span>
+                    </span>
+                  </figure>
+
+                  <div class="blog-news-card__body">
+                    <h3 class="blog-news-card__title">
+                      مدل ناخن رنگ نود؛ جدیدترین طرح‌های شیک و ترندی
+                    </h3>
+
+                    <p class="blog-news-card__excerpt">
+                      در دنیای مد و زیبایی، بعضی ترندها می‌آیند و می‌روند اما
+                      تعدادی از آن‌ها به‌قدری کاربردی و جذاب هستند که ماندگار
+                      می‌شوند...
+                    </p>
+
+                    <span class="blog-news-card__more"> مطالعه بیشتر </span>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Solarium -->
+              <article class="blog-news-card">
+                <a
+                  href="#"
+                  class="blog-news-card__link"
+                  aria-label="همه چیز درباره سولار؛ آفتاب بهتر است یا سولاریوم؟"
+                >
+                  <figure class="blog-news-card__thumbnail">
+                    <img
+                      src="assets/images/what-is-solarium-1.webp"
+                      alt="همه چیز درباره سولار؛ آفتاب بهتر است یا سولاریوم؟"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span
+                      class="blog-news-card__image-overlay"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="blog-news-card__image-time">
+                      <i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+                      <span> ۷ دقیقه </span>
+                    </span>
+                  </figure>
+
+                  <div class="blog-news-card__body">
+                    <h3 class="blog-news-card__title">
+                      همه چیز درباره سولار؛ آفتاب بهتر است یا سولاریوم؟
+                    </h3>
+
+                    <p class="blog-news-card__excerpt">
+                      برنزه کردن از گذشته تا به حال یکی از ترندهای محبوب دنیای
+                      زیبایی بوده است. بسیاری از خانم‌ها و آقایان به دنبال پوستی
+                      برنزه و سالم هستند...
+                    </p>
+
+                    <span class="blog-news-card__more"> مطالعه بیشتر </span>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <!-- Blog Mobile Slider -->
+          <div class="blog-news__mobile-slider" data-blog-slider>
+            <div class="blog-news__mobile-viewport">
+              <div class="blog-news__mobile-track" data-blog-track>
+                <!-- Slide 1 -->
+                <article class="blog-news__mobile-slide">
+                  <a href="#" class="blog-featured__link">
+                    <img
+                      src="assets/images/wine-hair-color-13-1.webp"
+                      alt="جدیدترین مدل‌ها و ترکیب رنگ مو شرابی"
+                      class="blog-featured__image"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span class="blog-featured__overlay"></span>
+
+                    <div class="blog-featured__body">
+                      <h3 class="blog-featured__title">
+                        <span class="blog-featured__bullet"></span>
+
+                        <span> جدیدترین مدل‌ها و ترکیب رنگ مو شرابی </span>
+                      </h3>
+
+                      <p class="blog-featured__excerpt">
+                        رنگ مو شرابی همان رنگی است که چهره شما را چند برابر
+                        شیک‌تر نشان می‌دهد؛ البته باید تناژ درستی را انتخاب
+                        کنید.
+                      </p>
+
+                      <div class="blog-featured__divider"></div>
+
+                      <div class="blog-featured__meta">
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-comments"></i>
+                          <span>۰ دیدگاه</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span>۲۳ اردیبهشت ۱۴۰۵</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-clock"></i>
+                          <span>۳ دقیقه</span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="blog-news__mobile-slide">
+                  <a href="#" class="blog-featured__link">
+                    <img
+                      src="assets/images/A-simple-henna-role-27.webp"
+                      alt="نقش حنا جدید با طرح‌های ساده دخترانه"
+                      class="blog-featured__image"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span class="blog-featured__overlay"></span>
+
+                    <div class="blog-featured__body">
+                      <h3 class="blog-featured__title">
+                        <span class="blog-featured__bullet"></span>
+
+                        <span> نقش حنا جدید با طرح‌های ساده دخترانه </span>
+                      </h3>
+
+                      <p class="blog-featured__excerpt">
+                        نقش حنا، یک هنر قدیمی با قدمت باستانی است که جلوه‌ای
+                        زنانه و زیبا به دست‌های شما می‌دهد.
+                      </p>
+
+                      <div class="blog-featured__divider"></div>
+
+                      <div class="blog-featured__meta">
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-comments"></i>
+                          <span>۰ دیدگاه</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span>۲۳ اردیبهشت ۱۴۰۵</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-clock"></i>
+                          <span>۲ دقیقه</span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="blog-news__mobile-slide">
+                  <a href="#" class="blog-featured__link">
+                    <img
+                      src="assets/images/Nude-nail-design-8.webp"
+                      alt="مدل ناخن رنگ نود؛ جدیدترین طرح‌های شیک و ترندی"
+                      class="blog-featured__image"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span class="blog-featured__overlay"></span>
+
+                    <div class="blog-featured__body">
+                      <h3 class="blog-featured__title">
+                        <span class="blog-featured__bullet"></span>
+
+                        <span>
+                          مدل ناخن رنگ نود؛ جدیدترین طرح‌های شیک و ترندی
+                        </span>
+                      </h3>
+
+                      <p class="blog-featured__excerpt">
+                        در دنیای مد و زیبایی، بعضی ترندها می‌آیند و می‌روند اما
+                        تعدادی از آن‌ها به‌قدری کاربردی و جذاب هستند که ماندگار
+                        می‌شوند.
+                      </p>
+
+                      <div class="blog-featured__divider"></div>
+
+                      <div class="blog-featured__meta">
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-comments"></i>
+                          <span>۰ دیدگاه</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span>۲۳ اردیبهشت ۱۴۰۵</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-clock"></i>
+                          <span>۳ دقیقه</span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+
+                <!-- Slide 4 -->
+                <article class="blog-news__mobile-slide">
+                  <a href="#" class="blog-featured__link">
+                    <img
+                      src="assets/images/what-is-solarium-1.webp"
+                      alt="همه چیز درباره سولار؛ آفتاب بهتر است یا سولاریوم؟"
+                      class="blog-featured__image"
+                      width="1200"
+                      height="760"
+                      loading="lazy"
+                    />
+
+                    <span class="blog-featured__overlay"></span>
+
+                    <div class="blog-featured__body">
+                      <h3 class="blog-featured__title">
+                        <span class="blog-featured__bullet"></span>
+
+                        <span>
+                          همه چیز درباره سولار؛ آفتاب بهتر است یا سولاریوم؟
+                        </span>
+                      </h3>
+
+                      <p class="blog-featured__excerpt">
+                        برنزه کردن از گذشته تا به حال یکی از ترندهای محبوب دنیای
+                        زیبایی بوده است.
+                      </p>
+
+                      <div class="blog-featured__divider"></div>
+
+                      <div class="blog-featured__meta">
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-comments"></i>
+                          <span>۰ دیدگاه</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span>۲۳ اردیبهشت ۱۴۰۵</span>
+                        </span>
+
+                        <span class="blog-featured__meta-item">
+                          <i class="fa-regular fa-clock"></i>
+                          <span>۷ دقیقه</span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+
+            <!-- Dots -->
+            <div
+              class="blog-news__mobile-dots"
+              data-blog-dots
+              aria-label="اسلایدهای اخبار"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Brands -->
+      <section class="brands-section" aria-labelledby="brands-section-title">
+        <div class="brands-section__container">
+          <!-- Header -->
+          <header class="brands-section__header">
+            <!-- Title -->
+            <div class="section-heading brands-section__heading">
+              <span class="section-eyebrow brands-section__eyebrow">
+                POPULAR BRANDS
+              </span>
+
+              <h2
+                class="section-title brands-section__title"
+                id="brands-section-title"
+              >
+                <span>محبوب‌ترین</span>
+                برندها
+              </h2>
+            </div>
+
+            <div
+              class="section-divider brands-section__line"
+              aria-hidden="true"
+            ></div>
+
+            <!-- Arrows -->
+            <div class="slider-arrows brands-section__arrows">
+              <button
+                class="slider-arrow brands-section__arrow brands-section__arrow--next"
+                type="button"
+                aria-label="برند بعدی"
+              >
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+
+              <button
+                class="slider-arrow brands-section__arrow brands-section__arrow--prev"
+                type="button"
+                aria-label="برند قبلی"
+              >
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </header>
+
+          <!-- Slider -->
+          <div class="brands-slider">
+            <div class="brands-slider__track">
+              <!-- Apple -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/apple.png"
+                  alt="اپل"
+                  class="brand-item__image"
+                  width="67"
+                  height="69"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">اپل</div>
+
+                    <div class="brand-item__hover-name">Apple</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Xiaomi -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/mi.png"
+                  alt="شیائومی"
+                  class="brand-item__image"
+                  width="67"
+                  height="69"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">شیائومی</div>
+
+                    <div class="brand-item__hover-name">Xiaomi</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Huawei -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/huawei.png"
+                  alt="هواوی"
+                  class="brand-item__image"
+                  width="58"
+                  height="58"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">هواوی</div>
+
+                    <div class="brand-item__hover-name">Huawei</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Mahya -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/moha.png"
+                  alt="مهیا"
+                  class="brand-item__image"
+                  width="67"
+                  height="69"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">مهیا</div>
+
+                    <div class="brand-item__hover-name">Mahya</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Aparat -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/aparat.png"
+                  alt="آپارات"
+                  class="brand-item__image"
+                  width="58"
+                  height="58"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">آپارات</div>
+
+                    <div class="brand-item__hover-name">Aparat</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Pril -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/pril.png"
+                  alt="پریل"
+                  class="brand-item__image"
+                  width="67"
+                  height="69"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">پریل</div>
+
+                    <div class="brand-item__hover-name">Pril</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+
+              <!-- Daewoo -->
+              <a href="#" class="brand-item">
+                <img
+                  src="assets/images/daewoo.png"
+                  alt="دوو"
+                  class="brand-item__image"
+                  width="67"
+                  height="69"
+                />
+
+                <div class="brand-item__texts">
+                  <div class="brand-item__name-wrap">
+                    <div class="brand-item__name">دوو</div>
+
+                    <div class="brand-item__hover-name">Daewoo</div>
+                  </div>
+
+                  <div class="brand-item__count">
+                    <span>۱۲۰</span>
+                    محصول
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Site Footer -->
+      <footer class="site-footer" id="site-footer">
+        <div class="site-footer__container">
+          <div class="site-footer__shell">
+            <!-- Social Ribbon -->
+            <div class="site-footer__social-ribbon">
+              <div class="site-footer__socials">
+                <a href="#" aria-label="اینستاگرام">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="تلگرام">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+
+                <a href="#" aria-label="ایکس">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="واتساپ">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Top -->
+            <div class="site-footer__top">
+              <!-- Menus -->
+              <div class="site-footer__menus">
+                <!-- Quick Access -->
+                <div class="footer-menu">
+                  <h3 class="footer-menu__title">
+                    دسترسی هــــای
+                    <strong>سریع</strong>
+                  </h3>
+
+                  <ul class="footer-menu__list">
+                    <li><a href="#">همه محصولات</a></li>
+                    <li><a href="#">مجله خبری</a></li>
+                    <li><a href="#">لوگوها</a></li>
+                  </ul>
+                </div>
+
+                <!-- Brands -->
+                <div class="footer-menu">
+                  <h3 class="footer-menu__title">
+                    برند هــــای
+                    <strong>مطرح</strong>
+                  </h3>
+
+                  <ul class="footer-menu__list">
+                    <li><a href="#">وارمی</a></li>
+                    <li><a href="#">اولی بولا</a></li>
+                    <li><a href="#">این لی</a></li>
+                    <li><a href="#">دراگون رانی</a></li>
+                  </ul>
+                </div>
+
+                <!-- Customers -->
+                <div class="footer-menu">
+                  <h3 class="footer-menu__title">
+                    راهــــنمای
+                    <strong>مشتریان</strong>
+                  </h3>
+
+                  <ul class="footer-menu__list">
+                    <li><a href="#">حساب کاربری من</a></li>
+                    <li><a href="#">سبد خرید</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                  </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-menu footer-menu--last">
+                  <h3 class="footer-menu__title">
+                    محبوب ترین
+                    <strong>دسته‌بندی‌ها</strong>
+                  </h3>
+
+                  <ul class="footer-menu__list">
+                    <li><a href="#">عطر و ادکلن</a></li>
+                    <li><a href="#">آرایش چشم</a></li>
+                    <li><a href="#">آرایش لب</a></li>
+                    <li><a href="#">مراقبت پوست</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Trust Logos -->
+              <div class="site-footer__trust">
+                <a href="#">
+                  <img
+                    src="assets/images/logo1.png"
+                    alt=""
+                    width="51"
+                    height="51"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="assets/images/logo2.png"
+                    alt=""
+                    width="51"
+                    height="51"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="assets/images/logo3.png"
+                    alt=""
+                    width="51"
+                    height="51"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Information Cards -->
+            <div class="site-footer__info">
+              <!-- About -->
+              <div class="footer-about">
+                <img
+                  class="footer-about__logo"
+                  src="assets/images/arax-logo-footer.png"
+                  alt="فروشگاه آراکس"
+                  width="105"
+                  height="108"
+                />
+
+                <p class="footer-about__text">
+                  ما باور داریم خرید آنلاین باید ساده، مطمئن و لذت‌بخش باشه. از
+                  همین باور بود که فروشگاه ما متولد شد؛ جایی که هدفش ایجاد
+                  تجربه‌ای متفاوت از خرید اینترنتی برای شماست. ما تلاش می‌کنیم
+                  هر روز مجموعه‌ای از کاربردی‌ترین محصولات رو از برندهای معتبر
+                  کنار هم قرار بدیم تا بتونید با خیال راحت و با بهترین قیمت‌ها
+                  خرید کنید.
+                </p>
+              </div>
+
+              <!-- Contact -->
+              <div class="footer-contact">
+                <div class="footer-contact__row footer-contact__row--phone">
+                  <span class="footer-contact__label"> تلفن: </span>
+
+                  <div class="footer-contact__phones">
+                    <span>
+                      ۵۵۶۷۶۵۴ -
+                      <strong>۰۲۱</strong>
+                    </span>
+
+                    <span>
+                      ۵۵۶۷۶۵۴ -
+                      <strong>۰۲۱</strong>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="footer-contact__row">
+                  <span class="footer-contact__label"> آدرس: </span>
+
+                  <p class="footer-contact__address">
+                    تهران – خیابان سعادت آباد – کوچه 5 – پلاک ۴۳ – طبقه دوم
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Divider + Back To Top -->
+            <div class="site-footer__divider">
+              <button
+                class="site-footer__back-top"
+                type="button"
+                data-footer-top
+              >
+                <span> بازگشت به بالا </span>
+
+                <span class="site-footer__back-top-icon" aria-hidden="true">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </span>
+              </button>
+            </div>
+
+            <!-- Bottom -->
+            <div class="site-footer__bottom">
+              <p class="site-footer__copyright">
+                © کپی رایت کلیه حقوق مادی و معنوی برای این سایت محفوظ می باشد.
+              </p>
+
+              <div class="site-footer__bottom-links">
+                <a href="#" class="site-footer__developer">
+                  برنامه نویسی شده توسط: محمدجعفر خواجه
+                </a>
+
+                <a href="#"> شرایط و ضوابط </a>
+
+                <a href="#"> پیگیری سفارش </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Wishlist Panel -->
+    <section
+      id="wishlist-panel"
+      class="wishlist-panel"
+      data-wishlist-panel
+      role="dialog"
+      aria-label="علاقه‌مندی‌های من"
+      hidden
+    >
+      <div class="wishlist-panel__header">
+        <div class="wishlist-panel__title">
+          <span class="wishlist-panel__title-icon">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+          </span>
+
+          <div>
+            <strong> علاقه‌مندی‌های من </strong>
+
+            <small data-wishlist-panel-count> ۰ محصول </small>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="wishlist-panel__close"
+          aria-label="بستن علاقه‌مندی‌ها"
+          data-wishlist-close
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="wishlist-panel__body" data-wishlist-list></div>
+
+      <div class="wishlist-panel__empty" data-wishlist-empty hidden>
+        <span class="wishlist-panel__empty-icon">
+          <i class="fa-regular fa-heart" aria-hidden="true"></i>
+        </span>
+
+        <strong> هنوز محصولی ذخیره نکرده‌اید </strong>
+
+        <p>محصولات مورد علاقه‌تان را با زدن روی قلب ذخیره کنید.</p>
+      </div>
+    </section>
+
+    <!-- Account Popover -->
+    <div class="account-popover" data-account-popover hidden>
+      <div class="account-popover__profile">
+        <span class="account-popover__avatar">
+          <i class="fa-regular fa-user" aria-hidden="true"></i>
+        </span>
+
+        <div class="account-popover__identity">
+          <strong data-account-popover-name> کاربر </strong>
+
+          <span data-account-popover-username> @username </span>
+        </div>
+      </div>
+
+      <div class="account-popover__divider"></div>
+
+      <button type="button" class="account-popover__logout" data-account-logout>
+        <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+
+        خروج از حساب
+      </button>
+    </div>
+
+    <!-- Account Modal -->
+    <div id="account-modal" class="account-modal" data-account-modal hidden>
+      <!-- Backdrop -->
+      <div
+        class="account-modal__backdrop"
+        data-account-close
+        aria-hidden="true"
+      ></div>
+
+      <!-- Dialog -->
+      <section
+        class="account-modal__dialog"
+        data-account-dialog
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="account-modal-title"
+        tabindex="-1"
+      >
+        <!-- Close -->
+        <button
+          type="button"
+          class="account-modal__close"
+          data-account-close
+          aria-label="بستن پنجره ورود و عضویت"
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+
+        <!-- Header -->
+        <header class="account-modal__header">
+          <span class="account-modal__icon">
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+          </span>
+
+          <div>
+            <h2 id="account-modal-title" class="account-modal__title">
+              حساب کاربری
+            </h2>
+
+            <p class="account-modal__description">
+              وارد حساب خود شوید یا یک حساب جدید بسازید.
+            </p>
+          </div>
+        </header>
+
+        <!-- Tabs -->
+        <div
+          class="account-modal__tabs"
+          role="tablist"
+          aria-label="ورود یا عضویت"
+        >
+          <button
+            type="button"
+            class="account-modal__tab is-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="account-login-panel"
+            data-account-tab="login"
+          >
+            ورود
+          </button>
+
+          <button
+            type="button"
+            class="account-modal__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="account-register-panel"
+            data-account-tab="register"
+          >
+            عضویت
+          </button>
+        </div>
+
+        <!-- Login -->
+        <div
+          id="account-login-panel"
+          class="account-modal__panel"
+          role="tabpanel"
+          data-account-panel="login"
+        >
+          <form class="account-form" data-account-login-form novalidate>
+            <div class="account-form__field">
+              <label for="account-login-username" class="account-form__label">
+                نام کاربری
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+
+                <input
+                  id="account-login-username"
+                  type="text"
+                  name="username"
+                  autocomplete="username"
+                  placeholder="نام کاربری"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="account-form__field">
+              <label for="account-login-password" class="account-form__label">
+                رمز عبور
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+
+                <input
+                  id="account-login-password"
+                  type="password"
+                  name="password"
+                  autocomplete="current-password"
+                  placeholder="رمز عبور"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="account-form__password-toggle"
+                  data-password-toggle
+                  aria-label="نمایش رمز عبور"
+                >
+                  <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <p
+              class="account-form__message"
+              data-account-login-message
+              role="status"
+              aria-live="polite"
+            ></p>
+
+            <button type="submit" class="account-form__submit">
+              ورود به حساب
+            </button>
+
+            <button
+              type="button"
+              class="account-form__switch"
+              data-account-switch="register"
+            >
+              حساب ندارید؟
+              <strong>عضویت</strong>
+            </button>
+          </form>
+        </div>
+
+        <!-- Register -->
+        <div
+          id="account-register-panel"
+          class="account-modal__panel"
+          role="tabpanel"
+          data-account-panel="register"
+          hidden
+        >
+          <form class="account-form" data-account-register-form novalidate>
+            <div class="account-form__field">
+              <label for="account-register-name" class="account-form__label">
+                نام و نام خانوادگی
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+
+                <input
+                  id="account-register-name"
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="نام و نام خانوادگی"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="account-form__field">
+              <label
+                for="account-register-username"
+                class="account-form__label"
+              >
+                نام کاربری
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+
+                <input
+                  id="account-register-username"
+                  type="text"
+                  name="username"
+                  autocomplete="username"
+                  placeholder="نام کاربری"
+                  minlength="3"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="account-form__field">
+              <label
+                for="account-register-password"
+                class="account-form__label"
+              >
+                رمز عبور
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+
+                <input
+                  id="account-register-password"
+                  type="password"
+                  name="password"
+                  autocomplete="new-password"
+                  placeholder="حداقل ۶ کاراکتر"
+                  minlength="6"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="account-form__password-toggle"
+                  data-password-toggle
+                  aria-label="نمایش رمز عبور"
+                >
+                  <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="account-form__field">
+              <label
+                for="account-register-password-confirm"
+                class="account-form__label"
+              >
+                تکرار رمز عبور
+              </label>
+
+              <div class="account-form__control">
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+
+                <input
+                  id="account-register-password-confirm"
+                  type="password"
+                  name="passwordConfirm"
+                  autocomplete="new-password"
+                  placeholder="تکرار رمز عبور"
+                  minlength="6"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="account-form__password-toggle"
+                  data-password-toggle
+                  aria-label="نمایش رمز عبور"
+                >
+                  <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <p
+              class="account-form__message"
+              data-account-register-message
+              role="status"
+              aria-live="polite"
+            ></p>
+
+            <button type="submit" class="account-form__submit">
+              ساخت حساب کاربری
+            </button>
+
+            <button
+              type="button"
+              class="account-form__switch"
+              data-account-switch="login"
+            >
+              قبلاً ثبت‌نام کرده‌اید؟
+              <strong>ورود</strong>
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Core -->
+    <script src="assets/js/core/navigation.js"></script>
+    <script src="assets/js/core/site.js"></script>
+
+    <!-- Store -->
+    <script src="assets/js/store/store.js"></script>
+    <script src="assets/js/store/products.js"></script>
+
+    <!-- Account / Shop -->
+    <script src="assets/js/account/account.js"></script>
+    <script src="assets/js/shop/search.js"></script>
+    <script src="assets/js/shop/wishlist.js"></script>
+    <script src="assets/js/shop/cart.js"></script>
+
+    <!-- Sections -->
+    <script src="assets/js/sections/hero.js"></script>
+    <script src="assets/js/sections/amazing-deals.js"></script>
+    <script src="assets/js/sections/new-products.js"></script>
+    <script src="assets/js/sections/best-sellers.js"></script>
+    <script src="assets/js/sections/category-promos.js"></script>
+    <script src="assets/js/sections/testimonials.js"></script>
+    <script src="assets/js/sections/blog-news.js"></script>
+    <script src="assets/js/sections/popular-brands.js"></script>
+
+    <!-- App bootstrap: always last -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

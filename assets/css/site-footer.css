@@ -1,0 +1,992 @@
+/* =========================================
+   Footer
+   Desktop
+========================================= */
+
+.site-footer {
+  --footer-purple: var(--color-brand-primary);
+  --footer-purple-light: var(--color-brand-primary-light-end);
+  --footer-green: #50b96c;
+
+  --footer-white: #fcfeff;
+  --footer-muted: #999c9d;
+  --footer-line: rgba(255, 255, 255, 0.2);
+
+  width: 100%;
+
+  margin-top: 40px;
+
+  direction: rtl;
+}
+
+/* =========================================
+   Outer Container
+========================================= */
+
+.site-footer__container {
+  width: min(calc(100% - 80px), var(--section-content-width));
+
+  margin-inline: auto;
+
+  padding-block: 40px;
+}
+
+/* =========================================
+   Main Shell
+========================================= */
+
+.site-footer__shell {
+  position: relative;
+
+  width: 100%;
+
+  padding: 96px 56px 56px;
+
+  border-radius: 48px;
+
+  background: #01090c url("../images/arax-footer-bg.png") center / cover
+    no-repeat;
+
+  color: var(--color-white);
+}
+
+/* =========================================
+   Social Ribbon
+========================================= */
+
+.site-footer__social-ribbon {
+  position: absolute;
+
+  top: -17px;
+  right: 88px;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 294px;
+  height: 94px;
+
+  padding-bottom: 12px;
+
+  background: var(--color-brand-gradient);
+
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 18%,
+    88% 84%,
+    82% 91%,
+    18% 91%,
+    12% 84%,
+    0 18%
+  );
+}
+
+/* shadow / lower purple line */
+.site-footer__social-ribbon::after {
+  content: "";
+
+  position: absolute;
+
+  right: 19px;
+  bottom: -10px;
+
+  z-index: -1;
+
+  width: 238px;
+  height: 70px;
+
+  border-right: 1px solid var(--color-brand-primary);
+
+  border-bottom: 1px solid var(--color-brand-primary);
+
+  border-radius: 0 0 34px 34px;
+
+  opacity: 0.9;
+}
+
+/* decorative stars */
+.site-footer__social-ribbon::before {
+  content: "✦        ✦";
+
+  position: absolute;
+
+  top: 9px;
+
+  width: 100%;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 1rem;
+
+  letter-spacing: 172px;
+
+  text-align: center;
+
+  pointer-events: none;
+}
+
+.site-footer__socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  direction: rtl;
+}
+
+.site-footer__socials a {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background: var(--color-white);
+
+  color: var(--footer-purple);
+
+  font-size: 1rem;
+
+  transition:
+    transform var(--duration-fast) ease,
+    background-color var(--duration-fast) ease,
+    color var(--duration-fast) ease;
+}
+
+.site-footer__socials a:hover {
+  transform: translateY(-3px);
+
+  background: var(--footer-purple);
+
+  color: var(--color-white);
+}
+
+/* =========================================
+   Top Layout
+========================================= */
+
+.site-footer__top {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  gap: 40px;
+
+  align-items: start;
+}
+
+/* =========================================
+   Footer Menus
+========================================= */
+
+.site-footer__menus {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  column-gap: 60px;
+}
+
+.footer-menu {
+  position: relative;
+
+  min-width: 0;
+
+  padding-left: 20px;
+}
+
+/* vertical separator */
+.footer-menu:not(.footer-menu--last)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 52px;
+  left: -30px;
+
+  width: 1px;
+  height: 130px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* title */
+
+.footer-menu__title {
+  position: relative;
+
+  padding-right: 12px;
+
+  color: var(--color-white);
+
+  font-size: 1.375rem;
+  font-weight: 400;
+
+  line-height: 2rem;
+
+  white-space: nowrap;
+}
+
+.footer-menu__title::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0.5em;
+  right: 0;
+
+  width: 4px;
+  height: 21px;
+
+  border-radius: var(--radius-round);
+
+  background: var(--footer-purple);
+}
+
+.footer-menu__title strong {
+  color: var(--footer-purple);
+
+  font-weight: 700;
+}
+
+/* links */
+
+.footer-menu__list {
+  margin-top: 8px;
+}
+
+.footer-menu__list li {
+  position: relative;
+
+  padding-right: 16px;
+}
+
+.footer-menu__list li::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--footer-purple);
+
+  transform: translateY(-50%);
+}
+
+.footer-menu__list a {
+  display: block;
+
+  padding: 8px 0;
+
+  color: var(--footer-white);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  line-height: 1.8;
+
+  transition:
+    color var(--duration-fast) ease,
+    transform var(--duration-fast) ease;
+}
+
+.footer-menu__list a:hover {
+  color: var(--footer-purple);
+
+  transform: translateX(-3px);
+}
+
+/* =========================================
+   Trust Logos
+========================================= */
+
+.site-footer__trust {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 24px;
+
+  border-radius: var(--radius-xl);
+
+  background: #191f22;
+}
+
+.site-footer__trust a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer__trust img {
+  display: block;
+
+  width: 51px;
+  height: 51px;
+
+  object-fit: contain;
+
+  transition: transform var(--duration-fast) ease;
+}
+
+.site-footer__trust a:hover img {
+  transform: scale(1.07);
+}
+
+/* =========================================
+   Information Area
+========================================= */
+
+.site-footer__info {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 897px)
+    minmax(280px, 1fr);
+
+  gap: 20px;
+
+  margin-top: 56px;
+}
+
+/* =========================================
+   About Card
+========================================= */
+
+.footer-about {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 32px;
+
+  min-width: 0;
+
+  padding: 20px;
+
+  border-radius: var(--radius-xl);
+
+  background: var(--color-white);
+
+  color: #00070a;
+}
+
+.footer-about__logo {
+  display: block;
+
+  flex: 0 0 105px;
+
+  width: 105px;
+  height: 108px;
+
+  object-fit: contain;
+}
+
+.footer-about__text {
+  flex: 1;
+
+  min-width: 0;
+
+  color: #171a1c;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 2rem;
+
+  text-align: justify;
+}
+
+/* =========================================
+   Contact Card
+========================================= */
+
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  border-radius: var(--radius-xl);
+
+  background: var(--color-white);
+
+  color: #171a1c;
+}
+
+.footer-contact__row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.footer-contact__row--phone {
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #e1e2e3;
+}
+
+.footer-contact__label {
+  flex: 0 0 auto;
+
+  color: #171a1c;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.footer-contact__phones {
+  display: flex;
+
+  align-items: center;
+
+  color: var(--footer-muted);
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  line-height: 2rem;
+}
+
+.footer-contact__phones span {
+  white-space: nowrap;
+}
+
+.footer-contact__phones span + span {
+  margin-right: 16px;
+
+  padding-right: 16px;
+
+  border-right: 1px solid #e1e2e3;
+}
+
+.footer-contact__phones strong {
+  color: var(--footer-purple);
+
+  font-weight: 700;
+}
+
+.footer-contact__address {
+  color: var(--footer-muted);
+
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  line-height: 2rem;
+}
+
+/* =========================================
+   Divider
+========================================= */
+
+.site-footer__divider {
+  position: relative;
+
+  width: 100%;
+  height: 1px;
+
+  margin-top: 72px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   Back To Top
+========================================= */
+
+.site-footer__back-top {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 48px;
+
+  padding: 6px 6px 6px 20px;
+
+  border: 0;
+  border-radius: var(--radius-lg);
+
+  background: var(--color-brand-gradient);
+
+  color: var(--color-white);
+
+  font-size: 0.9375rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    background var(--duration-base) ease,
+    color var(--duration-base) ease;
+}
+
+.site-footer__back-top-icon {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-white);
+
+  color: var(--footer-purple);
+
+  transition:
+    background-color var(--duration-base) ease,
+    color var(--duration-base) ease;
+}
+
+.site-footer__back-top:hover {
+  background: var(--color-white);
+
+  color: var(--footer-purple);
+}
+
+.site-footer__back-top:hover .site-footer__back-top-icon {
+  background: var(--color-brand-gradient);
+
+  color: var(--color-white);
+}
+
+/* =========================================
+   Bottom
+========================================= */
+
+.site-footer__bottom {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  margin-top: 56px;
+}
+
+.site-footer__copyright {
+  flex: 0 0 auto;
+
+  color: var(--color-white);
+
+  font-size: 0.9375rem;
+  font-weight: 500;
+
+  line-height: 2rem;
+}
+
+.site-footer__bottom-links {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  color: var(--color-white);
+
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.site-footer__bottom-links a {
+  color: var(--color-white);
+
+  transition: color var(--duration-fast) ease;
+}
+
+.site-footer__bottom-links a:hover {
+  color: var(--footer-purple-light);
+}
+
+.site-footer__developer {
+  margin-left: 20px;
+
+  padding-left: 20px;
+
+  border-left: 1px solid var(--color-white);
+}
+
+.site-footer__bottom-links a:last-child {
+  margin-right: 16px;
+}
+
+/* =========================================
+   Footer — <= 1366px
+========================================= */
+
+@media only screen and (max-width: 1366px) {
+  .site-footer__info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    flex-direction: column;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer__bottom-links {
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   Footer — <= 1200px
+========================================= */
+
+@media only screen and (max-width: 1200px) {
+  .site-footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__menus {
+    grid-template-columns: repeat(2, minmax(0, auto));
+
+    gap: 20px;
+
+    justify-content: center;
+  }
+
+  .site-footer__trust {
+    flex-direction: row;
+    justify-content: center;
+
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .footer-menu::after {
+    display: none;
+  }
+
+  .footer-menu:nth-child(1)::after,
+  .footer-menu:nth-child(3)::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+
+    top: 52px;
+    left: 0;
+
+    width: 1px;
+    height: 130px;
+
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* =========================================
+   Footer — <= 768px
+========================================= */
+
+@media only screen and (max-width: 768px) {
+  .site-footer__container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .site-footer__shell {
+    padding: 96px 32px 32px;
+
+    background: #01090c url("../images/arax-footer-bg.png") center / cover
+      no-repeat;
+  }
+
+  /* =====================================
+     Social ribbon
+  ===================================== */
+
+  .site-footer__social-ribbon {
+    top: -14px;
+    right: 31px;
+
+    width: 252px;
+    height: 80px;
+
+    padding-bottom: 8px;
+  }
+
+  /* =====================================
+     Top / menus
+  ===================================== */
+
+  .site-footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__menus {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px 20px;
+  }
+
+  .footer-menu::after {
+    display: none !important;
+  }
+
+  .footer-menu {
+    min-width: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    border-bottom: 0;
+  }
+
+  .footer-menu__title {
+    white-space: normal;
+  }
+
+  /* =====================================
+     Trust logos
+  ===================================== */
+
+  .site-footer__trust {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 16px;
+  }
+
+  /* =====================================
+     Info
+  ===================================== */
+
+  .site-footer__info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    padding: 16px;
+  }
+
+  .footer-contact {
+    padding: 16px;
+  }
+
+  .footer-contact__row {
+    gap: 8px;
+  }
+
+  .footer-contact__phones {
+    flex-wrap: wrap;
+  }
+
+  /* =====================================
+     Back to top
+  ===================================== */
+
+  .site-footer__divider {
+    margin-top: 56px;
+  }
+
+  /* =====================================
+     Bottom
+  ===================================== */
+
+  .site-footer__bottom {
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 32px;
+  }
+
+  .site-footer__copyright {
+    text-align: center;
+  }
+
+  .site-footer__bottom-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    row-gap: 12px;
+
+    text-align: center;
+  }
+}
+
+/* =========================================
+   Footer — <= 595px
+========================================= */
+
+@media only screen and (max-width: 595px) {
+  .site-footer__bottom {
+    gap: 18px;
+  }
+
+  .site-footer__copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer__bottom-links {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    text-align: center;
+  }
+
+  .site-footer__bottom-links a {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    white-space: nowrap;
+  }
+
+  .site-footer__developer {
+    margin: 0;
+    padding: 0;
+
+    border-left: 0;
+  }
+}
+
+/* ============================================
+   Sticky Header / Sticky Site Nav
+   ============================================ */
+
+.site-header {
+  --sticky-nav-gutter: var(--layout-gutter);
+}
+
+/* ============================================
+   Desktop / Laptop
+    Sticky nav
+   ============================================ */
+
+@media only screen and (min-width: 1025px) {
+  .site-header.is-nav-sticky .site-header__inner {
+    padding-bottom: var(--site-nav-height);
+  }
+
+  .site-header.is-nav-sticky .site-nav {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 60;
+
+    width: 100%;
+
+    min-height: var(--site-nav-height);
+
+    padding-inline: max(
+      var(--sticky-nav-gutter),
+      calc((100vw - var(--layout-max-width)) / 2 + var(--sticky-nav-gutter))
+    );
+
+    border-top: 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    background: var(--color-surface);
+
+    box-shadow: 0 8px 30px var(--color-border-subtle);
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  .site-header {
+    --sticky-nav-gutter: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .site-header {
+    --sticky-nav-gutter: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .site-header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 50;
+
+    background: var(--color-surface);
+  }
+
+  .compact-header {
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.055);
+  }
+
+  .mobile-nav-layer:not([hidden]),
+  body.is-preview-bar-hidden .mobile-nav-layer:not([hidden]),
+  .demo-page .mobile-nav-layer:not([hidden]) {
+    top: var(--mobile-nav-top, var(--compact-header-height));
+  }
+}

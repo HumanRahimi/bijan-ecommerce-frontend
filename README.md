@@ -214,9 +214,9 @@ Approximate results:
 | Category       | Score |
 | -------------- | ----: |
 | Performance    |   90+ |
-| Accessibility  |   100 |
-| Best Practices |   100 |
-| SEO            |   90+ |
+| Accessibility  |    96 |
+| Best Practices |    77 |
+| SEO            |   100 |
 
 ---
 
@@ -302,7 +302,7 @@ Planned features:
 
 # 👨‍💻 Author
 
-**Human Rahimi**
+**Hooman Rahimi**
 
 GitHub:
 

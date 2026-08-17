@@ -144,18 +144,6 @@ function initAccountSystem() {
     return cleanText(value).toLowerCase();
   }
 
-  /*
-   * Username Rules:
-   *
-   * - فقط انگلیسی
-   * - حداقل 3 و حداکثر 24 کاراکتر
-   * - کاراکتر اول حتماً حرف انگلیسی
-   * - عدد مجاز
-   * - نقطه مجاز
-   * - underline مجاز
-   * - Space ممنوع
-   */
-
   function isValidUsername(username) {
     return /^[A-Za-z][A-Za-z0-9._]{2,23}$/.test(username);
   }
@@ -660,11 +648,6 @@ function initAccountSystem() {
 
     clearFormErrors(registerForm);
 
-    /*
-     * هر بار Modal باز شد
-     * Password مخفی شود
-     */
-
     resetPasswordVisibility();
 
     activateTab(panelName, false);
@@ -793,23 +776,9 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * فارسی، Space، @ و ...
-     */
-
     const hasInvalidCharacters = /[^A-Za-z0-9._]/.test(value);
 
-    /*
-     * اولین کاراکتر
-     * باید حرف انگلیسی باشد
-     */
-
     const startsWrong = !/^[A-Za-z]/.test(value);
-
-    /*
-     * وقتی به حداقل 3 کاراکتر
-     * رسید، Duplicate هم بررسی شود
-     */
 
     if (hasInvalidCharacters || startsWrong || value.length >= 3) {
       validateRegisterUsername();
@@ -826,11 +795,6 @@ function initAccountSystem() {
     if (registerPasswordInput.getAttribute("aria-invalid") === "true") {
       validateRegisterPassword();
     }
-
-    /*
-     * اگر Confirm نوشته شده،
-     * دوباره تطبیق بده
-     */
 
     if (registerPasswordConfirmInput?.value) {
       validateRegisterPasswordConfirm();
@@ -911,12 +875,6 @@ function initAccountSystem() {
       name: name,
 
       username: username,
-
-      /*
-       * فقط برای Demo Front-end.
-       * در نسخه واقعی Password
-       * باید سمت Server مدیریت شود.
-       */
 
       password: password,
 
@@ -1194,11 +1152,6 @@ function initAccountSystem() {
   logoutButton?.addEventListener("click", function () {
     closeAccountPopover();
 
-    /*
-     * فقط Session پاک می‌شود.
-     * User حذف نمی‌شود.
-     */
-
     setCurrentUser(null);
 
     loginForm?.reset();
@@ -1354,10 +1307,6 @@ function initAccountSystem() {
    */
 
   activateTab("login", false);
-
-  /*
-   * Restore Login after Refresh
-   */
 
   currentUser = restoreCurrentUser();
 

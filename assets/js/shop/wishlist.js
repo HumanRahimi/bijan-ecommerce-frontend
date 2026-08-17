@@ -102,11 +102,6 @@ function initWishlist() {
 
     const currentProduct = BijanProducts.getProductById(id);
 
-    /*
-     * اگر Product هنوز روی صفحه وجود دارد،
-     * اطلاعات فعلی صفحه اولویت دارد.
-     */
-
     if (currentProduct) {
       if (item && typeof item === "object") {
         return {
@@ -121,11 +116,6 @@ function initWishlist() {
         id,
       };
     }
-
-    /*
-     * سازگاری با Wishlistهای قدیمی
-     * که فقط Product ID ذخیره کرده‌اند.
-     */
 
     if (typeof item === "string") {
       return {
@@ -162,11 +152,6 @@ function initWishlist() {
      ======================================== */
 
   function requestLogin() {
-    /*
-     * اگر درخواست از منوی موبایل آمده،
-     * ابتدا Sidebar بسته شود.
-     */
-
     closeMobileMenu();
 
     const accountButtons = Array.from(
@@ -428,10 +413,6 @@ function initWishlist() {
     if (!currentUser) {
       return false;
     }
-
-    /*
-     * جلوگیری از Duplicate
-     */
 
     if (hasProduct(currentUser, product.id)) {
       renderWishlist();
@@ -744,11 +725,6 @@ function initWishlist() {
       return;
     }
 
-    /*
-     * کاربر ابتدا Heart زده،
-     * سپس Login / Register کرده.
-     */
-
     if (pendingProductId) {
       const product = BijanProducts.getProductById(pendingProductId);
 
@@ -758,11 +734,6 @@ function initWishlist() {
         addProduct(product);
       }
     }
-
-    /*
-     * کاربر ابتدا Wishlist Header
-     * را زده و سپس Login کرده.
-     */
 
     if (pendingPanelButton) {
       const button = pendingPanelButton;

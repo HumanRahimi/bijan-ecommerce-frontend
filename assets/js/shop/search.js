@@ -95,17 +95,7 @@ function initProductSearch() {
         return;
       }
 
-      /*
-       * همان رفتار قبلی Search:
-       * اولین Card این محصول Target اصلی است.
-       */
-
       const target = cards[0];
-
-      /*
-       * یک Product ممکن است در چند Section تکرار شده باشد.
-       * اولین Category معتبر را پیدا می‌کنیم.
-       */
 
       let category = "";
 

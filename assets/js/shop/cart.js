@@ -401,20 +401,11 @@ function initCart() {
         return getCartItemId(item) === product.id;
       });
 
-      /*
-       * محصول برای اولین بار اضافه شده
-       */
-
       if (index < 0) {
         user.cart.push(getProductSnapshot(product, 1));
 
         return;
       }
-
-      /*
-       * محصول از قبل داخل سبد است
-       * Quantity افزایش پیدا می‌کند
-       */
 
       const currentItem = user.cart[index];
 
@@ -565,10 +556,6 @@ function initCart() {
   function openPanel(button) {
     const user = BijanStore.getCurrentUser();
 
-    /*
-     * Login Required
-     */
-
     if (!user) {
       pendingOpenButton = button;
 
@@ -596,12 +583,6 @@ function initCart() {
     activeOpenButton = button;
 
     renderPanel(user);
-
-    /*
-     * چون Cart اصلی داخل Desktop Header است،
-     * برای اینکه روی Compact Header هم کار کند
-     * هنگام باز شدن به body منتقل می‌شود.
-     */
 
     if (panel.parentElement !== document.body) {
       document.body.appendChild(panel);
@@ -799,11 +780,6 @@ function initCart() {
       return;
     }
 
-    /*
-     * کاربر Add To Cart زده
-     * و بعد Login کرده
-     */
-
     if (pendingProduct) {
       const product = pendingProduct;
 
@@ -811,11 +787,6 @@ function initCart() {
 
       addProduct(product);
     }
-
-    /*
-     * کاربر Cart Header زده
-     * و بعد Login کرده
-     */
 
     if (pendingOpenButton) {
       const button = pendingOpenButton;

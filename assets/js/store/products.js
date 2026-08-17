@@ -154,10 +154,6 @@
 
     const id = card.dataset.productId || createProductId(title, image);
 
-    /*
-     * روی Card هم ID ثبت می‌کنیم
-     */
-
     card.dataset.productId = id;
 
     return {
@@ -192,14 +188,6 @@
 
       const imageKey = getImageKey(product.image);
 
-      /*
-       * یک محصول ممکن است در چند Section
-       * تکرار شده باشد.
-       *
-       * Title یکسان یا Image یکسان
-       * یعنی همان Product.
-       */
-
       const existing = products.find(function (item) {
         const sameTitle = titleKey && item.titleKey === titleKey;
 
@@ -209,11 +197,6 @@
       });
 
       if (existing) {
-        /*
-         * همه Cardهای این محصول
-         * یک ID مشترک می‌گیرند.
-         */
-
         card.dataset.productId = existing.id;
 
         existing.cards.push(card);
@@ -284,11 +267,6 @@
       return null;
     }
 
-    /*
-     * اول بررسی می‌کنیم آیا خود Element
-     * یا یکی از والدهایش Product ID دارد.
-     */
-
     const productElement = element.closest("[data-product-id]");
 
     const productId = productElement?.dataset.productId || "";
@@ -300,10 +278,6 @@
         return product;
       }
     }
-
-    /*
-     * Fallback برای Cardهای معمولی
-     */
 
     const card = getCardFromElement(element);
 

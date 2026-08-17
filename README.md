@@ -308,6 +308,10 @@ GitHub:
 
 https://github.com/HumanRahimi
 
+Telegram:
+
+https://t.me/HumanRahimi
+
 ---
 
 # 📌 Disclaimer

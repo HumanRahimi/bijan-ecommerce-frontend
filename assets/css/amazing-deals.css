@@ -1,6 +1,4 @@
-/* ============================================
-   Amazing deals
-   ============================================ */
+/* Amazing deals */
 .amazing-deals {
   width: 100%;
   margin-top: var(--section-space-top);
@@ -62,9 +60,7 @@
   pointer-events: none;
 }
 
-/* ============================================
-   Amazing deals header
-   ============================================ */
+/* Amazing deals header */
 .amazing-deals__header {
   position: relative;
   z-index: 2;
@@ -82,7 +78,7 @@
   min-height: 136px;
 }
 
-/* ---------- White title label ---------- */
+/* White title label */
 .amazing-deals__label {
   grid-area: label;
   position: relative;
@@ -170,7 +166,7 @@
   font-weight: 800;
 }
 
-/* ---------- Intro text ---------- */
+/* Intro text */
 .amazing-deals__intro {
   grid-area: intro;
 
@@ -192,7 +188,7 @@
   margin-top: 2px;
 }
 
-/* ---------- View all link ---------- */
+/* View all link */
 .amazing-deals__view-all {
   grid-area: view;
   justify-self: end;
@@ -209,9 +205,7 @@
   border-radius: var(--radius-xs);
 }
 
-/* ============================================
-   Deals grid — desktop structure
-   ============================================ */
+/* Deals grid: desktop structure */
 .amazing-deals__grid {
   position: relative;
   z-index: 2;
@@ -230,9 +224,7 @@
   min-width: 0;
 }
 
-/* ============================================
-   Deal card
-   ============================================ */
+/* Deal card */
 .deal-card {
   min-width: 0;
   height: 228px;
@@ -542,9 +534,7 @@
   outline-offset: 3px;
 }
 
-/* ============================================
-   Deal countdown
-   ============================================ */
+/* Deal countdown */
 .deal-card__countdown {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -631,9 +621,7 @@
   color: var(--color-text-muted, #999999);
 }
 
-/* ============================================
-   Amazing deals — compact desktop
-   ============================================ */
+/* Amazing deals: compact desktop */
 @media only screen and (max-width: 1200px) {
   .amazing-deals {
     margin-top: 72px;
@@ -646,7 +634,7 @@
     padding-inline: 18px;
   }
 
-  /* ---------- Header ---------- */
+  /* Header */
   .amazing-deals__header {
     grid-template-columns:
       minmax(190px, 1fr)
@@ -663,12 +651,12 @@
     padding: 17px 22px 14px;
   }
 
-  /* ---------- Grid ---------- */
+  /* Grid */
   .amazing-deals__grid {
     gap: 14px;
   }
 
-  /* ---------- Card ---------- */
+  /* Card */
   .deal-card {
     height: 216px;
     border-radius: var(--radius-card-lg);
@@ -724,7 +712,7 @@
     font-size: 13px;
   }
 
-  /* ---------- Countdown ---------- */
+  /* Countdown */
   .deal-card__countdown {
     height: 72px;
 
@@ -751,9 +739,7 @@
   }
 }
 
-/* ============================================
-   Amazing deals — two-column layout
-   ============================================ */
+/* Amazing deals: two-column layout */
 @media only screen and (max-width: 1100px) {
   .amazing-deals__container {
     --amazing-panel-height: 650px;
@@ -821,9 +807,7 @@
   }
 }
 
-/* ============================================
-   Amazing deals — mobile layout
-   ============================================ */
+/* Amazing deals: mobile layout */
 @media only screen and (max-width: 740px) {
   .amazing-deals {
     margin-top: 60px;
@@ -856,7 +840,7 @@
     border-radius: 32px 0 70% 32px;
   }
 
-  /* ---------- Header ---------- */
+  /* Header */
   .amazing-deals__header {
     grid-template-columns: minmax(0, 1fr);
 
@@ -906,7 +890,7 @@
     justify-self: center;
   }
 
-  /* ---------- One-column grid ---------- */
+  /* One-column grid */
   .amazing-deals__grid {
     grid-template-columns: minmax(0, 1fr);
 
@@ -916,7 +900,7 @@
     gap: 14px;
   }
 
-  /* ---------- Card ---------- */
+  /* Card */
   .deal-card {
     width: 100%;
     height: 216px;
@@ -966,7 +950,7 @@
     font-size: 13px;
   }
 
-  /* ---------- Countdown ---------- */
+  /* Countdown */
   .deal-card__countdown {
     height: 72px;
 

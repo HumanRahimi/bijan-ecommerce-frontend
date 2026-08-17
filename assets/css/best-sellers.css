@@ -1,6 +1,4 @@
-/* =========================================
-   Best Sellers
-========================================= */
+/* Best Sellers */
 
 .best-sellers {
   --bs-purple: #9d3cbc;
@@ -23,18 +21,14 @@
   direction: rtl;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .best-sellers__container {
   width: min(100%, var(--section-content-width));
   margin-inline: auto;
 }
 
-/* =========================================
-   Main Layout
-========================================= */
+/* Layout */
 
 .best-sellers__layout {
   display: grid;
@@ -45,9 +39,7 @@
   direction: ltr;
 }
 
-/* =========================================
-   Featured Product Slider
-========================================= */
+/* Featured Product Slider */
 
 .best-sellers-featured {
   position: relative;
@@ -76,9 +68,7 @@
     inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-/* =========================================
-   Featured Badge
-========================================= */
+/* Featured Badge */
 
 .best-sellers-featured__badge {
   position: absolute;
@@ -121,9 +111,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   Featured Image
-========================================= */
+/* Featured Image */
 
 .best-sellers-featured__image {
   position: relative;
@@ -164,9 +152,7 @@
   transform: scale(1.035);
 }
 
-/* =========================================
-   Featured Navigation
-========================================= */
+/* Featured Navigation */
 
 .best-sellers-featured__nav {
   position: absolute;
@@ -205,9 +191,7 @@
   transform: translateY(-50%);
 }
 
-/* =========================================
-   Featured Title
-========================================= */
+/* Featured Title */
 
 .best-sellers-featured__title {
   position: relative;
@@ -234,9 +218,7 @@
   transition: opacity 160ms ease;
 }
 
-/* =========================================
-   Featured Footer
-========================================= */
+/* Featured Footer */
 
 .best-sellers-featured__divider {
   position: relative;
@@ -263,9 +245,7 @@
   direction: ltr;
 }
 
-/* =========================================
-   Featured Cart
-========================================= */
+/* Featured Cart */
 
 .best-sellers-featured__cart {
   display: inline-flex;
@@ -306,9 +286,7 @@
   box-shadow: 0 9px 19px rgba(52, 14, 70, 0.2);
 }
 
-/* =========================================
-   Featured Price
-========================================= */
+/* Featured Price */
 
 .best-sellers-featured__price {
   display: flex;
@@ -328,7 +306,7 @@
   transition: opacity 160ms ease;
 }
 
-/* قیمت قبلی */
+/* Previous price */
 .best-sellers-featured__price del {
   display: block;
 
@@ -390,9 +368,7 @@
   font-weight: 800;
 }
 
-/* =========================================
-   Featured Change Animation
-========================================= */
+/* Featured Change Animation */
 
 .best-sellers-featured.is-changing .best-sellers-featured__image > img,
 .best-sellers-featured.is-changing .best-sellers-featured__title,
@@ -400,9 +376,7 @@
   opacity: 0;
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .best-sellers-featured__image > img,
@@ -412,18 +386,14 @@
   }
 }
 
-/* =========================================
-   Main Content
-========================================= */
+/* Main Content */
 
 .best-sellers__content {
   min-width: 0;
   direction: rtl;
 }
 
-/* =========================================
-   Best Sellers Header
-========================================= */
+/* Best Sellers Header */
 
 .best-sellers__header {
   display: grid;
@@ -552,9 +522,7 @@
   font-weight: var(--section-title-accent-weight);
 }
 
-/* =========================================
-   Products Grid
-========================================= */
+/* Products Grid */
 
 .best-sellers__grid {
   display: grid;
@@ -564,9 +532,7 @@
   width: 100%;
 }
 
-/* =========================================
-   Product Card
-========================================= */
+/* Product Card */
 
 .best-seller-card {
   position: relative;
@@ -606,9 +572,7 @@
   transform: none;
 }
 
-/* =========================================
-   Product Card Content
-========================================= */
+/* Product Card Content */
 
 .best-seller-card__content {
   display: flex;
@@ -641,9 +605,7 @@
   -webkit-box-orient: vertical;
 }
 
-/* =========================================
-   Product Price and Stock
-========================================= */
+/* Product Price and Stock */
 
 .best-seller-card__bottom {
   display: flex;
@@ -775,9 +737,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   Product Hover Actions
-========================================= */
+/* Product Hover Actions */
 
 .best-seller-card__actions {
   position: absolute;
@@ -848,9 +808,7 @@
   box-shadow: 0 6px 14px rgba(126, 36, 158, 0.16);
 }
 
-/* =========================================
-   Product Card Image
-========================================= */
+/* Product Card Image */
 
 .best-seller-card__image {
   position: relative;
@@ -885,9 +843,7 @@
   transform: scale(1.04);
 }
 
-/* =========================================
-   Discount
-========================================= */
+/* Discount */
 
 .best-seller-card__discount {
   position: absolute;
@@ -912,9 +868,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   Product Colors
-========================================= */
+/* Product Colors */
 
 .best-seller-card__color {
   position: absolute;
@@ -1059,14 +1013,10 @@
   }
 }
 
-/* =========================================
-   Best Sellers Responsive — 1024px
-========================================= */
+/* Best Sellers Responsive: 1024px */
 
 @media only screen and (max-width: 1024px) {
-  /* =========================================
-     Section
-  ========================================= */
+  /* Section */
 
   .best-sellers {
     padding-inline: 16px;
@@ -1088,9 +1038,7 @@
     display: contents;
   }
 
-  /* =========================================
-     Header
-  ========================================= */
+  /* Header */
 
   .best-sellers__header {
     grid-area: header;
@@ -1120,9 +1068,7 @@
     padding-inline-end: 12px;
   }
 
-  /* =========================================
-     Featured Horizontal Banner
-  ========================================= */
+  /* Featured Horizontal Banner */
 
   .best-sellers-featured {
     grid-area: featured;
@@ -1246,9 +1192,7 @@
     transform: translateY(-50%);
   }
 
-  /* =========================================
-     Products Grid
-  ========================================= */
+  /* Products Grid */
 
   .best-sellers__grid {
     grid-area: products;
@@ -1260,9 +1204,7 @@
     width: 100%;
   }
 
-  /* =========================================
-     Product Card — Horizontal Again
-  ========================================= */
+  /* Product Card: Horizontal Again */
 
   .best-seller-card {
     position: relative;
@@ -1354,9 +1296,7 @@
   }
 }
 
-/* =========================================
-   Best Sellers Responsive — 768px
-========================================= */
+/* Best Sellers Responsive: 768px */
 
 @media only screen and (max-width: 768px) {
   .best-sellers__grid {
@@ -1387,18 +1327,14 @@
   }
 }
 
-/* =========================================
-   Best Sellers Responsive — 560px
-========================================= */
+/* Best Sellers Responsive: 560px */
 
 @media only screen and (max-width: 560px) {
   .best-sellers {
     padding-inline: 10px;
   }
 
-  /* =========================================
-     Header
-  ========================================= */
+  /* Header */
 
   .best-sellers__header {
     grid-template-columns: max-content minmax(0, 1fr);
@@ -1450,9 +1386,7 @@
     padding-inline-end: 8px;
   }
 
-  /* =========================================
-     Featured Card — Vertical
-  ========================================= */
+  /* Featured Card: Vertical */
 
   .best-sellers-featured {
     grid-template-columns: minmax(0, 1fr);
@@ -1534,9 +1468,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .best-sellers *,

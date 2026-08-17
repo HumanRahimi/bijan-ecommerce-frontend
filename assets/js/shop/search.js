@@ -1,8 +1,6 @@
 "use strict";
 
-/* ============================================
-   Product Search
-   ============================================ */
+// Product search indexing, filtering, and result navigation.
 
 function initProductSearch() {
   const forms = Array.from(document.querySelectorAll("[data-product-search]"));
@@ -44,9 +42,7 @@ function initProductSearch() {
   let searchIndex = [];
   let highlightTimer = null;
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function cleanText(value) {
     return String(value || "")
@@ -79,9 +75,7 @@ function initProductSearch() {
     return categoryMap[productCategory] || productCategory;
   }
 
-  /* ========================================
-     Build Shared Search Index
-     ======================================== */
+  // Search index build
 
   function buildSearchIndex() {
     searchIndex = [];
@@ -126,9 +120,7 @@ function initProductSearch() {
     });
   }
 
-  /* ========================================
-     Find Matches
-     ======================================== */
+  // Search matching
 
   function getMatches(query, selectedCategory) {
     const normalizedQuery = normalizeText(query);
@@ -151,9 +143,7 @@ function initProductSearch() {
     });
   }
 
-  /* ========================================
-     Highlight Query
-     ======================================== */
+  // Query highlighting
 
   function appendHighlightedText(element, text, query) {
     const cleanedQuery = cleanText(query);
@@ -187,9 +177,7 @@ function initProductSearch() {
     );
   }
 
-  /* ========================================
-     Reveal New Product
-     ======================================== */
+  // Reveal filtered products
 
   function revealNewProductIfNeeded(target) {
     if (!target.matches("[data-product-card]") || !target.hidden) {
@@ -207,9 +195,7 @@ function initProductSearch() {
     }
   }
 
-  /* ========================================
-     Scroll To Product
-     ======================================== */
+  // Product activation
 
   function activateProduct(product) {
     const target = product.target;
@@ -241,9 +227,7 @@ function initProductSearch() {
     });
   }
 
-  /* ========================================
-     Close Mobile Sidebar
-     ======================================== */
+  // Mobile sidebar cleanup
 
   function closeMobileSidebar() {
     const menuToggle = document.querySelector("[data-mobile-menu-toggle]");
@@ -253,9 +237,7 @@ function initProductSearch() {
     }
   }
 
-  /* ========================================
-     Setup One Search Form
-     ======================================== */
+  // Search form setup
 
   function setupSearchForm(form, formIndex) {
     const input = form.querySelector("[data-search-input]");
@@ -273,9 +255,7 @@ function initProductSearch() {
     let visibleResults = [];
     let activeIndex = -1;
 
-    /* ==============================
-       Close Results
-       ============================== */
+    // Close results
 
     function closeResults() {
       resultsPanel.hidden = true;
@@ -290,9 +270,7 @@ function initProductSearch() {
       input.removeAttribute("aria-activedescendant");
     }
 
-    /* ==============================
-       Result Button
-       ============================== */
+    // Result rendering
 
     function createResultButton(product, index, query) {
       const button = document.createElement("button");
@@ -309,9 +287,7 @@ function initProductSearch() {
 
       button.dataset.searchResultIndex = String(index);
 
-      /*
-       * Image
-       */
+      // Media
 
       const media = document.createElement("span");
 
@@ -337,9 +313,7 @@ function initProductSearch() {
         media.appendChild(icon);
       }
 
-      /*
-       * Content
-       */
+      // Content
 
       const content = document.createElement("span");
 
@@ -351,9 +325,7 @@ function initProductSearch() {
 
       appendHighlightedText(title, product.title, query);
 
-      /*
-       * Meta
-       */
+      // Metadata
 
       const meta = document.createElement("span");
 
@@ -380,9 +352,7 @@ function initProductSearch() {
       return button;
     }
 
-    /* ==============================
-       Message
-       ============================== */
+    // Result messages
 
     function renderMessage(message) {
       resultsPanel.replaceChildren();
@@ -400,9 +370,7 @@ function initProductSearch() {
       input.setAttribute("aria-expanded", "true");
     }
 
-    /* ==============================
-       Render Results
-       ============================== */
+    // Results rendering
 
     function renderResults() {
       const query = input.value;
@@ -460,9 +428,7 @@ function initProductSearch() {
       input.setAttribute("aria-expanded", "true");
     }
 
-    /* ==============================
-       Active Result
-       ============================== */
+    // Keyboard selection
 
     function setActiveIndex(index) {
       const buttons = Array.from(
@@ -492,9 +458,7 @@ function initProductSearch() {
       });
     }
 
-    /* ==============================
-       Select Product
-       ============================== */
+    // Product selection
 
     function selectProduct(product) {
       input.value = product.title;
@@ -508,9 +472,7 @@ function initProductSearch() {
       activateProduct(product);
     }
 
-    /* ==============================
-       Input
-       ============================== */
+    // Input events
 
     input.addEventListener("input", renderResults);
 
@@ -520,10 +482,7 @@ function initProductSearch() {
       }
     });
 
-    /* ==============================
-       Category
-       Desktop only
-       ============================== */
+    // Category filtering
 
     categorySelect?.addEventListener("change", function () {
       if (normalizeText(input.value).length > 0) {
@@ -532,9 +491,7 @@ function initProductSearch() {
       }
     });
 
-    /* ==============================
-       Keyboard
-       ============================== */
+    // Keyboard handling
 
     input.addEventListener("keydown", function (event) {
       if (event.key === "Escape") {
@@ -573,9 +530,7 @@ function initProductSearch() {
       }
     });
 
-    /* ==============================
-       Submit
-       ============================== */
+    // Form submit
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -590,9 +545,7 @@ function initProductSearch() {
       selectProduct(visibleResults[index]);
     });
 
-    /* ==============================
-       Click Outside
-       ============================== */
+    // Outside click handling
 
     document.addEventListener("pointerdown", function (event) {
       if (!form.contains(event.target)) {
@@ -601,9 +554,7 @@ function initProductSearch() {
     });
   }
 
-  /* ========================================
-     Start
-     ======================================== */
+  // Initialization
 
   buildSearchIndex();
 

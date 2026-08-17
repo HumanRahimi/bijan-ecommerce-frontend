@@ -1,6 +1,4 @@
-/* ============================================
-   Category shortcuts
-   ============================================ */
+/* Category shortcuts */
 .category-shortcuts {
   width: 100%;
   margin-top: 64px;
@@ -23,7 +21,7 @@
   width: 100%;
 }
 
-/* ---------- Category card ---------- */
+/* Category card */
 .category-shortcut {
   position: relative;
 
@@ -72,7 +70,7 @@
   outline-offset: 3px;
 }
 
-/* ---------- Category image ---------- */
+/* Category image */
 .category-shortcut__media {
   position: absolute;
   top: 50%;
@@ -116,7 +114,7 @@
   transform: scale(1.08);
 }
 
-/* ---------- Category text ---------- */
+/* Category text */
 .category-shortcut__content {
   grid-area: content;
 
@@ -160,14 +158,14 @@
   overflow: hidden;
 
   color: #6f6f6f;
-  
+
   font-size: 0.875rem;
   line-height: 1.5;
 
   white-space: nowrap;
 }
 
-/* ---------- Arrow ---------- */
+/* Arrow */
 .category-shortcut__arrow {
   grid-area: arrow;
 
@@ -204,9 +202,7 @@
   transform: translateX(-2px);
 }
 
-/* ============================================
-   Category shortcuts — tablet
-   ============================================ */
+/* Category shortcuts: tablet */
 @media only screen and (max-width: 1024px) {
   .category-shortcuts {
     margin-top: 56px;
@@ -225,9 +221,7 @@
   }
 }
 
-/* ============================================
-   Category shortcuts — mobile compact
-   ============================================ */
+/* Category shortcuts: mobile compact */
 @media only screen and (max-width: 560px) {
   .category-shortcuts {
     margin-top: 42px;

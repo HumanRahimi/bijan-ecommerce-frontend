@@ -1,6 +1,4 @@
-/* =========================================
-   About Showcase
-========================================= */
+/* About Showcase */
 
 .about-showcase {
   --about-purple: #9842b8;
@@ -15,9 +13,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Main Container
-========================================= */
+/* Container */
 
 .about-showcase__container {
   position: relative;
@@ -28,9 +24,7 @@
   margin-inline: auto;
 }
 
-/* =========================================
-   Center Panel
-========================================= */
+/* Center Panel */
 
 .about-showcase__panel {
   position: absolute;
@@ -53,9 +47,7 @@
   background-size: 597px 180px;
 }
 
-/* =========================================
-   Center Content
-========================================= */
+/* Content */
 
 .about-showcase__content {
   position: relative;
@@ -69,9 +61,7 @@
   text-align: center;
 }
 
-/* =========================================
-   Title
-========================================= */
+/* Title */
 
 .about-showcase__title {
   color: #151515;
@@ -89,9 +79,7 @@
   font-weight: 800;
 }
 
-/* =========================================
-   Description
-========================================= */
+/* Description */
 
 .about-showcase__description {
   width: 100%;
@@ -109,9 +97,7 @@
   text-align: center;
 }
 
-/* =========================================
-   Buttons Container
-========================================= */
+/* Buttons Container */
 
 .about-showcase__actions {
   display: flex;
@@ -122,9 +108,7 @@
   margin-top: 28px;
 }
 
-/* =========================================
-   Button
-========================================= */
+/* Button */
 
 .about-showcase__button {
   display: flex;
@@ -159,9 +143,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   Button Icon
-========================================= */
+/* Button Icon */
 
 .about-showcase__button-icon {
   display: inline-flex;
@@ -192,9 +174,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   Button Hover — Reverse Colors
-========================================= */
+/* Button Hover: Reverse Colors */
 
 .about-showcase__button:hover {
   border-color: var(--about-purple);
@@ -213,9 +193,7 @@
   outline-offset: 4px;
 }
 
-/* =========================================
-   Product Circles
-========================================= */
+/* Product Circles */
 
 .about-showcase__visual {
   position: absolute;
@@ -241,9 +219,7 @@
   left: 0;
 }
 
-/* =========================================
-   Circle Inner Area
-========================================= */
+/* Circle Inner Area */
 
 .about-showcase__visual-inner {
   position: relative;
@@ -313,9 +289,7 @@
   );
 }
 
-/* =========================================
-   Product Images
-========================================= */
+/* Product Images */
 
 .about-showcase__product {
   position: absolute;
@@ -347,9 +321,7 @@
   transform: translateX(-50%);
 }
 
-/* =========================================
-   1300px
-========================================= */
+/* Responsive: <= 1300px */
 
 @media only screen and (max-width: 1300px) {
   .about-showcase__container {
@@ -381,9 +353,7 @@
   }
 }
 
-/* =========================================
-   1200px
-========================================= */
+/* Responsive: <= 1200px */
 
 @media only screen and (max-width: 1200px) {
   .about-showcase__container {
@@ -419,9 +389,7 @@
   }
 }
 
-/* =========================================
-   1040px — Vertical Content Balance
-========================================= */
+/* Responsive: <= 1040px — Vertical Content Balance */
 
 @media only screen and (max-width: 1040px) {
   .about-showcase__panel {
@@ -451,9 +419,7 @@
   }
 }
 
-/* =========================================
-   1024px — Vertical Layout
-========================================= */
+/* Responsive: <= 1024px — Vertical Layout */
 
 @media only screen and (max-width: 1024px) {
   .about-showcase {
@@ -470,9 +436,7 @@
     height: auto;
   }
 
-  /* =====================================
-     Top Visual — Perfume
-  ===================================== */
+  /* Top Visual: Perfume */
 
   .about-showcase__visual--right {
     order: 1;
@@ -483,9 +447,7 @@
     margin-bottom: -52px;
   }
 
-  /* =====================================
-     Center Panel
-  ===================================== */
+  /* Center Panel */
 
   .about-showcase__panel {
     position: relative;
@@ -552,9 +514,7 @@
     border-radius: 9px;
   }
 
-  /* =====================================
-     Bottom Visual — Nail Polish
-  ===================================== */
+  /* Bottom Visual: Nail Polish */
 
   .about-showcase__visual--left {
     order: 3;
@@ -565,9 +525,7 @@
     margin-top: -52px;
   }
 
-  /* =====================================
-     Smaller Fluid Circles
-  ===================================== */
+  /* Smaller Fluid Circles */
 
   .about-showcase__visual {
     position: relative;
@@ -604,9 +562,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .about-showcase__button,

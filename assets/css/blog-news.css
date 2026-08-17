@@ -1,6 +1,4 @@
-/* =========================================
-   Blog News
-========================================= */
+/* Blog News */
 
 .blog-news {
   --blog-purple: #9741ba;
@@ -19,9 +17,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .blog-news__container {
   width: min(100%, var(--section-content-width));
@@ -29,9 +25,7 @@
   margin-inline: auto;
 }
 
-/* =========================================
-   Section Header
-========================================= */
+/* Header */
 
 .blog-news__header {
   display: flex;
@@ -44,9 +38,7 @@
   margin-bottom: 46px;
 }
 
-/* =========================================
-   Heading
-========================================= */
+/* Heading */
 
 .blog-news__heading {
   flex: 0 0 auto;
@@ -61,9 +53,7 @@
   text-align: right;
 }
 
-/* =========================================
-   BLOGS Label
-========================================= */
+/* BLOGS Label */
 
 .blog-news__eyebrow {
   position: relative;
@@ -113,9 +103,7 @@
 
   pointer-events: none;
 }
-/* =========================================
-   Section Title
-========================================= */
+/* Section Title */
 
 .blog-news__title {
   align-self: flex-end;
@@ -133,17 +121,13 @@
   font-weight: var(--section-title-accent-weight);
 }
 
-/* =========================================
-   Header Divider
-========================================= */
+/* Header Divider */
 
 .blog-news__line {
   flex: 1;
 }
 
-/* =========================================
-   View All Button
-========================================= */
+/* View All Button */
 
 .blog-news__all {
   --section-view-all-color: var(--blog-purple);
@@ -159,9 +143,7 @@
   font: inherit;
 }
 
-/* =========================================
-   View All Icon
-========================================= */
+/* View All Icon */
 
 .blog-news__all-icon {
   display: inline-flex;
@@ -190,9 +172,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   View All Hover
-========================================= */
+/* View All Hover */
 
 .blog-news__all:hover .blog-news__all-icon {
   background: var(--blog-purple);
@@ -200,9 +180,7 @@
   color: var(--color-white);
 }
 
-/* =========================================
-   Main Content Grid
-========================================= */
+/* Main Content Grid */
 
 .blog-news__content {
   display: grid;
@@ -216,17 +194,13 @@
   align-items: stretch;
 }
 
-/* =========================================
-   Featured Post
-========================================= */
+/* Featured Post */
 
 .blog-featured {
   min-width: 0;
 }
 
-/* =========================================
-   Featured Link
-========================================= */
+/* Featured Link */
 
 .blog-featured__link {
   position: relative;
@@ -245,9 +219,7 @@
   background: #111;
 }
 
-/* =========================================
-   Featured Image
-========================================= */
+/* Featured Image */
 
 .blog-featured__image {
   position: absolute;
@@ -265,9 +237,7 @@
   transition: transform 550ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-/* =========================================
-   Featured Overlay
-========================================= */
+/* Featured Overlay */
 
 .blog-featured__overlay {
   position: absolute;
@@ -285,9 +255,7 @@
   transition: opacity 300ms ease;
 }
 
-/* =========================================
-   Featured Body
-========================================= */
+/* Featured Body */
 
 .blog-featured__body {
   position: absolute;
@@ -301,9 +269,7 @@
   color: var(--color-white);
 }
 
-/* =========================================
-   Featured Title
-========================================= */
+/* Featured Title */
 
 .blog-featured__title {
   display: flex;
@@ -333,9 +299,7 @@
   background: var(--color-white);
 }
 
-/* =========================================
-   Featured Excerpt
-========================================= */
+/* Featured Excerpt */
 
 .blog-featured__excerpt {
   display: -webkit-box;
@@ -368,9 +332,7 @@
     margin-top 300ms ease;
 }
 
-/* =========================================
-   Featured Divider
-========================================= */
+/* Featured Divider */
 
 .blog-featured__divider {
   width: 100%;
@@ -383,9 +345,7 @@
   transition: margin 300ms ease;
 }
 
-/* =========================================
-   Featured Meta
-========================================= */
+/* Featured Meta */
 
 .blog-featured__meta {
   display: flex;
@@ -414,9 +374,7 @@
   font-size: 1.25rem;
 }
 
-/* =========================================
-   Featured Hover
-========================================= */
+/* Featured Hover */
 
 .blog-featured__link:hover .blog-featured__image {
   transform: scale(1.1);
@@ -445,9 +403,7 @@
   margin-top: 22px;
 }
 
-/* =========================================
-   Side Posts List
-========================================= */
+/* Side Posts List */
 
 .blog-news__list {
   display: grid;
@@ -459,17 +415,13 @@
   min-width: 0;
 }
 
-/* =========================================
-   Side Card
-========================================= */
+/* Side Card */
 
 .blog-news-card {
   min-width: 0;
 }
 
-/* =========================================
-   Side Card Link
-========================================= */
+/* Side Card Link */
 
 .blog-news-card__link {
   display: grid;
@@ -486,9 +438,7 @@
   align-items: start;
 }
 
-/* =========================================
-   Side Thumbnail
-========================================= */
+/* Side Thumbnail */
 
 .blog-news-card__thumbnail {
   position: relative;
@@ -503,9 +453,7 @@
   background: #eee;
 }
 
-/* =========================================
-   Side Thumbnail Image
-========================================= */
+/* Side Thumbnail Image */
 
 .blog-news-card__thumbnail img {
   display: block;
@@ -519,9 +467,7 @@
   transition: transform 250ms ease;
 }
 
-/* =========================================
-   Thumbnail Hover Overlay
-========================================= */
+/* Thumbnail Hover Overlay */
 
 .blog-news-card__image-overlay {
   position: absolute;
@@ -541,9 +487,7 @@
   transition: opacity var(--duration-smooth) ease;
 }
 
-/* =========================================
-   Thumbnail Time
-========================================= */
+/* Thumbnail Time */
 
 .blog-news-card__image-time {
   position: absolute;
@@ -577,9 +521,7 @@
   font-size: 1rem;
 }
 
-/* =========================================
-   Side Card Body
-========================================= */
+/* Side Card Body */
 
 .blog-news-card__body {
   display: flex;
@@ -593,9 +535,7 @@
   text-align: right;
 }
 
-/* =========================================
-   Side Card Title
-========================================= */
+/* Side Card Title */
 
 .blog-news-card__title {
   overflow: hidden;
@@ -610,9 +550,7 @@
   text-overflow: ellipsis;
 }
 
-/* =========================================
-   Side Card Excerpt
-========================================= */
+/* Side Card Excerpt */
 
 .blog-news-card__excerpt {
   display: -webkit-box;
@@ -631,9 +569,7 @@
   line-clamp: 2;
 }
 
-/* =========================================
-   Read More
-========================================= */
+/* Read More */
 
 .blog-news-card__more {
   display: inline-block;
@@ -651,9 +587,7 @@
   line-height: 1.4;
 }
 
-/* =========================================
-   Small Card Hover
-========================================= */
+/* Small Card Hover */
 
 .blog-news-card__link:hover .blog-news-card__thumbnail img {
   transform: scale(1.045);
@@ -669,17 +603,13 @@
   transform: translateY(0);
 }
 
-/* =========================================
-   Mobile Blog Slider — Hidden On Desktop
-========================================= */
+/* Mobile Blog Slider: Hidden On Desktop */
 
 .blog-news__mobile-slider {
   display: none;
 }
 
-/* =========================================
-   Blog News — 1200px
-========================================= */
+/* Blog News: 1200px */
 
 @media only screen and (max-width: 1200px) {
   .blog-news__content {
@@ -733,9 +663,7 @@
   }
 }
 
-/* =========================================
-   Blog News — 1024px
-========================================= */
+/* Blog News: 1024px */
 
 @media only screen and (max-width: 1024px) {
   .blog-news__content {
@@ -790,9 +718,7 @@
     min-height: 500px;
   }
 
-  /* =====================================
-     Pagination
-  ===================================== */
+  /* Pagination */
 
   .blog-news__mobile-dots {
     display: flex;
@@ -851,9 +777,7 @@
   }
 }
 
-/* =========================================
-   Blog News — 768px
-========================================= */
+/* Blog News: 768px */
 
 @media only screen and (max-width: 768px) {
   .blog-news {
@@ -886,9 +810,7 @@
   }
 }
 
-/* =========================================
-   Blog News — 560px
-========================================= */
+/* Blog News: 560px */
 
 @media only screen and (max-width: 560px) {
   .blog-news {
@@ -959,9 +881,7 @@
   }
 }
 
-/* =========================================
-   Blog News — 425px
-========================================= */
+/* Blog News: 425px */
 
 @media only screen and (max-width: 425px) {
   .blog-news {
@@ -1022,9 +942,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .blog-news__all,

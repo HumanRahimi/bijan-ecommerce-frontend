@@ -1,8 +1,6 @@
 "use strict";
 
-/* =========================================
-   Best Sellers Featured Slider
-========================================= */
+// Featured best-seller product switching.
 
 function initBestSellersFeatured() {
   const root = document.querySelector("[data-best-sellers-featured]");

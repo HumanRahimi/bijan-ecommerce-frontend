@@ -1,8 +1,6 @@
 "use strict";
 
-/* ============================================
-   Cart
-   ============================================ */
+// Cart state mutations, rendering, and popover interactions.
 
 function initCart() {
   if (!window.BijanStore) {
@@ -15,9 +13,7 @@ function initCart() {
     return;
   }
 
-  /* ========================================
-     Elements
-     ======================================== */
+  // DOM references
 
   const panel = document.querySelector("[data-cart-popover]");
   const panelList = panel?.querySelector("[data-cart-list]");
@@ -33,9 +29,7 @@ function initCart() {
 
   const cartButtons = Array.from(document.querySelectorAll("[data-cart-add]"));
 
-  /* ========================================
-     State
-     ======================================== */
+  // Runtime state
 
   let pendingProduct = null;
   let pendingOpenButton = null;
@@ -45,9 +39,7 @@ function initCart() {
 
   let panelPositionFrame = null;
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function toPersianDigits(value) {
     const digits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -134,9 +126,7 @@ function initCart() {
     };
   }
 
-  /* ========================================
-     Mobile Menu
-     ======================================== */
+  // Mobile menu helper
 
   function closeMobileMenu() {
     const menuButton = document.querySelector("[data-mobile-menu-toggle]");
@@ -146,9 +136,7 @@ function initCart() {
     }
   }
 
-  /* ========================================
-     Request Login
-     ======================================== */
+  // Login request
 
   function requestLogin() {
     closeMobileMenu();
@@ -173,9 +161,7 @@ function initCart() {
     }, 50);
   }
 
-  /* ========================================
-     Live Region
-     ======================================== */
+  // Accessibility announcements
 
   let liveRegion = document.querySelector("[data-cart-live]");
 
@@ -203,9 +189,7 @@ function initCart() {
     }, 20);
   }
 
-  /* ========================================
-     Counts
-     ======================================== */
+  // Count rendering
 
   function updateCounts(user) {
     const totalQuantity = getCartTotalQuantity(user);
@@ -223,9 +207,7 @@ function initCart() {
     }
   }
 
-  /* ========================================
-     Create Cart Item
-     ======================================== */
+  // Cart item rendering
 
   function createCartItem(item) {
     const product = getDisplayProduct(item);
@@ -235,7 +217,7 @@ function initCart() {
     article.className = "cart-popover__item";
     article.dataset.productId = product.id;
 
-    /* ---------- Image ---------- */
+    // Media
 
     const media = document.createElement("div");
 
@@ -258,7 +240,7 @@ function initCart() {
       media.appendChild(fallback);
     }
 
-    /* ---------- Content ---------- */
+    // Content
 
     const content = document.createElement("div");
 
@@ -280,7 +262,7 @@ function initCart() {
       content.appendChild(price);
     }
 
-    /* ---------- Quantity ---------- */
+    // Quantity controls
 
     const controls = document.createElement("div");
 
@@ -324,7 +306,7 @@ function initCart() {
 
     content.appendChild(controls);
 
-    /* ---------- Remove ---------- */
+    // Remove control
 
     const removeButton = document.createElement("button");
 
@@ -343,9 +325,7 @@ function initCart() {
     return article;
   }
 
-  /* ========================================
-     Render Panel
-     ======================================== */
+  // Panel rendering
 
   function renderPanel(user) {
     if (!panelList || !panelEmpty) {
@@ -385,9 +365,7 @@ function initCart() {
     }
   }
 
-  /* ========================================
-     Add Product
-     ======================================== */
+  // Add product
 
   function addProduct(product) {
     const currentUser = BijanStore.getCurrentUser();
@@ -440,9 +418,7 @@ function initCart() {
     return true;
   }
 
-  /* ========================================
-     Quantity
-     ======================================== */
+  // Quantity updates
 
   function changeQuantity(productId, delta) {
     const currentUser = BijanStore.getCurrentUser();
@@ -488,9 +464,7 @@ function initCart() {
     return Boolean(updatedUser);
   }
 
-  /* ========================================
-     Remove Product
-     ======================================== */
+  // Remove product
 
   function removeProductById(productId, productTitle = "محصول") {
     const currentUser = BijanStore.getCurrentUser();
@@ -516,9 +490,7 @@ function initCart() {
     return true;
   }
 
-  /* ========================================
-     Panel Position
-     ======================================== */
+  // Popover positioning
 
   function positionPanel(button) {
     if (!panel || !button) {
@@ -549,9 +521,7 @@ function initCart() {
     panel.style.setProperty("--popover-top", `${top}px`);
   }
 
-  /* ========================================
-     Open Panel
-     ======================================== */
+  // Open popover
 
   function openPanel(button) {
     const user = BijanStore.getCurrentUser();
@@ -601,9 +571,7 @@ function initCart() {
     });
   }
 
-  /* ========================================
-     Close Panel
-     ======================================== */
+  // Close popover
 
   function closePanel(restoreFocus = false) {
     if (!panel || panel.hidden) {
@@ -637,9 +605,7 @@ function initCart() {
     }, 180);
   }
 
-  /* ========================================
-     Add To Cart Buttons
-     ======================================== */
+  // Add-to-cart events
 
   cartButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -656,9 +622,7 @@ function initCart() {
 
       const currentUser = BijanStore.getCurrentUser();
 
-      /*
-       * Login Required
-       */
+      // Require authentication.
 
       if (!currentUser) {
         pendingProduct = {
@@ -674,9 +638,7 @@ function initCart() {
     });
   });
 
-  /* ========================================
-     Header Cart
-     ======================================== */
+  // Cart trigger
 
   openButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -700,17 +662,13 @@ function initCart() {
     });
   });
 
-  /* ========================================
-     Close Button
-     ======================================== */
+  // Close control
 
   closeButton?.addEventListener("click", function () {
     closePanel(true);
   });
 
-  /* ========================================
-     Quantity / Remove
-     ======================================== */
+  // Cart item actions
 
   panelList?.addEventListener("click", function (event) {
     const plusButton = event.target.closest("[data-cart-plus]");
@@ -719,19 +677,11 @@ function initCart() {
 
     const removeButton = event.target.closest("[data-cart-remove]");
 
-    /*
-     * Plus
-     */
-
     if (plusButton) {
       changeQuantity(plusButton.dataset.cartPlus, 1);
 
       return;
     }
-
-    /*
-     * Minus
-     */
 
     if (minusButton) {
       changeQuantity(minusButton.dataset.cartMinus, -1);
@@ -739,9 +689,7 @@ function initCart() {
       return;
     }
 
-    /*
-     * Remove
-     */
+    // Remove control
 
     if (removeButton) {
       const productId = removeButton.dataset.cartRemove;
@@ -758,16 +706,12 @@ function initCart() {
     }
   });
 
-  /* ========================================
-     Account Changed
-     ======================================== */
+  // Account change sync
 
   document.addEventListener("account:changed", function (event) {
     const user = event.detail?.user || null;
 
-    /*
-     * Logout
-     */
+    // Logout
 
     if (!user) {
       pendingProduct = null;
@@ -801,17 +745,13 @@ function initCart() {
     renderCart();
   });
 
-  /* ========================================
-     Store Updated
-     ======================================== */
+  // Store update sync
 
   document.addEventListener("store:user-updated", function () {
     renderCart();
   });
 
-  /* ========================================
-     Click Outside
-     ======================================== */
+  // Outside click handling
 
   document.addEventListener("pointerdown", function (event) {
     if (!panel || panel.hidden) {
@@ -833,9 +773,7 @@ function initCart() {
     closePanel();
   });
 
-  /* ========================================
-     Keyboard
-     ======================================== */
+  // Keyboard handling
 
   document.addEventListener("keydown", function (event) {
     if (event.key !== "Escape" || !panel || panel.hidden) {
@@ -886,9 +824,7 @@ function initCart() {
     closePanel();
   });
 
-  /* ========================================
-     Resize / Refresh
-     ======================================== */
+  // Viewport and page restore sync
 
   window.addEventListener("resize", syncPanelPosition);
 
@@ -909,9 +845,7 @@ function initCart() {
     }
   });
 
-  /* ========================================
-     Initial Render
-     ======================================== */
+  // Initial render
 
   renderCart();
 }

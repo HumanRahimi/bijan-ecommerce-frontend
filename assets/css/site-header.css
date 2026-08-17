@@ -1,6 +1,4 @@
-/* ============================================
-   Discount banner
-   ============================================ */
+/* Discount banner */
 .header-banner {
   position: relative;
   z-index: 5;
@@ -19,9 +17,7 @@
   margin-top: 0;
 }
 
-/* ============================================
-   Site header wrapper
-   ============================================ */
+/* Site header wrapper */
 .site-header {
   position: relative;
   z-index: 4;
@@ -37,9 +33,7 @@
   padding: 0 var(--layout-gutter);
 }
 
-/* ============================================
-   Toolbar row (logo + search + account actions)
-   ============================================ */
+/* Toolbar row (logo + search + account actions) */
 .toolbar {
   display: flex;
   align-items: center;
@@ -68,7 +62,7 @@
   display: block;
 }
 
-/* --- Product search --- */
+/* Product search */
 .product-search {
   position: relative;
   display: flex;
@@ -149,9 +143,7 @@
   opacity: 0.85;
 }
 
-/* ============================================
-   Product Search Results
-   ============================================ */
+/* Product Search Results */
 
 .product-search__results {
   position: absolute;
@@ -335,7 +327,7 @@
   text-align: center;
 }
 
-/* --- Toolbar actions (undo, wishlist, cart, account) --- */
+/* Toolbar actions (undo, wishlist, cart, account) */
 .toolbar__actions {
   display: flex;
   align-items: center;
@@ -430,9 +422,7 @@ button.icon-action {
   color: var(--color-surface);
 }
 
-/* ============================================
-   Secondary nav row (menu + contact chips)
-   ============================================ */
+/* Secondary nav row (menu + contact chips) */
 .site-nav {
   position: relative;
   z-index: 1;
@@ -565,7 +555,7 @@ button.icon-action {
   color: var(--color-brand-primary);
 }
 
-/* --- Categories pill (first nav item, "featured" style) --- */
+/* Categories pill (first nav item, "featured" style) */
 .categories-trigger {
   display: inline-flex;
   align-items: center;
@@ -607,7 +597,7 @@ button.icon-action {
   padding-inline: 8px;
 }
 
-/* --- Contact chips --- */
+/* Contact chips */
 .site-nav__contact {
   display: flex;
   align-items: center;
@@ -660,10 +650,7 @@ button.icon-action {
   color: var(--color-secondary-accent);
 }
 
-/* ============================================
-   Compact header
-   Hidden on desktop
-   ============================================ */
+/* Compact header Hidden on desktop */
 .compact-header {
   display: none;
 }
@@ -767,12 +754,8 @@ button.icon-action {
   background: var(--color-brand-primary-tint);
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
-/* ============================================
-   Laptop — 1366px and below
-   ============================================ */
+/* Responsive */
+/* Laptop: 1366px and below */
 @media only screen and (max-width: 1366px) {
   .site-header__inner {
     padding-inline: 20px;
@@ -830,9 +813,7 @@ button.icon-action {
   }
 }
 
-/* ============================================
-   Tablet landscape — 1200px and below
-   ============================================ */
+/* Tablet landscape: 1200px and below */
 @media only screen and (max-width: 1200px) {
   .site-header__inner {
     padding-inline: 16px;
@@ -897,9 +878,7 @@ button.icon-action {
   }
 }
 
-/* ============================================
-   Tablet / laptop preview — 1024px and below
-   ============================================ */
+/* Tablet / laptop preview: 1024px and below */
 @media only screen and (max-width: 1024px) {
   .site-header__inner {
     display: none;
@@ -927,9 +906,7 @@ button.icon-action {
     margin-inline-start: auto;
   }
 
-  /* ============================================
-   Mobile navigation layer
-   ============================================ */
+  /* Mobile navigation layer */
   .mobile-nav-layer {
     display: none;
   }
@@ -999,7 +976,7 @@ button.icon-action {
     overflow: hidden;
   }
 
-  /* ---------- Sidebar search ---------- */
+  /* Sidebar search */
   .mobile-sidebar__search {
     position: relative;
     display: flex;
@@ -1043,7 +1020,7 @@ button.icon-action {
     cursor: pointer;
   }
 
-  /* ---------- Sidebar search results ---------- */
+  /* Sidebar search results */
 
   .mobile-sidebar__search-results {
     position: absolute;
@@ -1152,7 +1129,7 @@ button.icon-action {
     font-size: var(--text-2xs);
   }
 
-  /* ---------- Sidebar navigation ---------- */
+  /* Sidebar navigation */
   .mobile-sidebar__navigation {
     flex: 1 1 auto;
     min-height: 0;
@@ -1224,7 +1201,7 @@ button.icon-action {
     font-weight: 600;
   }
 
-  /* ---------- Mobile sidebar submenus ---------- */
+  /* Mobile sidebar submenus */
 
   .mobile-sidebar__submenu-toggle {
     width: 100%;
@@ -1307,7 +1284,7 @@ button.icon-action {
     background: var(--color-brand-primary-tint);
   }
 
-  /* ---------- Sidebar support ---------- */
+  /* Sidebar support */
   .mobile-sidebar__support {
     display: flex;
     align-items: center;

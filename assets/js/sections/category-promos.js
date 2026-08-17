@@ -1,8 +1,6 @@
 "use strict";
 
-/* =========================================
-   Category Promos Auto Slider
-========================================= */
+// Responsive category promo autoplay slider.
 
 function initCategoryPromosSlider() {
   const section = document.querySelector(".category-promos");

@@ -1,8 +1,4 @@
-/* =========================================================
-   Hero — rebuilt from scratch from the Bijan reference.
-   Desktop geometry mirrors the original 1360px Elementor row:
-   1fr / 507px / 1fr, with 206px side-panel overlap.
-   ========================================================= */
+/* Desktop hero geometry */
 
 .home-main {
   width: 100%;
@@ -25,7 +21,7 @@
   width: 100%;
 }
 
-/* ---------- side panels ---------- */
+/* side panels */
 .hero__promo,
 .hero__feature {
   min-height: 375px;
@@ -161,7 +157,7 @@
   stroke-linejoin: round;
 }
 
-/* ---------- center slider ---------- */
+/* center slider */
 .hero-slider {
   grid-area: slider;
   position: relative;
@@ -239,7 +235,7 @@
   text-decoration: none;
 }
 
-/* ---------- Individual hero slides ---------- */
+/* Individual hero slides */
 .hero-slide {
   position: absolute;
   inset: 0;
@@ -424,7 +420,7 @@
   right: 12px;
 }
 
-/* ---------- thumbnail row ---------- */
+/* thumbnail row */
 .hero-slider__thumbs {
   position: relative;
   z-index: 3;
@@ -562,15 +558,9 @@
   outline-offset: 3px;
 }
 
-/* =========================================================
-   Responsive fallback.
-   The two unavailable responsive background assets are not
-   fabricated; the supplied desktop assets are adapted here.
-   ========================================================= */
+/* Responsive fallback */
 
-/* ============================================
-   Laptop — 1366px and below
-   ============================================ */
+/* Laptop: 1366px and below */
 @media only screen and (max-width: 1366px) {
   .hero__grid {
     grid-template-columns: minmax(0, 1fr) 400px minmax(0, 1fr);
@@ -702,9 +692,7 @@
   }
 }
 
-/* ============================================
-   Tablet landscape — 1200px and below
-   ============================================ */
+/* Tablet landscape: 1200px and below */
 @media only screen and (max-width: 1200px) {
   .hero {
     padding-inline: 16px;
@@ -862,9 +850,7 @@
   }
 }
 
-/* ============================================
-   Tablet / laptop preview — 1024px and below
-   ============================================ */
+/* Tablet / laptop preview: 1024px and below */
 @media only screen and (max-width: 1024px) {
   .hero {
     --hero-responsive-size: min(680px, calc(100vw - 64px));
@@ -882,7 +868,7 @@
     justify-items: center;
   }
 
-  /* ---------- Promo panel ---------- */
+  /* Promo panel */
   .hero__promo {
     position: relative;
     z-index: 0;
@@ -921,7 +907,7 @@
     line-height: 2;
   }
 
-  /* ---------- Large responsive slider ---------- */
+  /* Large responsive slider */
   .hero-slider {
     position: relative;
     z-index: 2;
@@ -968,7 +954,7 @@
     object-fit: contain;
   }
 
-  /* ---------- Discount badge ---------- */
+  /* Discount badge */
   .hero-slider__discount {
     width: clamp(64px, 8vw, 78px);
     height: clamp(64px, 8vw, 78px);
@@ -1009,7 +995,7 @@
     transform: none;
   }
 
-  /* ---------- Slider arrows ---------- */
+  /* Slider arrows */
   .hero-slider__arrow {
     width: 52px;
     height: 52px;
@@ -1028,7 +1014,7 @@
     display: none;
   }
 
-  /* ---------- Feature panel ---------- */
+  /* Feature panel */
   .hero__feature {
     position: relative;
     z-index: 0;
@@ -1065,9 +1051,7 @@
   }
 }
 
-/* ============================================
-   Mobile — 767px and below
-   ============================================ */
+/* Mobile: 767px and below */
 @media only screen and (max-width: 767px) {
   .hero {
     --hero-responsive-size: min(680px, calc(100vw - 64px));
@@ -1079,7 +1063,7 @@
     transform: none;
   }
 
-  /* ---------- Promo ---------- */
+  /* Promo */
   .hero__promo {
     padding: 26px 14px var(--hero-responsive-half);
   }
@@ -1095,7 +1079,7 @@
     line-height: 1.9;
   }
 
-  /* ---------- Slider arrows ---------- */
+  /* Slider arrows */
   .hero-slider__arrow {
     width: 42px;
     height: 42px;
@@ -1111,7 +1095,7 @@
     right: 6px;
   }
 
-  /* ---------- Discount badge ---------- */
+  /* Discount badge */
   .hero-slider__discount {
     width: clamp(52px, 13vw, 66px);
     height: clamp(52px, 13vw, 66px);
@@ -1140,7 +1124,7 @@
     font-size: var(--text-2xs);
   }
 
-  /* ---------- Feature ---------- */
+  /* Feature */
   .hero__feature {
     padding: var(--hero-responsive-half) 14px 28px;
   }

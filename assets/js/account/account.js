@@ -1,9 +1,6 @@
 "use strict";
 
-/* ============================================
-   Account System
-   Modal + Register + Login + Session + Menu
-   ============================================ */
+// Account modal, authentication demo, session, and popover UI.
 
 function initAccountSystem() {
   const modal = document.querySelector("[data-account-modal]");
@@ -18,9 +15,7 @@ function initAccountSystem() {
     return;
   }
 
-  /* ========================================
-     Elements
-     ======================================== */
+  // DOM references
 
   const dialog = modal.querySelector("[data-account-dialog]");
 
@@ -58,9 +53,7 @@ function initAccountSystem() {
     document.querySelectorAll("[data-account-button-text]"),
   );
 
-  /* ========================================
-     Form Inputs
-     ======================================== */
+  // Form inputs
 
   const loginUsernameInput = loginForm?.querySelector('[name="username"]');
 
@@ -78,9 +71,7 @@ function initAccountSystem() {
     '[name="passwordConfirm"]',
   );
 
-  /* ========================================
-     Username Input Settings
-     ======================================== */
+  // Username input rules
 
   [loginUsernameInput, registerUsernameInput].forEach(function (input) {
     if (!input) {
@@ -94,9 +85,7 @@ function initAccountSystem() {
     input.setAttribute("spellcheck", "false");
   });
 
-  /* ========================================
-     Account Popover
-     ======================================== */
+  // Account popover
 
   const popover = document.querySelector("[data-account-popover]");
 
@@ -108,17 +97,13 @@ function initAccountSystem() {
 
   const logoutButton = popover?.querySelector("[data-account-logout]");
 
-  /* ========================================
-     Settings
-     ======================================== */
+  // Configuration
 
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   );
 
-  /* ========================================
-     State
-     ======================================== */
+  // Runtime state
 
   let currentUser = null;
 
@@ -130,9 +115,7 @@ function initAccountSystem() {
 
   let activeAccountButton = null;
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function cleanText(value) {
     return String(value || "")
@@ -156,9 +139,7 @@ function initAccountSystem() {
     return "user-" + Date.now() + "-" + Math.random().toString(36).slice(2, 9);
   }
 
-  /* ========================================
-     LocalStorage
-     ======================================== */
+  // Store adapters
 
   function readUsers() {
     return BijanStore.getUsers();
@@ -192,9 +173,7 @@ function initAccountSystem() {
     );
   }
 
-  /* ========================================
-     Global Messages
-     ======================================== */
+  // Global messages
 
   function clearMessage(element) {
     if (!element) {
@@ -224,9 +203,7 @@ function initAccountSystem() {
     clearMessage(registerMessage);
   }
 
-  /* ========================================
-     Field Error UI
-     ======================================== */
+  // Field validation UI
 
   function setFieldError(input, message) {
     if (!input) {
@@ -290,17 +267,13 @@ function initAccountSystem() {
     });
   }
 
-  /* ========================================
-     Username Duplicate Check
-     ======================================== */
+  // Username availability
 
   function usernameAlreadyExists(username) {
     return BijanStore.usernameExists(username);
   }
 
-  /* ========================================
-     Register Validation
-     ======================================== */
+  // Registration validation
 
   function validateRegisterName() {
     const value = cleanText(registerNameInput?.value);
@@ -426,14 +399,10 @@ function initAccountSystem() {
     return nameValid && usernameValid && passwordValid && confirmValid;
   }
 
-  /* ========================================
-     Header Account UI
-     ======================================== */
+  // Header account state
 
   function updateAccountUI() {
-    /*
-     * Logged Out
-     */
+    // Signed-out state
 
     if (!currentUser) {
       accountTextElements.forEach(function (element) {
@@ -453,9 +422,7 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Logged In
-     */
+    // Signed-in state
 
     const firstName =
       cleanText(currentUser.name).split(" ")[0] || currentUser.username;
@@ -475,9 +442,7 @@ function initAccountSystem() {
     });
   }
 
-  /* ========================================
-     Modal Tabs
-     ======================================== */
+  // Modal tabs
 
   function getFirstInput(panelName) {
     const panel = modal.querySelector(`[data-account-panel="${panelName}"]`);
@@ -507,18 +472,12 @@ function initAccountSystem() {
     }
   }
 
-  /* ========================================
-     Password Visibility
-     ======================================== */
+  // Password visibility
 
   function resetPasswordVisibility() {
     modal
       .querySelectorAll('input[name="password"], input[name="passwordConfirm"]')
       .forEach(function (input) {
-        /*
-         * Default:
-         * Password Hidden
-         */
 
         input.type = "password";
 
@@ -533,10 +492,6 @@ function initAccountSystem() {
         if (button) {
           button.setAttribute("aria-label", "نمایش رمز عبور");
         }
-
-        /*
-         * Hidden = Eye Slash
-         */
 
         if (icon) {
           icon.classList.remove("fa-eye");
@@ -576,10 +531,6 @@ function initAccountSystem() {
       const icon = button.querySelector("i");
 
       if (icon) {
-        /*
-         * Visible = Eye
-         * Hidden = Eye Slash
-         */
 
         icon.classList.toggle("fa-eye", nowVisible);
 
@@ -590,9 +541,7 @@ function initAccountSystem() {
     });
   });
 
-  /* ========================================
-     Focusable Elements
-     ======================================== */
+  // Focusable elements
 
   function getFocusableModalElements() {
     return Array.from(
@@ -611,9 +560,7 @@ function initAccountSystem() {
     });
   }
 
-  /* ========================================
-     Modal Open
-     ======================================== */
+  // Open modal
 
   function openModal(panelName = "login") {
     window.clearTimeout(modalCloseTimer);
@@ -630,9 +577,7 @@ function initAccountSystem() {
 
     previousActiveElement = document.activeElement;
 
-    /*
-     * Mobile Sidebar
-     */
+    // Close mobile navigation first.
 
     const mobileMenuToggle = document.querySelector(
       "[data-mobile-menu-toggle]",
@@ -665,9 +610,7 @@ function initAccountSystem() {
     });
   }
 
-  /* ========================================
-     Modal Close
-     ======================================== */
+  // Close modal
 
   function closeModal() {
     if (modal.hidden) {
@@ -697,17 +640,13 @@ function initAccountSystem() {
     modalCloseTimer = window.setTimeout(finishClose, 240);
   }
 
-  /* ========================================
-     Close Buttons
-     ======================================== */
+  // Close controls
 
   closeButtons.forEach(function (button) {
     button.addEventListener("click", closeModal);
   });
 
-  /* ========================================
-     Tabs
-     ======================================== */
+  // Tab events
 
   tabs.forEach(function (tab) {
     tab.addEventListener("click", function () {
@@ -735,9 +674,7 @@ function initAccountSystem() {
     });
   });
 
-  /* ========================================
-     Login / Register Switch
-     ======================================== */
+  // Auth mode switch
 
   switchButtons.forEach(function (button) {
     button.addEventListener("click", function () {
@@ -745,9 +682,7 @@ function initAccountSystem() {
     });
   });
 
-  /* ========================================
-     Live Validation - Name
-     ======================================== */
+  // Name validation
 
   registerNameInput?.addEventListener("blur", validateRegisterName);
 
@@ -757,18 +692,12 @@ function initAccountSystem() {
     }
   });
 
-  /* ========================================
-     Live Validation - Username
-     ======================================== */
+  // Username validation
 
   registerUsernameInput?.addEventListener("blur", validateRegisterUsername);
 
   registerUsernameInput?.addEventListener("input", function () {
     const value = registerUsernameInput.value;
-
-    /*
-     * Empty
-     */
 
     if (!value) {
       clearFieldError(registerUsernameInput);
@@ -785,9 +714,7 @@ function initAccountSystem() {
     }
   });
 
-  /* ========================================
-     Live Validation - Password
-     ======================================== */
+  // Password validation
 
   registerPasswordInput?.addEventListener("blur", validateRegisterPassword);
 
@@ -801,9 +728,7 @@ function initAccountSystem() {
     }
   });
 
-  /* ========================================
-     Live Validation - Confirm Password
-     ======================================== */
+  // Password confirmation
 
   registerPasswordConfirmInput?.addEventListener(
     "blur",
@@ -818,9 +743,7 @@ function initAccountSystem() {
     }
   });
 
-  /* ========================================
-     Login Input Cleanup
-     ======================================== */
+  // Login field cleanup
 
   loginUsernameInput?.addEventListener("input", function () {
     clearFieldError(loginUsernameInput);
@@ -834,18 +757,14 @@ function initAccountSystem() {
     clearMessage(loginMessage);
   });
 
-  /* ========================================
-     Register Submit
-     ======================================== */
+  // Registration flow
 
   registerForm?.addEventListener("submit", function (event) {
     event.preventDefault();
 
     clearMessage(registerMessage);
 
-    /*
-     * همه Fieldها Validation
-     */
+    // Validate all registration fields.
 
     if (!validateRegisterForm()) {
       return;
@@ -864,10 +783,6 @@ function initAccountSystem() {
     }
 
     const users = readUsers();
-
-    /*
-     * Create User
-     */
 
     const newUser = {
       id: createUserId(),
@@ -895,9 +810,7 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Auto Login
-     */
+    // Start the session after registration.
 
     setCurrentUser(newUser);
 
@@ -912,9 +825,7 @@ function initAccountSystem() {
     window.setTimeout(closeModal, 350);
   });
 
-  /* ========================================
-   Login Submit
-   ======================================== */
+  // Login flow
 
   loginForm?.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -929,19 +840,11 @@ function initAccountSystem() {
 
     const password = String(loginPasswordInput?.value || "");
 
-    /*
-     * Username Empty
-     */
-
     if (!username) {
       setFieldError(loginUsernameInput, "نام کاربری را وارد کنید.");
 
       return;
     }
-
-    /*
-     * Username Format
-     */
 
     if (!isValidUsername(username)) {
       setFieldError(loginUsernameInput, "نام کاربری واردشده معتبر نیست.");
@@ -949,25 +852,13 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Password Empty
-     */
-
     if (!password) {
       setFieldError(loginPasswordInput, "رمز عبور را وارد کنید.");
 
       return;
     }
 
-    /*
-     * Users
-     */
-
     const user = BijanStore.findUserByUsername(username);
-
-    /*
-     * Username Does Not Exist
-     */
 
     if (!user) {
       setFieldError(
@@ -978,20 +869,11 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Username Exists
-     * But Password Is Wrong
-     */
-
     if (user.password !== password) {
       setFieldError(loginPasswordInput, "رمز عبور اشتباه است.");
 
       return;
     }
-
-    /*
-     * Login Success
-     */
 
     setCurrentUser(user);
 
@@ -1006,9 +888,7 @@ function initAccountSystem() {
     window.setTimeout(closeModal, 300);
   });
 
-  /* ========================================
-     Popover Position
-     ======================================== */
+  // Popover positioning
 
   function positionAccountPopover(button) {
     if (!popover) {
@@ -1030,9 +910,7 @@ function initAccountSystem() {
     popover.style.top = `${rect.bottom + 10}px`;
   }
 
-  /* ========================================
-     Popover Open
-     ======================================== */
+  // Open popover
 
   function openAccountPopover(button) {
     if (!popover || !currentUser) {
@@ -1068,9 +946,7 @@ function initAccountSystem() {
     });
   }
 
-  /* ========================================
-     Popover Close
-     ======================================== */
+  // Close popover
 
   function closeAccountPopover(restoreFocus = false) {
     if (!popover || popover.hidden) {
@@ -1104,15 +980,11 @@ function initAccountSystem() {
     popoverCloseTimer = window.setTimeout(finishClose, 180);
   }
 
-  /* ========================================
-     Account Button
-     ======================================== */
+  // Account trigger
 
   accountButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-      /*
-       * Logged Out
-       */
+      // Signed-out state
 
       if (!currentUser) {
         openModal("login");
@@ -1120,9 +992,7 @@ function initAccountSystem() {
         return;
       }
 
-      /*
-       * Logged In
-       */
+      // Signed-in state
 
       if (!popover) {
         return;
@@ -1145,9 +1015,7 @@ function initAccountSystem() {
     });
   });
 
-  /* ========================================
-     Logout
-     ======================================== */
+  // Logout flow
 
   logoutButton?.addEventListener("click", function () {
     closeAccountPopover();
@@ -1167,9 +1035,7 @@ function initAccountSystem() {
     resetPasswordVisibility();
   });
 
-  /* ========================================
-     Popover Click Outside
-     ======================================== */
+  // Outside click handling
 
   document.addEventListener("pointerdown", function (event) {
     if (!popover || popover.hidden) {
@@ -1187,14 +1053,9 @@ function initAccountSystem() {
     closeAccountPopover();
   });
 
-  /* ========================================
-     Keyboard
-     ======================================== */
+  // Keyboard handling
 
   document.addEventListener("keydown", function (event) {
-    /*
-     * Popover Escape
-     */
 
     if (event.key === "Escape" && popover && !popover.hidden) {
       event.preventDefault();
@@ -1204,17 +1065,9 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Modal Closed
-     */
-
     if (modal.hidden) {
       return;
     }
-
-    /*
-     * Modal Escape
-     */
 
     if (event.key === "Escape") {
       event.preventDefault();
@@ -1224,9 +1077,7 @@ function initAccountSystem() {
       return;
     }
 
-    /*
-     * Focus Trap
-     */
+    // Keep focus inside the modal.
 
     if (event.key !== "Tab") {
       return;
@@ -1269,17 +1120,13 @@ function initAccountSystem() {
     closeAccountPopover();
   });
 
-  /* ========================================
-     Resize
-     ======================================== */
+  // Resize handling
 
   window.addEventListener("resize", function () {
     closeAccountPopover();
   });
 
-  /* ========================================
-     Scroll
-     ======================================== */
+  // Scroll handling
 
   window.addEventListener(
     "scroll",
@@ -1291,20 +1138,9 @@ function initAccountSystem() {
     },
   );
 
-  /* ========================================
-     Initial State
-     ======================================== */
-
-  /*
-   * Password Default:
-   * Hidden + Eye Slash
-   */
+  // Initial state
 
   resetPasswordVisibility();
-
-  /*
-   * Default Tab
-   */
 
   activateTab("login", false);
 

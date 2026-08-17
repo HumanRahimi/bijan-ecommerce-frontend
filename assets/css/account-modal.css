@@ -1,6 +1,4 @@
-/* ============================================
-   Account Modal
-   ============================================ */
+/* Account Modal */
 
 .account-modal {
   position: fixed;
@@ -18,9 +16,7 @@
   display: none;
 }
 
-/* ============================================
-   Backdrop
-   ============================================ */
+/* Backdrop */
 
 .account-modal__backdrop {
   position: absolute;
@@ -35,9 +31,7 @@
   transition: opacity var(--duration-smooth) ease;
 }
 
-/* ============================================
-   Dialog
-   ============================================ */
+/* Dialog */
 
 .account-modal__dialog {
   position: relative;
@@ -102,9 +96,7 @@ body.is-account-modal-open {
   overflow: hidden;
 }
 
-/* ============================================
-   Close button
-   ============================================ */
+/* Close button */
 
 .account-modal__close {
   position: absolute;
@@ -142,9 +134,7 @@ body.is-account-modal-open {
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Header
-   ============================================ */
+/* Header */
 
 .account-modal__header {
   display: flex;
@@ -192,9 +182,7 @@ body.is-account-modal-open {
   line-height: 1.8;
 }
 
-/* ============================================
-   Tabs
-   ============================================ */
+/* Tabs */
 
 .account-modal__tabs {
   display: grid;
@@ -243,17 +231,13 @@ body.is-account-modal-open {
   box-shadow: 0 4px 14px rgba(28, 18, 34, 0.06);
 }
 
-/* ============================================
-   Panels
-   ============================================ */
+/* Panels */
 
 .account-modal__panel[hidden] {
   display: none;
 }
 
-/* ============================================
-   Form
-   ============================================ */
+/* Form */
 
 .account-form {
   display: flex;
@@ -329,9 +313,7 @@ body.is-account-modal-open {
   color: var(--color-text-muted);
 }
 
-/* ============================================
-   Password visibility button
-   ============================================ */
+/* Password visibility button */
 
 .account-form__password-toggle {
   display: inline-flex;
@@ -360,9 +342,7 @@ body.is-account-modal-open {
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Validation message
-   ============================================ */
+/* Validation message */
 
 .account-form__message {
   min-height: 0;
@@ -386,9 +366,7 @@ body.is-account-modal-open {
   color: #268d58;
 }
 
-/* ============================================
-   Submit
-   ============================================ */
+/* Submit */
 
 .account-form__submit {
   min-height: 48px;
@@ -419,9 +397,7 @@ body.is-account-modal-open {
   transform: scale(0.99);
 }
 
-/* ============================================
-   Login / register switch
-   ============================================ */
+/* Login / register switch */
 
 .account-form__switch {
   align-self: center;
@@ -446,9 +422,7 @@ body.is-account-modal-open {
   font-weight: 700;
 }
 
-/* ============================================
-   Keyboard focus
-   ============================================ */
+/* Keyboard focus */
 
 .account-modal button:focus-visible {
   outline: 2px solid var(--color-brand-primary);
@@ -459,9 +433,7 @@ body.is-account-modal-open {
   outline: none;
 }
 
-/* ============================================
-   Account Popover
-   ============================================ */
+/* Account Popover */
 
 .account-popover {
   position: fixed;
@@ -626,9 +598,7 @@ body.is-account-modal-open {
   text-align: right;
 }
 
-/* ============================================
-   Tablet / Mobile
-   ============================================ */
+/* Tablet / Mobile */
 
 @media only screen and (max-width: 768px) {
   .account-modal {
@@ -656,9 +626,7 @@ body.is-account-modal-open {
   }
 }
 
-/* ============================================
-   Small Mobile
-   ============================================ */
+/* Small mobile */
 
 @media only screen and (max-width: 425px) {
   .account-modal {
@@ -725,9 +693,7 @@ body.is-account-modal-open {
   }
 }
 
-/* ============================================
-   Reduced Motion
-   ============================================ */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .account-modal__backdrop,

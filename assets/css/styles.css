@@ -1,6 +1,4 @@
-/* ============================================
-   Shared design tokens
-   ============================================ */
+/* Shared design tokens */
 :root {
   --layout-max-width: 1400px;
   --layout-gutter: 24px;
@@ -28,9 +26,7 @@
   --color-header-icon-fg: #4e5364;
   --color-badge: var(--color-brand-primary);
 
-  /* ============================================
-   Neutral Borders
-   ============================================ */
+  /* Neutral Borders */
 
   --color-border-subtle: rgba(0, 0, 0, 0.06);
 
@@ -50,9 +46,7 @@
   --header-banner-height: 46px;
   --compact-header-height: 72px;
 
-  /* ============================================
-   Shared section typography
-   ============================================ */
+  /* Shared section typography */
 
   --section-eyebrow-size: 0.875rem;
   --section-eyebrow-weight: 400;
@@ -64,18 +58,14 @@
 
   --section-title-accent-weight: 700;
 
-  /* ============================================
-   Small Typography Scale
-   ============================================ */
+  /* Small Typography Scale */
 
   --text-2xs: 0.6875rem; /* 11px */
   --text-xs: 0.75rem; /* 12px */
   --text-sm: 0.8125rem; /* 13px */
   --text-md: 0.875rem; /* 14px */
 
-  /* ============================================
-   Layout & Section Rhythm
-   ============================================ */
+  /* Layout & Section Rhythm */
 
   --section-content-width: 1360px;
   --section-inline-padding: 20px;
@@ -83,9 +73,7 @@
   --section-space-top: 88px;
   --section-space-bottom: 80px;
 
-  /* ============================================
-   Border Radius Scale
-   ============================================ */
+  /* Border Radius Scale */
 
   --radius-xs: 4px;
   --radius-sm: 8px;
@@ -98,18 +86,14 @@
   --radius-round: 999px;
   --radius-circle: 50%;
 
-  /* ============================================
-   Motion Durations
-   ============================================ */
+  /* Motion Durations */
 
   --duration-fast: 160ms;
   --duration-base: 200ms;
   --duration-smooth: 220ms;
 }
 
-/* ============================================
-   Base
-   ============================================ */
+/* Base */
 *,
 *::before,
 *::after {
@@ -129,9 +113,7 @@ body {
   font-family: "Dana", Tahoma, Arial, sans-serif;
 }
 
-/* ============================================
-   Global Element Reset
-   ============================================ */
+/* Global Element Reset */
 
 :where(h1, h2, h3, h4, h5, h6, p, figure, ul, ol) {
   margin: 0;
@@ -181,9 +163,7 @@ button {
   border: 0 !important;
 }
 
-/* ============================================
-   Shared Slider Navigation
-   ============================================ */
+/* Shared Slider Navigation */
 
 .slider-arrows {
   display: flex;
@@ -221,10 +201,7 @@ button {
   cursor: default;
 }
 
-/* ============================================
-   Compact Slider Arrow
-   New Products + Best Sellers
-   ============================================ */
+/* Compact Slider Arrow New Products + Best Sellers */
 
 .slider-arrow--compact {
   width: 38px;
@@ -289,9 +266,7 @@ button {
   }
 }
 
-/* ============================================
-   Shared Section View All
-   ============================================ */
+/* Shared Section View All */
 
 .section-view-all {
   --section-view-all-accent: var(--color-brand-primary);
@@ -339,19 +314,13 @@ button {
   border-radius: var(--radius-xs);
 }
 
-/* ============================================
-   Light variant
-   Amazing Deals
-   ============================================ */
+/* Light variant Amazing Deals */
 
 .section-view-all--light {
   --section-view-all-accent: var(--color-white);
 }
 
-/* ============================================
-   Button variant
-   Blog News
-   ============================================ */
+/* Button variant Blog News */
 
 .section-view-all--button {
   width: 170px;
@@ -386,9 +355,7 @@ button {
   transform: translateX(-2px);
 }
 
-/* ============================================
-   Reduced Motion
-   ============================================ */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .section-view-all {
@@ -396,9 +363,7 @@ button {
   }
 }
 
-/* ============================================
-   Shared Section Heading
-   ============================================ */
+/* Shared Section Heading */
 
 .section-heading {
   display: flex;
@@ -427,9 +392,7 @@ button {
   line-height: var(--section-title-line-height);
 }
 
-/* ============================================
-   Shared Section Divider
-   ============================================ */
+/* Shared Section Divider */
 
 .section-divider {
   width: 100%;
@@ -440,9 +403,7 @@ button {
   background: #e7e7ec;
 }
 
-/* ============================================
-   Preview bar
-   ============================================ */
+/* Preview bar */
 .preview-bar {
   position: absolute;
   inset: 0 0 auto;
@@ -640,9 +601,7 @@ button {
   cursor: pointer;
 }
 
-/* ============================================
-   Preview bar restore button
-   ============================================ */
+/* Preview bar restore button */
 .preview-bar-restore {
   position: fixed;
   top: 10px;
@@ -705,9 +664,7 @@ body.is-preview-bar-hidden .header-banner {
   margin-top: 0;
 }
 
-/* ============================================
-   Preview bar responsive
-   ============================================ */
+/* Preview bar responsive */
 @media (max-width: 1250px) {
   .preview-bar__title-wrap {
     flex: 0 0 50%;
@@ -743,9 +700,7 @@ body.is-preview-bar-hidden .header-banner {
   }
 }
 
-/* ============================================
-   Device preview workspace
-   ============================================ */
+/* Device preview workspace */
 .preview-shell-page {
   --preview-device-width: 100%;
   --preview-stage-offset: var(--preview-bar-height);
@@ -806,22 +761,22 @@ body.is-preview-bar-hidden .header-banner {
   background: var(--color-surface);
 }
 
-/* ---------- Desktop ---------- */
+/* Desktop */
 .preview-shell-page[data-preview-device="desktop"] {
   --preview-device-width: 100%;
 }
 
-/* ---------- Laptop ---------- */
+/* Laptop */
 .preview-shell-page[data-preview-device="laptop"] {
   --preview-device-width: 1024px;
 }
 
-/* ---------- Tablet ---------- */
+/* Tablet */
 .preview-shell-page[data-preview-device="tablet"] {
   --preview-device-width: 768px;
 }
 
-/* ---------- Mobile ---------- */
+/* Mobile */
 .preview-shell-page[data-preview-device="mobile"] {
   --preview-device-width: 425px;
 }

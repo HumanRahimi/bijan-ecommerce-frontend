@@ -1,5 +1,6 @@
 "use strict";
 
+// Preview bar and responsive device switching.
 function initPreviewBar() {
   const previewBar = document.querySelector("[data-preview-bar]");
 
@@ -11,6 +12,7 @@ function initPreviewBar() {
     return;
   }
 
+// Preview bar controls
   function closePreviewBar() {
     document.body.classList.add("is-preview-bar-hidden");
 
@@ -40,6 +42,7 @@ function initPreviewBar() {
   openButton.addEventListener("click", openPreviewBar);
 }
 
+// Device switcher
 function initDeviceSwitcher() {
   const buttons = Array.from(
     document.querySelectorAll(".device-switcher__button"),

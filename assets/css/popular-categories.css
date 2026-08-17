@@ -1,6 +1,4 @@
-/* =========================================
-   Popular Categories
-========================================= */
+/* Popular Categories */
 
 .popular-categories {
   --pc-purple: #9f3bc1;
@@ -18,18 +16,14 @@
   direction: rtl;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .popular-categories__container {
   width: min(100%, var(--section-content-width));
   margin-inline: auto;
 }
 
-/* =========================================
-   Section Header
-========================================= */
+/* Header */
 
 .popular-categories__header {
   display: grid;
@@ -120,9 +114,7 @@
   padding: 5px 0;
 }
 
-/* =========================================
-   Cards Grid
-========================================= */
+/* Cards Grid */
 
 .popular-categories__grid {
   display: grid;
@@ -133,9 +125,7 @@
   width: 100%;
 }
 
-/* =========================================
-   Category Card
-========================================= */
+/* Category Card */
 
 .popular-category-card {
   display: flex;
@@ -151,9 +141,7 @@
   background: var(--color-white);
 }
 
-/* =========================================
-   Card Header
-========================================= */
+/* Card Header */
 
 .popular-category-card__header {
   display: flex;
@@ -264,9 +252,7 @@
   filter: drop-shadow(0 4px 5px rgba(78, 25, 96, 0.18));
 }
 
-/* =========================================
-   Products List
-========================================= */
+/* Products List */
 
 .popular-category-card__products {
   display: grid;
@@ -366,9 +352,7 @@
   color: var(--pc-purple);
 }
 
-/* =========================================
-   Product Image
-========================================= */
+/* Product Image */
 
 .popular-mini-product__image {
   position: relative;
@@ -441,9 +425,7 @@
   background: #111;
 }
 
-/* =========================================
-   Card Footer
-========================================= */
+/* Card Footer */
 
 .popular-categories .popular-category-card__footer-link {
   display: flex;
@@ -650,9 +632,7 @@
     direction: rtl;
   }
 }
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .popular-categories *,

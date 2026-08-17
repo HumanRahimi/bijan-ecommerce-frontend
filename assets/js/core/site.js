@@ -14,9 +14,7 @@ function initGoBackButton() {
   });
 }
 
-/* =========================================
-   Footer — Back To Top
-========================================= */
+// Shared site-level browser and header behavior.
 
 function initFooterBackToTop() {
   const button = document.querySelector("[data-footer-top]");
@@ -38,9 +36,7 @@ function initFooterBackToTop() {
   });
 }
 
-/* ============================================
-   Sticky Site Nav + Compact Header
-============================================ */
+// Sticky and compact header
 
 function initStickyHeader() {
   const siteHeader = document.querySelector(".site-header");

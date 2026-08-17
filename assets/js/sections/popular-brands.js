@@ -1,8 +1,6 @@
 "use strict";
 
-/* =========================================
-   Popular Brands Slider
-========================================= */
+// Infinite popular-brands slider.
 
 function initPopularBrandsSlider() {
   const slider = document.querySelector(".brands-slider");

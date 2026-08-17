@@ -1,9 +1,6 @@
 "use strict";
 
-/* ============================================
-   Bijan Store
-   Shared LocalStorage / User State
-   ============================================ */
+// Shared user state, session, and LocalStorage access.
 
 (function () {
   const STORAGE_KEYS = {
@@ -11,9 +8,7 @@
     currentUser: "bijan_demo_current_user",
   };
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function normalizeUsername(value) {
     return String(value || "")
@@ -37,9 +32,7 @@
     };
   }
 
-  /* ========================================
-     Users
-     ======================================== */
+  // User persistence
 
   function getUsers() {
     try {
@@ -79,9 +72,7 @@
     }
   }
 
-  /* ========================================
-     Find User
-     ======================================== */
+  // User lookup
 
   function getUserById(userId) {
     if (!userId) {
@@ -113,9 +104,7 @@
     return Boolean(findUserByUsername(username));
   }
 
-  /* ========================================
-     Current User / Session
-     ======================================== */
+  // Session management
 
   function getCurrentUserId() {
     try {
@@ -181,9 +170,7 @@
     }
   }
 
-  /* ========================================
-     Update User
-     ======================================== */
+  // User updates
 
   function updateUser(userId, updater) {
     if (!userId || typeof updater !== "function") {
@@ -241,9 +228,7 @@
     return updateUser(currentUser.id, updater);
   }
 
-  /* ========================================
-     Public API
-     ======================================== */
+  // Public API
 
   window.BijanStore = Object.freeze({
     getUsers,

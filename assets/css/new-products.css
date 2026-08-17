@@ -1,6 +1,4 @@
-/* ============================================
-   New products section
-   ============================================ */
+/* New products section */
 .new-products {
   width: 100%;
   margin-top: 72px;
@@ -13,9 +11,7 @@
   margin-inline: auto;
 }
 
-/* ============================================
-   Section header
-   ============================================ */
+/* Section header */
 .new-products__header {
   display: grid;
   grid-template-columns:
@@ -34,7 +30,7 @@
   direction: ltr;
 }
 
-/* ---------- Heading ---------- */
+/* Heading */
 .new-products__heading {
   grid-area: heading;
 
@@ -117,9 +113,7 @@
   font-weight: var(--section-title-accent-weight);
 }
 
-/* ============================================
-   Product filters
-   ============================================ */
+/* Product filters */
 .new-products__filters {
   grid-area: filters;
 
@@ -159,7 +153,7 @@
   pointer-events: none;
 }
 
-/* ---------- Filter button ---------- */
+/* Filter button */
 .new-products__filter {
   position: relative;
 
@@ -232,9 +226,7 @@
   outline-offset: 3px;
 }
 
-/* ============================================
-   Header controls
-   ============================================ */
+/* Header controls */
 .new-products__controls {
   grid-area: controls;
 
@@ -251,7 +243,7 @@
   direction: rtl;
 }
 
-/* ---------- Slider arrows ---------- */
+/* Slider arrows */
 .new-products__arrows {
   flex-direction: row-reverse;
   gap: 8px;
@@ -259,9 +251,7 @@
   direction: ltr;
 }
 
-/* ============================================
-   Products slider
-   ============================================ */
+/* Products slider */
 .new-products__viewport {
   width: 100%;
   overflow: hidden;
@@ -295,9 +285,7 @@
   display: none;
 }
 
-/* ============================================
-   Product card
-   ============================================ */
+/* Product card */
 .product-card {
   flex: 0 0 var(--product-card-width, calc((100% - 54px) / 4));
 
@@ -332,9 +320,7 @@
   transform: translateY(-4px);
 }
 
-/* ============================================
-   Product media
-   ============================================ */
+/* Product media */
 .product-card__media {
   position: relative;
 
@@ -370,9 +356,7 @@
   transform: scale(1.045);
 }
 
-/* ============================================
-   Product color swatches
-   ============================================ */
+/* Product color swatches */
 .product-card__swatches {
   position: absolute;
   top: 12px;
@@ -425,9 +409,7 @@
   background: #d26774;
 }
 
-/* ============================================
-   Discount badge
-   ============================================ */
+/* Discount badge */
 .product-card__discount {
   position: absolute;
   bottom: 10px;
@@ -456,9 +438,7 @@
   box-shadow: 0 5px 12px rgba(255, 53, 79, 0.2);
 }
 
-/* ============================================
-   Product content
-   ============================================ */
+/* Product content */
 .product-card__content {
   display: flex;
   flex: 1 1 auto;
@@ -469,7 +449,7 @@
   padding: 14px 16px 16px;
 }
 
-/* ---------- Product title ---------- */
+/* Product title */
 .product-card__title {
   flex: 0 0 5.4em;
 
@@ -513,9 +493,7 @@
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Product stock
-   ============================================ */
+/* Product stock */
 .product-card__stock {
   margin-top: 10px;
   flex: 0 0 auto;
@@ -545,7 +523,7 @@
   font-weight: 700;
 }
 
-/* ---------- Stock progress ---------- */
+/* Stock progress */
 .product-card__progress {
   position: relative;
 
@@ -573,9 +551,7 @@
   background: var(--color-secondary-accent, #38ad69);
 }
 
-/* ============================================
-   Product footer
-   ============================================ */
+/* Product footer */
 .product-card__footer {
   display: flex;
   align-items: center;
@@ -588,7 +564,7 @@
   direction: ltr;
 }
 
-/* ---------- Product actions ---------- */
+/* Product actions */
 .product-card__actions {
   display: flex;
   align-items: center;
@@ -646,9 +622,7 @@
   outline-offset: 3px;
 }
 
-/* ============================================
-   Product prices
-   ============================================ */
+/* Product prices */
 .product-card__prices {
   display: flex;
   flex-direction: column;
@@ -702,9 +676,7 @@
   white-space: nowrap;
 }
 
-/* ============================================
-   New products — tablet
-   ============================================ */
+/* New products: tablet */
 @media only screen and (max-width: 880px) {
   .new-products {
     margin-top: 60px;
@@ -715,7 +687,7 @@
     width: calc(100% - 32px);
   }
 
-  /* ---------- Header ---------- */
+  /* Header */
   .new-products__header {
     display: grid;
     grid-template-columns:
@@ -765,7 +737,7 @@
     display: none;
   }
 
-  /* ---------- Slider ---------- */
+  /* Slider */
   .new-products__track {
     --products-per-view: 3;
     --products-gap: 14px;
@@ -775,9 +747,7 @@
   }
 }
 
-/* ============================================
-   New products — compact layout
-   ============================================ */
+/* New products: compact layout */
 @media only screen and (max-width: 700px) {
   .new-products {
     margin-top: 48px;
@@ -788,7 +758,7 @@
     width: calc(100% - 16px);
   }
 
-  /* ---------- Header ---------- */
+  /* Header */
   .new-products__header {
     grid-template-columns: minmax(0, 1fr);
 
@@ -821,7 +791,7 @@
     font-size: var(--section-title-size);
   }
 
-  /* ---------- Filters ---------- */
+  /* Filters */
   .new-products__filters {
     grid-area: filters;
 
@@ -852,7 +822,7 @@
     font-size: var(--text-xs);
   }
 
-  /* ---------- Controls ---------- */
+  /* Controls */
   .new-products__controls {
     grid-area: controls;
 
@@ -862,13 +832,13 @@
     margin: 0;
   }
 
-  /* ---------- Slider viewport ---------- */
+  /* Slider viewport */
   .new-products__viewport {
     width: min(100%, 560px);
     margin-inline: auto;
   }
 
-  /* ---------- Two cards per view ---------- */
+  /* Two cards per view */
   .new-products__track {
     --products-per-view: 2;
     --products-gap: 14px;
@@ -878,11 +848,9 @@
   }
 }
 
-/* ============================================
-   New products — mobile cards
-   ============================================ */
+/* New products: mobile cards */
 @media only screen and (max-width: 560px) {
-  /* ---------- Slider ---------- */
+  /* Slider */
   .new-products__track {
     --products-per-view: 2;
     --products-gap: 12px;
@@ -891,14 +859,14 @@
     gap: var(--products-gap);
   }
 
-  /* ---------- Product card ---------- */
+  /* Product card */
   .product-card {
     min-height: 350px;
 
     border-radius: var(--radius-card-md);
   }
 
-  /* ---------- Product image ---------- */
+  /* Product image */
   .product-card__media {
     height: 174px;
 
@@ -912,7 +880,7 @@
     height: 90%;
   }
 
-  /* ---------- Color swatches ---------- */
+  /* Color swatches */
   .product-card__swatches {
     top: 9px;
     right: 9px;
@@ -925,7 +893,7 @@
     height: 5px;
   }
 
-  /* ---------- Discount ---------- */
+  /* Discount */
   .product-card__discount {
     bottom: 8px;
     left: 8px;
@@ -936,12 +904,12 @@
     padding-inline: 6px;
   }
 
-  /* ---------- Content ---------- */
+  /* Content */
   .product-card__content {
     padding: 11px 10px 12px;
   }
 
-  /* ---------- Stock ---------- */
+  /* Stock */
   .product-card__stock {
     margin-top: 7px;
   }
@@ -958,14 +926,14 @@
     margin-top: 5px;
   }
 
-  /* ---------- Footer ---------- */
+  /* Footer */
   .product-card__footer {
     gap: 7px;
 
     padding-top: 10px;
   }
 
-  /* ---------- Actions ---------- */
+  /* Actions */
   .product-card__actions {
     gap: 6px;
   }
@@ -979,7 +947,7 @@
     font-size: 11px;
   }
 
-  /* ---------- Prices ---------- */
+  /* Prices */
   .product-card__prices {
     gap: 1px;
   }
@@ -989,9 +957,7 @@
   }
 }
 
-/* ============================================
-   Reduced motion
-   ============================================ */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .new-products__filter,
   .product-card,

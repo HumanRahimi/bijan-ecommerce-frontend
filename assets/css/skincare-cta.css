@@ -1,6 +1,4 @@
-/* =========================================
-   Skincare CTA
-========================================= */
+/* Skincare CTA */
 
 .skincare-cta {
   --sc-purple: #9d3cbc;
@@ -15,18 +13,14 @@
   direction: rtl;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .skincare-cta__container {
   width: min(100%, var(--section-content-width));
   margin-inline: auto;
 }
 
-/* =========================================
-   Main Box
-========================================= */
+/* Main Box */
 
 .skincare-cta__box {
   position: relative;
@@ -41,9 +35,7 @@
   direction: ltr;
 }
 
-/* =========================================
-   Side Panels
-========================================= */
+/* Side Panels */
 
 .skincare-cta__side {
   position: relative;
@@ -93,9 +85,7 @@
   background-position: center right;
 }
 
-/* =========================================
-   Left Description
-========================================= */
+/* Left Description */
 
 .skincare-cta__description {
   max-width: 280px;
@@ -115,9 +105,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   Left Arrow
-========================================= */
+/* Left Arrow */
 
 .skincare-cta__arrow {
   position: absolute;
@@ -187,9 +175,7 @@
   transform: rotate(-42deg);
 }
 
-/* =========================================
-   Right Title
-========================================= */
+/* Right Title */
 
 .skincare-cta__title {
   color: var(--sc-text);
@@ -207,9 +193,7 @@
   font-weight: 800;
 }
 
-/* =========================================
-   Center Product
-========================================= */
+/* Center Product */
 
 .skincare-cta__product {
   position: relative;
@@ -451,9 +435,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .skincare-cta *,

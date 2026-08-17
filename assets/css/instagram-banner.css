@@ -1,6 +1,4 @@
-/* ============================================
-   Instagram promotion
-   ============================================ */
+/* Instagram promotion */
 
 .instagram-banner {
   position: relative;
@@ -16,9 +14,7 @@
   margin-inline: auto;
 }
 
-/* ============================================
-   Main banner
-   ============================================ */
+/* Main banner */
 
 .instagram-banner__box {
   position: relative;
@@ -64,9 +60,7 @@
   content: none;
 }
 
-/* ============================================
-   Center content
-   ============================================ */
+/* Center content */
 
 .instagram-banner__content {
   grid-column: 2;
@@ -108,9 +102,7 @@
   font-weight: 700;
 }
 
-/* ============================================
-   Instagram button
-   ============================================ */
+/* Instagram button */
 
 .instagram-banner__button {
   grid-column: 1;
@@ -184,9 +176,7 @@
   font-size: 11px;
 }
 
-/* ============================================
-   Account ribbon
-   ============================================ */
+/* Account ribbon */
 
 .instagram-banner__account {
   position: absolute;
@@ -237,9 +227,7 @@
   content: none;
 }
 
-/* ============================================
-   Instagram 3D image
-   ============================================ */
+/* Instagram 3D image */
 
 .instagram-banner__image {
   position: relative;
@@ -268,9 +256,7 @@
   user-select: none;
 }
 
-/* ============================================
-   Responsive — 1366px
-   ============================================ */
+/* Responsive: 1366px */
 
 @media only screen and (max-width: 1366px) {
   .instagram-banner__box {
@@ -278,9 +264,7 @@
   }
 }
 
-/* ============================================
-   Responsive — 1200px
-   ============================================ */
+/* Responsive: 1200px */
 
 @media only screen and (max-width: 1200px) {
   .instagram-banner__box {
@@ -288,9 +272,7 @@
   }
 }
 
-/* ============================================
-   Responsive — 1024px
-   ============================================ */
+/* Responsive: 1024px */
 
 @media only screen and (max-width: 1024px) {
   .instagram-banner {
@@ -306,9 +288,7 @@
   }
 }
 
-/* ============================================
-   Responsive — 880px
-   ============================================ */
+/* Responsive: 880px */
 
 @media only screen and (max-width: 880px) {
   .instagram-banner__box {
@@ -365,9 +345,7 @@
   }
 }
 
-/* ============================================
-   Responsive — 767px
-   ============================================ */
+/* Responsive: 767px */
 @media only screen and (max-width: 767px) {
   .instagram-banner__account {
     right: 50%;
@@ -380,9 +358,7 @@
   }
 }
 
-/* ============================================
-   Small mobile safety
-   ============================================ */
+/* Small mobile safety */
 
 @media only screen and (max-width: 560px) {
   .instagram-banner__box {
@@ -419,9 +395,7 @@
   }
 }
 
-/* ============================================
-   Reduced motion
-   ============================================ */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .instagram-banner__button {

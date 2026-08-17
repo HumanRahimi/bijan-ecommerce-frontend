@@ -1,8 +1,6 @@
 "use strict";
 
-/* =========================================
-   Testimonials Slider
-========================================= */
+// Responsive testimonials slider.
 
 function initTestimonialsSlider() {
   const sections = document.querySelectorAll("[data-testimonials]");

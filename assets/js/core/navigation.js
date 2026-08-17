@@ -1,5 +1,6 @@
 "use strict";
 
+// Mobile navigation and submenu interactions.
 function initMobileNavigation() {
   const toggleButton = document.querySelector("[data-mobile-menu-toggle]");
   const navigationLayer = document.querySelector("[data-mobile-nav]");
@@ -25,6 +26,7 @@ function initMobileNavigation() {
   let closeTimer = null;
   let lastFocusedElement = null;
 
+// Menu controls
   function openMenu() {
     window.clearTimeout(closeTimer);
 
@@ -95,6 +97,7 @@ function initMobileNavigation() {
     }
   }
 
+// Submenu controls
   function closeSubmenu(button) {
     const submenuId = button.getAttribute("aria-controls");
 
@@ -147,6 +150,7 @@ function initMobileNavigation() {
     });
   });
 
+// Event bindings
   toggleButton.addEventListener("click", toggleMenu);
 
   closeButton.addEventListener("click", function () {

@@ -1,5 +1,6 @@
 "use strict";
 
+// Hero slider transitions, controls, and autoplay.
 function initHeroSlider() {
   const slider = document.querySelector("[data-hero-slider]");
 
@@ -58,6 +59,7 @@ function initHeroSlider() {
 
   let isAnimating = false;
 
+// Slider helpers
   function normalizeIndex(index) {
     return (index + slides.length) % slides.length;
   }
@@ -96,6 +98,7 @@ function initHeroSlider() {
     status.textContent = "پیشنهاد " + (index + 1) + " از " + slides.length;
   }
 
+// Rendering
   function renderImmediately(index, shouldAnnounce) {
     const targetIndex = normalizeIndex(index);
 
@@ -194,6 +197,7 @@ function initHeroSlider() {
     return true;
   }
 
+// Autoplay controls
   function stopAutoplay() {
     if (autoplayId === null) return;
 
@@ -226,6 +230,7 @@ function initHeroSlider() {
     startAutoplay();
   }
 
+// Event bindings
   thumbs.forEach(function (thumb, index) {
     thumb.addEventListener("click", function () {
       if (index === activeIndex) {

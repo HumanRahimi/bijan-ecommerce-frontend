@@ -1,8 +1,6 @@
 "use strict";
 
-/* =========================================
-   Blog News Mobile Slider
-========================================= */
+// Mobile blog slider, dots, and swipe gestures.
 
 function initBlogNewsSlider() {
   const sliders = document.querySelectorAll("[data-blog-slider]");

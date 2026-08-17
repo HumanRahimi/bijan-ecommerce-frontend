@@ -1,6 +1,4 @@
-/* =========================================
-   Popular Brands
-========================================= */
+/* Popular Brands */
 
 .brands-section {
   --brands-purple: var(--color-brand-primary);
@@ -27,9 +25,7 @@
   margin-inline: auto;
 }
 
-/* =========================================
-   Header
-========================================= */
+/* Header */
 
 .brands-section__header {
   display: flex;
@@ -124,9 +120,7 @@
   min-width: 40px;
 }
 
-/* =========================================
-   Arrows
-========================================= */
+/* Arrows */
 
 .brands-section__arrows {
   position: relative;
@@ -194,9 +188,7 @@
   opacity: 1;
 }
 
-/* =========================================
-   Slider
-========================================= */
+/* Slider */
 
 .brands-slider {
   width: 100%;
@@ -220,9 +212,7 @@
   will-change: transform;
 }
 
-/* =========================================
-   Brand Item
-========================================= */
+/* Brand Item */
 
 .brand-item {
   position: relative;
@@ -291,9 +281,7 @@
   transform: translate(-50%, 18px);
 }
 
-/* =========================================
-   Logo
-========================================= */
+/* Logo */
 
 .brand-item__image {
   display: block;
@@ -319,9 +307,7 @@
   filter: grayscale(0);
 }
 
-/* =========================================
-   Text
-========================================= */
+/* Text */
 
 .brand-item__texts {
   display: flex;
@@ -400,9 +386,7 @@
   font-weight: 500;
 }
 
-/* =========================================
-   Popular Brands — <= 1200px
-========================================= */
+/* Popular Brands: <= 1200px */
 @media only screen and (max-width: 1200px) {
   .brands-section {
     padding-inline: 16px;
@@ -413,9 +397,7 @@
   }
 }
 
-/* =========================================
-   Popular Brands — <= 768px
-========================================= */
+/* Popular Brands: <= 768px */
 @media only screen and (max-width: 768px) {
   .brands-section {
     padding-inline: 14px;
@@ -431,9 +413,7 @@
   }
 }
 
-/* =========================================
-   Popular Brands — <= 560px
-========================================= */
+/* Popular Brands: <= 560px */
 
 @media only screen and (max-width: 560px) {
   .brands-section {
@@ -478,10 +458,7 @@
   }
 }
 
-/* =========================================
-   Popular Brands — <= 425px
-   1 card
-========================================= */
+/* Popular Brands: <= 425px 1 card */
 
 @media only screen and (max-width: 425px) {
   .brand-item__image {

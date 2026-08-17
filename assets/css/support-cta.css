@@ -1,6 +1,4 @@
-/* =========================================
-   Support CTA
-========================================= */
+/* Support CTA */
 
 .support-cta {
   --support-purple: #9741ba;
@@ -13,7 +11,7 @@
 
   --support-text: #171717;
   --support-muted: #6f6f6f;
-  
+
   width: 100%;
   margin-top: 24px;
   padding: 0 20px 80px;
@@ -21,9 +19,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Accessibility
-========================================= */
+/* Accessibility */
 
 .support-cta__sr-only {
   position: absolute;
@@ -40,9 +36,7 @@
   border: 0;
 }
 
-/* =========================================
-   Main Container
-========================================= */
+/* Container */
 
 .support-cta__container {
   position: relative;
@@ -52,9 +46,7 @@
   margin-inline: auto;
 }
 
-/* =========================================
-   Main Panel
-========================================= */
+/* Panel */
 
 .support-cta__panel {
   position: absolute;
@@ -75,9 +67,7 @@
   background-size: auto 180px;
 }
 
-/* =========================================
-   Introduction
-========================================= */
+/* Introduction */
 
 .support-cta__intro {
   position: absolute;
@@ -100,9 +90,7 @@
   text-align: right;
 }
 
-/* =========================================
-   Contact Button
-========================================= */
+/* Contact Button */
 
 .support-cta__button {
   position: absolute;
@@ -184,9 +172,7 @@
   transition: color var(--duration-fast) ease;
 }
 
-/* =========================================
-   Contact Button Hover — Reverse Colors
-========================================= */
+/* Contact Button Hover: Reverse Colors */
 
 .support-cta__button:hover {
   border-color: var(--support-purple);
@@ -217,9 +203,7 @@
   outline-offset: 4px;
 }
 
-/* =========================================
-   Contact Details
-========================================= */
+/* Contact Details */
 
 .support-cta__details {
   position: absolute;
@@ -235,9 +219,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Detail Card
-========================================= */
+/* Detail Card */
 
 .support-detail {
   position: relative;
@@ -249,9 +231,7 @@
   overflow: visible;
 }
 
-/* =========================================
-   Detail Body
-========================================= */
+/* Detail Body */
 
 .support-detail__body {
   position: absolute;
@@ -279,9 +259,7 @@
   text-align: right;
 }
 
-/* =========================================
-   Detail Icon
-========================================= */
+/* Detail Icon */
 
 .support-detail__icon {
   position: absolute;
@@ -319,9 +297,7 @@
 .support-detail__icon .fa-regular {
   font-weight: 400;
 }
-/* =========================================
-   Detail Typography
-========================================= */
+/* Detail Typography */
 
 .support-detail__title {
   display: block;
@@ -375,9 +351,7 @@
   font-weight: 600;
 }
 
-/* =========================================
-   Support Person
-========================================= */
+/* Support Person */
 
 .support-cta__person {
   position: absolute;
@@ -403,9 +377,7 @@
   );
 }
 
-/* =========================================
-   Person Inner Circle
-========================================= */
+/* Person Inner Circle */
 
 .support-cta__person-inner {
   position: relative;
@@ -424,9 +396,7 @@
   background: linear-gradient(180deg, #ae65cb 0%, #9b49be 100%);
 }
 
-/* =========================================
-   Person Dots
-========================================= */
+/* Person Dots */
 
 .support-cta__person-dots {
   position: absolute;
@@ -464,9 +434,7 @@
   transform: translateX(-50%);
 }
 
-/* =========================================
-   Person Image
-========================================= */
+/* Person Image */
 
 .support-cta__person img {
   position: relative;
@@ -482,9 +450,7 @@
   object-position: center bottom;
 }
 
-/* =========================================
-   Focus
-========================================= */
+/* Focus */
 
 .support-cta__button:focus-visible,
 .support-detail__value:focus-visible {
@@ -492,9 +458,7 @@
   outline-offset: 4px;
 }
 
-/* =========================================
-   Support CTA — 1350px
-========================================= */
+/* Support CTA: 1350px */
 
 @media only screen and (max-width: 1350px) {
   .support-cta {
@@ -613,26 +577,20 @@
   }
 }
 
-/* =========================================
-   Support CTA — 1150px
-========================================= */
+/* Support CTA: 1150px */
 
 @media only screen and (max-width: 1150px) {
   .support-cta {
     padding-inline: 20px;
   }
 
-  /* =========================================
-     Main Container
-  ========================================= */
+  /* Container */
 
   .support-cta__container {
     height: 310px;
   }
 
-  /* =========================================
-     Main Panel
-  ========================================= */
+  /* Panel */
 
   .support-cta__panel {
     top: 10px;
@@ -645,9 +603,7 @@
     background-size: auto 160px;
   }
 
-  /* =========================================
-     Support Person
-  ========================================= */
+  /* Support Person */
 
   .support-cta__person {
     width: 285px;
@@ -672,9 +628,7 @@
     height: 232px;
   }
 
-  /* =========================================
-     Introduction
-  ========================================= */
+  /* Introduction */
 
   .support-cta__intro {
     top: 38px;
@@ -687,9 +641,7 @@
     line-height: 2;
   }
 
-  /* =========================================
-     Contact Button
-  ========================================= */
+  /* Contact Button */
 
   .support-cta__button {
     top: 44px;
@@ -710,9 +662,7 @@
     border-radius: 10px;
   }
 
-  /* =========================================
-     Contact Details — Three Cards
-  ========================================= */
+  /* Contact Details: Three Cards */
 
   .support-cta__details {
     right: 190px;
@@ -735,9 +685,7 @@
     justify-self: stretch;
   }
 
-  /* =========================================
-     Detail Card
-  ========================================= */
+  /* Detail Card */
 
   .support-detail {
     position: relative;
@@ -749,9 +697,7 @@
     overflow: visible;
   }
 
-  /* =========================================
-     Detail Icon
-  ========================================= */
+  /* Detail Icon */
 
   .support-detail__icon {
     top: 3px;
@@ -767,9 +713,7 @@
     font-size: 1.35rem;
   }
 
-  /* =========================================
-     Detail Body
-  ========================================= */
+  /* Detail Body */
 
   .support-detail__body {
     top: 3px;
@@ -782,9 +726,7 @@
     border-radius: 15px 43px 43px 15px;
   }
 
-  /* =========================================
-     Detail Typography
-  ========================================= */
+  /* Detail Typography */
 
   .support-detail__title {
     line-height: 1.45;
@@ -807,26 +749,20 @@
   }
 }
 
-/* =========================================
-   Support CTA — 1024px
-========================================= */
+/* Support CTA: 1024px */
 
 @media only screen and (max-width: 1024px) {
   .support-cta {
     padding-inline: 16px;
   }
 
-  /* =========================================
-     Main Container
-  ========================================= */
+  /* Container */
 
   .support-cta__container {
     height: 300px;
   }
 
-  /* =========================================
-     Main Panel
-  ========================================= */
+  /* Panel */
 
   .support-cta__panel {
     top: 10px;
@@ -839,9 +775,7 @@
     background-size: auto 155px;
   }
 
-  /* =========================================
-     Support Person
-  ========================================= */
+  /* Support Person */
 
   .support-cta__person {
     width: 268px;
@@ -866,9 +800,7 @@
     height: 217px;
   }
 
-  /* =========================================
-     Introduction
-  ========================================= */
+  /* Introduction */
 
   .support-cta__intro {
     top: 34px;
@@ -881,9 +813,7 @@
     line-height: 1.95;
   }
 
-  /* =========================================
-     Contact Button
-  ========================================= */
+  /* Contact Button */
 
   .support-cta__button {
     top: 40px;
@@ -904,9 +834,7 @@
     border-radius: 9px;
   }
 
-  /* =========================================
-     Contact Details
-  ========================================= */
+  /* Contact Details */
 
   .support-cta__details {
     right: 174px;
@@ -926,17 +854,13 @@
     justify-self: stretch;
   }
 
-  /* =========================================
-     Detail Card
-  ========================================= */
+  /* Detail Card */
 
   .support-detail {
     height: 82px;
   }
 
-  /* =========================================
-     Detail Icon
-  ========================================= */
+  /* Detail Icon */
 
   .support-detail__icon {
     top: 3px;
@@ -951,9 +875,7 @@
     font-size: 1.3rem;
   }
 
-  /* =========================================
-     Detail Body
-  ========================================= */
+  /* Detail Body */
 
   .support-detail__body {
     top: 3px;
@@ -976,9 +898,7 @@
   }
 }
 
-/* =========================================
-   Support CTA — 992px
-========================================= */
+/* Support CTA: 992px */
 
 @media only screen and (max-width: 992px) {
   .support-cta {
@@ -986,17 +906,13 @@
     padding-bottom: 64px;
   }
 
-  /* =========================================
-     Main Container
-  ========================================= */
+  /* Container */
 
   .support-cta__container {
     height: 610px;
   }
 
-  /* =========================================
-     Main Panel
-  ========================================= */
+  /* Panel */
 
   .support-cta__panel {
     top: 28px;
@@ -1012,9 +928,7 @@
     background-size: auto 160px;
   }
 
-  /* =========================================
-     Support Person
-  ========================================= */
+  /* Support Person */
 
   .support-cta__person {
     top: 0;
@@ -1042,9 +956,7 @@
     height: 171px;
   }
 
-  /* =========================================
-     Introduction
-  ========================================= */
+  /* Introduction */
 
   .support-cta__intro {
     top: 48px;
@@ -1062,9 +974,7 @@
     text-align: right;
   }
 
-  /* =========================================
-     Contact Button
-  ========================================= */
+  /* Contact Button */
 
   .support-cta__button {
     top: 142px;
@@ -1086,9 +996,7 @@
     border-radius: 10px;
   }
 
-  /* =========================================
-     Contact Details — One Column
-  ========================================= */
+  /* Contact Details: One Column */
 
   .support-cta__details {
     right: 24px;
@@ -1108,18 +1016,14 @@
     justify-self: stretch;
   }
 
-  /* =========================================
-     Detail Card
-  ========================================= */
+  /* Detail Card */
 
   .support-detail {
     width: 100%;
     height: 86px;
   }
 
-  /* =========================================
-     Detail Icon
-  ========================================= */
+  /* Detail Icon */
 
   .support-detail__icon {
     top: 3px;
@@ -1135,9 +1039,7 @@
     font-size: 1.4rem;
   }
 
-  /* =========================================
-     Detail Body
-  ========================================= */
+  /* Detail Body */
 
   .support-detail__body {
     top: 3px;
@@ -1150,9 +1052,7 @@
     border-radius: 16px 44px 44px 16px;
   }
 
-  /* =========================================
-     Detail Typography
-  ========================================= */
+  /* Detail Typography */
 
   .support-detail__title {
     line-height: 1.45;
@@ -1175,9 +1075,7 @@
   }
 }
 
-/* =========================================
-   Support CTA — 425px
-========================================= */
+/* Support CTA: 425px */
 
 @media only screen and (max-width: 560px) {
   .support-cta {
@@ -1185,17 +1083,13 @@
     padding-bottom: 56px;
   }
 
-  /* =========================================
-     Main Container
-  ========================================= */
+  /* Container */
 
   .support-cta__container {
     height: 690px;
   }
 
-  /* =========================================
-     Main Panel
-  ========================================= */
+  /* Panel */
 
   .support-cta__panel {
     top: 58px;
@@ -1211,9 +1105,7 @@
     background-size: auto 150px;
   }
 
-  /* =========================================
-     Support Person — Centered
-  ========================================= */
+  /* Support Person: Centered */
 
   .support-cta__person {
     top: 0;
@@ -1244,9 +1136,7 @@
     height: 154px;
   }
 
-  /* =========================================
-     Introduction — Below Person
-  ========================================= */
+  /* Introduction: Below Person */
 
   .support-cta__intro {
     top: 150px;
@@ -1267,9 +1157,7 @@
     text-align: center;
   }
 
-  /* =========================================
-     Contact Button — Centered
-  ========================================= */
+  /* Contact Button: Centered */
 
   .support-cta__button {
     top: 258px;
@@ -1297,9 +1185,7 @@
     border-radius: 10px;
   }
 
-  /* =========================================
-     Contact Details
-  ========================================= */
+  /* Contact Details */
 
   .support-cta__details {
     right: 18px;
@@ -1319,9 +1205,7 @@
     justify-self: stretch;
   }
 
-  /* =========================================
-     Detail Card
-  ========================================= */
+  /* Detail Card */
 
   .support-detail {
     width: 100%;
@@ -1364,9 +1248,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .support-cta__button {

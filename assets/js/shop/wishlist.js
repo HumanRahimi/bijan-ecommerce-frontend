@@ -1,8 +1,6 @@
 "use strict";
 
-/* ============================================
-   Wishlist
-   ============================================ */
+// Wishlist state, heart synchronization, and popover interactions.
 
 function initWishlist() {
   if (!window.BijanStore) {
@@ -15,9 +13,7 @@ function initWishlist() {
     return;
   }
 
-  /* ========================================
-     Elements
-     ======================================== */
+  // DOM references
 
   const panel = document.querySelector("[data-wishlist-panel]");
 
@@ -41,9 +37,7 @@ function initWishlist() {
     document.querySelectorAll("[data-wishlist-toggle]"),
   );
 
-  /* ========================================
-     State
-     ======================================== */
+  // Runtime state
 
   let pendingProductId = null;
   let pendingPanelButton = null;
@@ -53,9 +47,7 @@ function initWishlist() {
 
   let panelPositionFrame = null;
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function toPersianDigits(value) {
     const digits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -135,9 +127,7 @@ function initWishlist() {
     };
   }
 
-  /* ========================================
-     Mobile Menu
-     ======================================== */
+  // Mobile menu helper
 
   function closeMobileMenu() {
     const menuButton = document.querySelector("[data-mobile-menu-toggle]");
@@ -147,9 +137,7 @@ function initWishlist() {
     }
   }
 
-  /* ========================================
-     Request Login
-     ======================================== */
+  // Login request
 
   function requestLogin() {
     closeMobileMenu();
@@ -175,9 +163,7 @@ function initWishlist() {
     }, 50);
   }
 
-  /* ========================================
-     Live Region
-     ======================================== */
+  // Accessibility announcements
 
   let liveRegion = document.querySelector("[data-wishlist-live]");
 
@@ -207,9 +193,7 @@ function initWishlist() {
     }, 20);
   }
 
-  /* ========================================
-     Heart Button UI
-     ======================================== */
+  // Heart state rendering
 
   function setButtonState(button, isActive, product) {
     const icon = button.querySelector(".fa-heart");
@@ -236,9 +220,7 @@ function initWishlist() {
     icon.classList.toggle("fa-regular", !isActive);
   }
 
-  /* ========================================
-     Counts
-     ======================================== */
+  // Count rendering
 
   function updateCounts(user) {
     const count = getWishlist(user).length;
@@ -254,9 +236,7 @@ function initWishlist() {
     }
   }
 
-  /* ========================================
-     Create Panel Item
-     ======================================== */
+  // Wishlist item rendering
 
   function createWishlistItem(item) {
     const product = getDisplayProduct(item);
@@ -267,7 +247,7 @@ function initWishlist() {
 
     article.dataset.productId = product.id;
 
-    /* ---------- Image ---------- */
+    // Media
 
     const media = document.createElement("div");
 
@@ -293,7 +273,7 @@ function initWishlist() {
       media.appendChild(fallback);
     }
 
-    /* ---------- Content ---------- */
+    // Content
 
     const content = document.createElement("div");
 
@@ -317,7 +297,7 @@ function initWishlist() {
       content.appendChild(price);
     }
 
-    /* ---------- Remove ---------- */
+    // Remove control
 
     const removeButton = document.createElement("button");
 
@@ -345,9 +325,7 @@ function initWishlist() {
     return article;
   }
 
-  /* ========================================
-     Render Panel
-     ======================================== */
+  // Panel rendering
 
   function renderPanel(user) {
     if (!panelList || !panelEmpty) {
@@ -377,9 +355,7 @@ function initWishlist() {
     panelList.appendChild(fragment);
   }
 
-  /* ========================================
-     Render Wishlist
-     ======================================== */
+  // Wishlist rendering
 
   function renderWishlist() {
     const user = BijanStore.getCurrentUser();
@@ -403,9 +379,7 @@ function initWishlist() {
     }
   }
 
-  /* ========================================
-     Add Product
-     ======================================== */
+  // Add product
 
   function addProduct(product) {
     const currentUser = BijanStore.getCurrentUser();
@@ -435,9 +409,7 @@ function initWishlist() {
     return true;
   }
 
-  /* ========================================
-     Remove Product
-     ======================================== */
+  // Remove product
 
   function removeProductById(productId, productTitle = "محصول") {
     const currentUser = BijanStore.getCurrentUser();
@@ -463,16 +435,12 @@ function initWishlist() {
     return true;
   }
 
-  /* ========================================
-     Toggle Product
-     ======================================== */
+  // Toggle product
 
   function toggleProduct(product) {
     const currentUser = BijanStore.getCurrentUser();
 
-    /*
-     * Login Required
-     */
+    // Require authentication.
 
     if (!currentUser) {
       pendingProductId = product.id;
@@ -482,9 +450,7 @@ function initWishlist() {
       return;
     }
 
-    /*
-     * Remove
-     */
+    // Remove control
 
     if (hasProduct(currentUser, product.id)) {
       removeProductById(product.id, product.title);
@@ -492,16 +458,10 @@ function initWishlist() {
       return;
     }
 
-    /*
-     * Add
-     */
-
     addProduct(product);
   }
 
-  /* ========================================
-     Panel Position
-     ======================================== */
+  // Popover positioning
 
   function positionPanel(button) {
     if (!panel || !button) {
@@ -530,16 +490,12 @@ function initWishlist() {
     panel.style.setProperty("--popover-top", `${top}px`);
   }
 
-  /* ========================================
-     Open Panel
-     ======================================== */
+  // Open popover
 
   function openPanel(button) {
     const user = BijanStore.getCurrentUser();
 
-    /*
-     * Login Required
-     */
+    // Require authentication.
 
     if (!user) {
       pendingPanelButton = button;
@@ -582,9 +538,7 @@ function initWishlist() {
     });
   }
 
-  /* ========================================
-     Close Panel
-     ======================================== */
+  // Close popover
 
   function closePanel(restoreFocus = false) {
     if (!panel || panel.hidden) {
@@ -618,9 +572,7 @@ function initWishlist() {
     }, 180);
   }
 
-  /* ========================================
-     Product Heart Click
-     ======================================== */
+  // Heart events
 
   wishlistButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -640,9 +592,7 @@ function initWishlist() {
     });
   });
 
-  /* ========================================
-     Open Wishlist
-     ======================================== */
+  // Wishlist trigger
 
   openButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -666,17 +616,13 @@ function initWishlist() {
     });
   });
 
-  /* ========================================
-     Close Button
-     ======================================== */
+  // Close control
 
   closeButton?.addEventListener("click", function () {
     closePanel(true);
   });
 
-  /* ========================================
-     Remove From Panel
-     ======================================== */
+  // Panel item removal
 
   panelList?.addEventListener("click", function (event) {
     const removeButton = event.target.closest("[data-wishlist-remove]");
@@ -702,17 +648,12 @@ function initWishlist() {
     removeProductById(productId, product?.title || "محصول");
   });
 
-  /* ========================================
-     Account Changed
-     Login / Register / Logout
-     ======================================== */
+  // Account change sync
 
   document.addEventListener("account:changed", function (event) {
     const user = event.detail?.user || null;
 
-    /*
-     * Logout
-     */
+    // Logout
 
     if (!user) {
       pendingProductId = null;
@@ -748,17 +689,13 @@ function initWishlist() {
     renderWishlist();
   });
 
-  /* ========================================
-     Store Updated
-     ======================================== */
+  // Store update sync
 
   document.addEventListener("store:user-updated", function () {
     renderWishlist();
   });
 
-  /* ========================================
-     Click Outside
-     ======================================== */
+  // Outside click handling
 
   document.addEventListener("pointerdown", function (event) {
     if (!panel || panel.hidden) {
@@ -780,9 +717,7 @@ function initWishlist() {
     closePanel();
   });
 
-  /* ========================================
-     Keyboard
-     ======================================== */
+  // Keyboard handling
 
   document.addEventListener("keydown", function (event) {
     if (event.key !== "Escape" || !panel || panel.hidden) {
@@ -833,9 +768,7 @@ function initWishlist() {
     });
   }
 
-  /* ========================================
-     Resize
-     ======================================== */
+  // Resize handling
 
   window.addEventListener("resize", syncPanelPosition);
 
@@ -843,9 +776,7 @@ function initWishlist() {
     passive: true,
   });
 
-  /* ========================================
-     Initial Render
-     ======================================== */
+  // Initial render
 
   renderWishlist();
 }

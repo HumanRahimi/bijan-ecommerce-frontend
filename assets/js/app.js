@@ -1,8 +1,6 @@
 "use strict";
 
-/* ============================================
-   App Bootstrap
-   ============================================ */
+// Application bootstrap and module initialization.
 
 document.addEventListener("DOMContentLoaded", function () {
   const initializers = [

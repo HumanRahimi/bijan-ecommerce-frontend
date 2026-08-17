@@ -1,6 +1,4 @@
-/* =========================================
-   Testimonials
-========================================= */
+/* Testimonials */
 
 .testimonials {
   --testimonials-purple: #9741ba;
@@ -20,18 +18,14 @@
   direction: rtl;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .testimonials__container {
   width: min(100%, var(--section-content-width));
   margin-inline: auto;
 }
 
-/* =========================================
-   Header
-========================================= */
+/* Header */
 
 .testimonials__header {
   display: flex;
@@ -41,9 +35,7 @@
   width: 100%;
 }
 
-/* =========================================
-   Heading
-========================================= */
+/* Heading */
 
 .testimonials__heading {
   flex: 0 0 auto;
@@ -121,17 +113,13 @@
   font-weight: var(--section-title-accent-weight);
 }
 
-/* =========================================
-   Header Line
-========================================= */
+/* Header Line */
 
 .testimonials__line {
   flex: 1;
 }
 
-/* =========================================
-   Slider Arrows
-========================================= */
+/* Slider Arrows */
 
 .testimonials__arrows {
   gap: 16px;
@@ -180,9 +168,7 @@
   outline-offset: 4px;
 }
 
-/* =========================================
-   Slider Viewport
-========================================= */
+/* Slider Viewport */
 
 .testimonials__viewport {
   width: 100%;
@@ -193,9 +179,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Slider Track
-========================================= */
+/* Slider Track */
 
 .testimonials__track {
   display: flex;
@@ -213,9 +197,7 @@
   will-change: transform;
 }
 
-/* =========================================
-   Testimonial Card
-========================================= */
+/* Testimonial Card */
 
 .testimonial-card {
   position: relative;
@@ -245,9 +227,7 @@
     box-shadow var(--duration-smooth) ease;
 }
 
-/* =========================================
-   Quote Icon — Hidden Normally
-========================================= */
+/* Quote Icon: Hidden Normally */
 
 .testimonial-card::before {
   content: "“";
@@ -275,9 +255,7 @@
     transform var(--duration-smooth) ease;
 }
 
-/* =========================================
-   Avatar Ring
-========================================= */
+/* Avatar Ring */
 
 .testimonial-card__avatar {
   position: absolute;
@@ -319,9 +297,7 @@
   transition: transform var(--duration-smooth) ease;
 }
 
-/* =========================================
-   Customer Identity
-========================================= */
+/* Customer Identity */
 
 .testimonial-card__identity {
   text-align: center;
@@ -365,9 +341,7 @@
   text-overflow: ellipsis;
 }
 
-/* =========================================
-   Rating
-========================================= */
+/* Rating */
 
 .testimonial-card__rating {
   display: flex;
@@ -405,9 +379,7 @@
   color: var(--testimonials-yellow);
 }
 
-/* =========================================
-   Divider
-========================================= */
+/* Divider */
 
 .testimonial-card__divider {
   width: 100%;
@@ -420,9 +392,7 @@
   transition: background-color var(--duration-smooth) ease;
 }
 
-/* =========================================
-   Review Text
-========================================= */
+/* Review Text */
 
 .testimonial-card__text {
   color: #181818;
@@ -434,9 +404,7 @@
   text-align: right;
 }
 
-/* =========================================
-   Testimonial Card Hover
-========================================= */
+/* Testimonial Card Hover */
 
 .testimonial-card:hover {
   border-color: var(--testimonials-purple);
@@ -464,9 +432,7 @@
   background-color: rgba(151, 65, 186, 0.22);
 }
 
-/* =========================================
-   Touch Devices
-========================================= */
+/* Touch devices */
 
 @media (hover: none) {
   .testimonial-card:hover {
@@ -494,9 +460,7 @@
   }
 }
 
-/* =========================================
-   Testimonials — Three Cards
-========================================= */
+/* Testimonials: Three Cards */
 
 @media only screen and (max-width: 1150px) {
   .testimonials {
@@ -508,9 +472,7 @@
   }
 }
 
-/* =========================================
-   Testimonials — Two Cards
-========================================= */
+/* Testimonials: Two Cards */
 
 @media only screen and (max-width: 820px) {
   .testimonials {
@@ -522,9 +484,7 @@
   }
 }
 
-/* =========================================
-   Testimonials — One Card
-========================================= */
+/* Testimonials: One Card */
 
 @media only screen and (max-width: 560px) {
   .testimonials {
@@ -543,9 +503,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .testimonials__track,

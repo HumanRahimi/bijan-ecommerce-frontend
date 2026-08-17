@@ -1,9 +1,6 @@
 "use strict";
 
-/* ============================================
-   Bijan Products
-   Shared Product Registry
-   ============================================ */
+// Shared product registry and DOM-to-product resolution.
 
 (function () {
   const PRODUCT_CONFIGS = [
@@ -38,9 +35,7 @@
 
   let products = [];
 
-  /* ========================================
-     Helpers
-     ======================================== */
+  // Helpers
 
   function cleanText(value) {
     return String(value || "")
@@ -95,9 +90,7 @@
     return `product-${Math.abs(hash)}`;
   }
 
-  /* ========================================
-     Card Detection
-     ======================================== */
+  // Card detection
 
   function getConfigForCard(card) {
     return (
@@ -121,9 +114,7 @@
     );
   }
 
-  /* ========================================
-     Extract Product
-     ======================================== */
+  // Product extraction
 
   function getProductFromCard(card) {
     if (!card) {
@@ -164,9 +155,7 @@
     };
   }
 
-  /* ========================================
-     Build Registry
-     ======================================== */
+  // Registry build
 
   function buildRegistry() {
     products = [];
@@ -230,9 +219,7 @@
     return products;
   }
 
-  /* ========================================
-     Product Getters
-     ======================================== */
+  // Product queries
 
   function getAllProducts() {
     return products.map(function (product) {
@@ -316,17 +303,13 @@
     };
   }
 
-  /* ========================================
-     Refresh
-     ======================================== */
+  // Registry refresh
 
   function refresh() {
     return buildRegistry();
   }
 
-  /* ========================================
-     Public API
-     ======================================== */
+  // Public API
 
   window.BijanProducts = Object.freeze({
     refresh,
@@ -346,9 +329,7 @@
     getCardFromElement,
   });
 
-  /* ========================================
-     Initial Registry
-     ======================================== */
+  // Initial registry
 
   buildRegistry();
 })();

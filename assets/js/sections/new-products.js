@@ -1,5 +1,7 @@
 "use strict";
 
+// New-product filtering and slider behavior.
+// Product filters
 function initNewProductsFilters() {
   const sections = document.querySelectorAll("[data-new-products]");
 
@@ -58,6 +60,7 @@ function initNewProductsFilters() {
   });
 }
 
+// Product slider
 function initNewProductsSlider() {
   const sections = document.querySelectorAll("[data-new-products]");
 

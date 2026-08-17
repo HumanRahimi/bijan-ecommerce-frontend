@@ -1,7 +1,4 @@
-/* ============================================
-   Cart Panel
-   Same visual system as Wishlist
-   ============================================ */
+/* Cart Panel Same visual system as Wishlist */
 
 .cart-popover {
   position: fixed;
@@ -39,9 +36,7 @@
   transform: translateY(0);
 }
 
-/* ============================================
-   Header
-   ============================================ */
+/* Header */
 
 .cart-popover__header {
   display: flex;
@@ -135,9 +130,7 @@
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Body
-   ============================================ */
+/* Body */
 
 .cart-popover__body {
   flex: 1 1 auto;
@@ -148,9 +141,7 @@
   overflow-y: auto;
 }
 
-/* ============================================
-   Item
-   ============================================ */
+/* Item */
 
 .cart-popover__item {
   display: grid;
@@ -200,9 +191,7 @@
   object-fit: contain;
 }
 
-/* ============================================
-   Content
-   ============================================ */
+/* Content */
 
 .cart-popover__item-content {
   display: flex;
@@ -233,9 +222,7 @@
   font-weight: 700;
 }
 
-/* ============================================
-   Quantity
-   ============================================ */
+/* Quantity */
 
 .cart-popover__quantity {
   display: inline-flex;
@@ -303,9 +290,7 @@
   font-weight: 700;
 }
 
-/* ============================================
-   Remove
-   ============================================ */
+/* Remove */
 
 .cart-popover__item-remove {
   display: inline-flex;
@@ -337,9 +322,7 @@
   transform: scale(0.94);
 }
 
-/* ============================================
-   Empty
-   ============================================ */
+/* Empty */
 
 .cart-popover__empty {
   padding: 38px 24px;
@@ -386,9 +369,7 @@
   line-height: 1.8;
 }
 
-/* ============================================
-   Focus
-   ============================================ */
+/* Focus */
 
 [data-cart-open]:focus-visible,
 .cart-popover button:focus-visible {
@@ -396,9 +377,7 @@
   outline-offset: 2px;
 }
 
-/* ============================================
-   Small Mobile
-   ============================================ */
+/* Small mobile */
 
 @media only screen and (max-width: 425px) {
   .cart-popover__header {
@@ -418,9 +397,7 @@
   }
 }
 
-/* ============================================
-   Reduced Motion
-   ============================================ */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .cart-popover,

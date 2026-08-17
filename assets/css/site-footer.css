@@ -1,7 +1,4 @@
-/* =========================================
-   Footer
-   Desktop
-========================================= */
+/* Footer Desktop */
 
 .site-footer {
   --footer-purple: var(--color-brand-primary);
@@ -19,9 +16,7 @@
   direction: rtl;
 }
 
-/* =========================================
-   Outer Container
-========================================= */
+/* Outer Container */
 
 .site-footer__container {
   width: min(calc(100% - 80px), var(--section-content-width));
@@ -31,9 +26,7 @@
   padding-block: 40px;
 }
 
-/* =========================================
-   Main Shell
-========================================= */
+/* Main Shell */
 
 .site-footer__shell {
   position: relative;
@@ -50,9 +43,7 @@
   color: var(--color-white);
 }
 
-/* =========================================
-   Social Ribbon
-========================================= */
+/* Social Ribbon */
 
 .site-footer__social-ribbon {
   position: absolute;
@@ -171,9 +162,7 @@
   color: var(--color-white);
 }
 
-/* =========================================
-   Top Layout
-========================================= */
+/* Top Layout */
 
 .site-footer__top {
   display: grid;
@@ -187,9 +176,7 @@
   align-items: start;
 }
 
-/* =========================================
-   Footer Menus
-========================================= */
+/* Footer Menus */
 
 .site-footer__menus {
   display: grid;
@@ -314,9 +301,7 @@
   transform: translateX(-3px);
 }
 
-/* =========================================
-   Trust Logos
-========================================= */
+/* Trust Logos */
 
 .site-footer__trust {
   display: flex;
@@ -356,9 +341,7 @@
   transform: scale(1.07);
 }
 
-/* =========================================
-   Information Area
-========================================= */
+/* Information Area */
 
 .site-footer__info {
   display: grid;
@@ -372,9 +355,7 @@
   margin-top: 56px;
 }
 
-/* =========================================
-   About Card
-========================================= */
+/* About Card */
 
 .footer-about {
   display: flex;
@@ -422,9 +403,7 @@
   text-align: justify;
 }
 
-/* =========================================
-   Contact Card
-========================================= */
+/* Contact Card */
 
 .footer-contact {
   display: flex;
@@ -507,9 +486,7 @@
   line-height: 2rem;
 }
 
-/* =========================================
-   Divider
-========================================= */
+/* Divider */
 
 .site-footer__divider {
   position: relative;
@@ -522,9 +499,7 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* =========================================
-   Back To Top
-========================================= */
+/* Back To Top */
 
 .site-footer__back-top {
   position: absolute;
@@ -595,9 +570,7 @@
   color: var(--color-white);
 }
 
-/* =========================================
-   Bottom
-========================================= */
+/* Bottom */
 
 .site-footer__bottom {
   display: flex;
@@ -657,9 +630,7 @@
   margin-right: 16px;
 }
 
-/* =========================================
-   Footer — <= 1366px
-========================================= */
+/* Footer: <= 1366px */
 
 @media only screen and (max-width: 1366px) {
   .site-footer__info {
@@ -680,9 +651,7 @@
   }
 }
 
-/* =========================================
-   Footer — <= 1200px
-========================================= */
+/* Footer: <= 1200px */
 
 @media only screen and (max-width: 1200px) {
   .site-footer__top {
@@ -727,9 +696,7 @@
   }
 }
 
-/* =========================================
-   Footer — <= 768px
-========================================= */
+/* Footer: <= 768px */
 
 @media only screen and (max-width: 768px) {
   .site-footer__container {
@@ -744,9 +711,7 @@
       no-repeat;
   }
 
-  /* =====================================
-     Social ribbon
-  ===================================== */
+  /* Social ribbon */
 
   .site-footer__social-ribbon {
     top: -14px;
@@ -758,9 +723,7 @@
     padding-bottom: 8px;
   }
 
-  /* =====================================
-     Top / menus
-  ===================================== */
+  /* Top / menus */
 
   .site-footer__top {
     grid-template-columns: 1fr;
@@ -790,9 +753,7 @@
     white-space: normal;
   }
 
-  /* =====================================
-     Trust logos
-  ===================================== */
+  /* Trust logos */
 
   .site-footer__trust {
     flex-direction: row;
@@ -805,9 +766,7 @@
     padding: 16px;
   }
 
-  /* =====================================
-     Info
-  ===================================== */
+  /* Info */
 
   .site-footer__info {
     grid-template-columns: 1fr;
@@ -829,17 +788,13 @@
     flex-wrap: wrap;
   }
 
-  /* =====================================
-     Back to top
-  ===================================== */
+  /* Back to top */
 
   .site-footer__divider {
     margin-top: 56px;
   }
 
-  /* =====================================
-     Bottom
-  ===================================== */
+  /* Bottom */
 
   .site-footer__bottom {
     flex-direction: column;
@@ -864,9 +819,7 @@
   }
 }
 
-/* =========================================
-   Footer — <= 595px
-========================================= */
+/* Footer: <= 595px */
 
 @media only screen and (max-width: 595px) {
   .site-footer__bottom {
@@ -907,18 +860,13 @@
   }
 }
 
-/* ============================================
-   Sticky Header / Sticky Site Nav
-   ============================================ */
+/* Sticky Header / Sticky Site Nav */
 
 .site-header {
   --sticky-nav-gutter: var(--layout-gutter);
 }
 
-/* ============================================
-   Desktop / Laptop
-    Sticky nav
-   ============================================ */
+/* Desktop / Laptop Sticky nav */
 
 @media only screen and (min-width: 1025px) {
   .site-header.is-nav-sticky .site-header__inner {

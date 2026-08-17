@@ -1,6 +1,4 @@
-/* ============================================
-   Wishlist Buttons
-   ============================================ */
+/* Wishlist Buttons */
 
 [data-wishlist-toggle] .fa-heart {
   transition:
@@ -17,9 +15,7 @@
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Wishlist Panel
-   ============================================ */
+/* Wishlist Panel */
 
 .wishlist-panel {
   position: fixed;
@@ -57,9 +53,7 @@
   transform: translateY(0);
 }
 
-/* ============================================
-   Header
-   ============================================ */
+/* Header */
 
 .wishlist-panel__header {
   display: flex;
@@ -151,9 +145,7 @@
   color: var(--color-brand-primary);
 }
 
-/* ============================================
-   Items
-   ============================================ */
+/* Items */
 
 .wishlist-panel__body {
   flex: 1 1 auto;
@@ -270,9 +262,7 @@
   transform: scale(0.94);
 }
 
-/* ============================================
-   Empty
-   ============================================ */
+/* Empty */
 
 .wishlist-panel__empty {
   padding: 38px 24px;
@@ -315,9 +305,7 @@
   line-height: 1.8;
 }
 
-/* ============================================
-   Focus
-   ============================================ */
+/* Focus */
 
 [data-wishlist-toggle]:focus-visible,
 [data-wishlist-open]:focus-visible,
@@ -326,9 +314,7 @@
   outline-offset: 2px;
 }
 
-/* ============================================
-   Small Mobile
-   ============================================ */
+/* Small mobile */
 
 @media only screen and (max-width: 425px) {
   .wishlist-panel__header {
@@ -348,9 +334,7 @@
   }
 }
 
-/* ============================================
-   Reduced Motion
-   ============================================ */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   [data-wishlist-toggle] .fa-heart,

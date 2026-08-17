@@ -1,5 +1,6 @@
 "use strict";
 
+// Deal countdown timers and visibility-aware updates.
 function initDealCountdowns() {
   const countdowns = Array.from(
     document.querySelectorAll("[data-deal-countdown]"),
@@ -11,6 +12,7 @@ function initDealCountdowns() {
 
   const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
 
+// Formatting helpers
   function toPersianDigits(value) {
     return String(value).replace(/\d/g, function (digit) {
       return persianDigits[Number(digit)];
@@ -45,6 +47,7 @@ function initDealCountdowns() {
     element.dataset.currentValue = formattedValue;
   }
 
+// Timer state
   const timers = countdowns
     .map(function (countdown) {
       const duration = Number.parseInt(countdown.dataset.duration, 10);
@@ -92,6 +95,7 @@ function initDealCountdowns() {
 
   let intervalId = null;
 
+// Countdown updates
   function updateTimer(timer) {
     const remainingSeconds = Math.max(
       0,
@@ -155,6 +159,7 @@ function initDealCountdowns() {
     return hasActiveTimer;
   }
 
+// Ticker controls
   function stopTicker() {
     if (intervalId === null) {
       return;

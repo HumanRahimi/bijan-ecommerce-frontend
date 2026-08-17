@@ -1,6 +1,4 @@
-/* ============================================
-   Store Benefits
-   ============================================ */
+/* Store Benefits */
 
 .store-benefits {
   width: 100%;
@@ -21,9 +19,7 @@
   margin-inline: auto;
 }
 
-/* ============================================
-   Benefits List
-   ============================================ */
+/* Benefits List */
 
 .store-benefits__list {
   display: grid;
@@ -33,9 +29,7 @@
   min-height: 116px;
 }
 
-/* ============================================
-   Benefit Item
-   ============================================ */
+/* Benefit Item */
 
 .store-benefit {
   position: relative;
@@ -68,9 +62,7 @@
   transform: translateY(-50%);
 }
 
-/* ============================================
-   Icon
-   ============================================ */
+/* Icon */
 
 .store-benefit__icon {
   display: block;
@@ -83,9 +75,7 @@
   object-fit: contain;
 }
 
-/* ============================================
-   Content
-   ============================================ */
+/* Content */
 
 .store-benefit__content {
   display: flex;
@@ -123,9 +113,7 @@
   white-space: nowrap;
 }
 
-/* ============================================
-   <= 1200px
-   ============================================ */
+/* <= 1200px */
 
 @media only screen and (max-width: 1200px) {
   .store-benefits {
@@ -162,10 +150,7 @@
   }
 }
 
-/* ============================================
-   <= 1100px
-   Compact Tablet
-   ============================================ */
+/* <= 1100px Compact Tablet */
 
 @media only screen and (max-width: 1100px) {
   .store-benefits__list {
@@ -216,10 +201,7 @@
   }
 }
 
-/* ============================================
-   <= 767px
-   Horizontal Benefits Rail
-   ============================================ */
+/* <= 767px Horizontal Benefits Rail */
 
 @media only screen and (max-width: 767px) {
   .store-benefits {
@@ -306,10 +288,7 @@
   }
 }
 
-/* ============================================
-   <= 425px
-   Small Mobile
-   ============================================ */
+/* <= 425px Small Mobile */
 
 @media only screen and (max-width: 425px) {
   .store-benefit {

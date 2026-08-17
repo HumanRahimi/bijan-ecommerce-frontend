@@ -1,6 +1,4 @@
-/* =========================================
-   Category Promos
-========================================= */
+/* Category Promos */
 
 .category-promos {
   width: 100%;
@@ -19,18 +17,14 @@
   text-decoration: none;
 }
 
-/* =========================================
-   Container
-========================================= */
+/* Container */
 
 .category-promos__container {
   width: min(100%, var(--section-content-width));
   margin-inline: auto;
 }
 
-/* =========================================
-   Grid
-========================================= */
+/* Grid */
 
 .category-promos__grid {
   display: grid;
@@ -40,10 +34,7 @@
   width: 100%;
 }
 
-/* =========================================
-   Promo Card
-   Based on original banners-slider-item
-========================================= */
+/* Promo Card Based on original banners-slider-item */
 
 .category-promo {
   position: relative;
@@ -74,9 +65,7 @@
     filter var(--duration-fast) ease;
 }
 
-/* =========================================
-   Exact Card Colors
-========================================= */
+/* Exact Card Colors */
 
 .category-promo--skin {
   background-color: #97a1fe;
@@ -90,9 +79,7 @@
   background-color: #44ad61;
 }
 
-/* =========================================
-   Text + Button Column
-========================================= */
+/* Text + Button Column */
 
 .category-promo__start {
   display: flex;
@@ -117,9 +104,7 @@
   text-align: right;
 }
 
-/* =========================================
-   Title
-========================================= */
+/* Title */
 
 .category-promo__title {
   width: 100%;
@@ -134,9 +119,7 @@
   white-space: nowrap;
 }
 
-/* =========================================
-   Product Count
-========================================= */
+/* Product Count */
 
 .category-promo__subtitle {
   display: flex;
@@ -169,9 +152,7 @@
   background: var(--color-white);
 }
 
-/* =========================================
-   More Button
-========================================= */
+/* More Button */
 
 .category-promo__button {
   display: flex;
@@ -212,9 +193,7 @@
   line-height: 1;
 }
 
-/* =========================================
-   Product Image
-========================================= */
+/* Product Image */
 
 .category-promo__image {
   display: flex;
@@ -253,9 +232,7 @@
   height: 150px;
 }
 
-/* =========================================
-   Hover
-========================================= */
+/* Hover */
 
 .category-promo:hover {
   box-shadow: 0 14px 28px rgba(31, 26, 52, 0.08);
@@ -272,18 +249,14 @@
   box-shadow: 0 7px 16px rgba(37, 32, 55, 0.08);
 }
 
-/* =========================================
-   Keyboard Focus
-========================================= */
+/* Keyboard focus */
 
 .category-promo:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
 
-/* =========================================
-   Category Promos Slider — 1200px
-========================================= */
+/* Category Promos Slider: 1200px */
 
 @media only screen and (max-width: 1200px) {
   .category-promos__container {
@@ -315,9 +288,7 @@
   }
 }
 
-/* =========================================
-   Reduced Motion
-========================================= */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .category-promo,

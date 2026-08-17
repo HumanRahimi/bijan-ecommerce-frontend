@@ -12,7 +12,7 @@ function initDealCountdowns() {
 
   const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
 
-// Formatting helpers
+  // Formatting helpers
   function toPersianDigits(value) {
     return String(value).replace(/\d/g, function (digit) {
       return persianDigits[Number(digit)];
@@ -47,7 +47,7 @@ function initDealCountdowns() {
     element.dataset.currentValue = formattedValue;
   }
 
-// Timer state
+  // Timer state
   const timers = countdowns
     .map(function (countdown) {
       const duration = Number.parseInt(countdown.dataset.duration, 10);
@@ -95,7 +95,7 @@ function initDealCountdowns() {
 
   let intervalId = null;
 
-// Countdown updates
+  // Countdown updates
   function updateTimer(timer) {
     const remainingSeconds = Math.max(
       0,
@@ -159,7 +159,7 @@ function initDealCountdowns() {
     return hasActiveTimer;
   }
 
-// Ticker controls
+  // Ticker controls
   function stopTicker() {
     if (intervalId === null) {
       return;
